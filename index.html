@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Abre HTML General head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inés Vega ~ Artista Plástica</title>
+    <!-- Abre Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png"/>
+<!-- Cierra Favicon-->
+
+<!-- Abre Bootstrap-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- Cierra Bootstrap-->
+
+<!-- Abre Css estilos -->
+    <link rel="stylesheet" href="css/estilos.css"/>
+<!-- Cierra Css estilos -->
+
+<!--abre JS-->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+<!--cierra JS-->
+
+<!-- Abre Fuentes Tipográficas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Cierra Fuentes Tipográficas -->
+<!-- Abre Íconos -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+<!-- Cierra Íconos -->
+
+  <!-- Abre Animaciones-->
+    <link rel="stylesheet" href="css/infinite.css">   <!-- Pulsar línea -->
+    <link href="css/demo-page.css" rel="stylesheet" media="all">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<!-- aos  https://michalsnik.github.io/aos/-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<!-- cierra aos -->
+
+    <!-- wow -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/animate.css"> <!-- wow -->
+    <style>
+      .wow:first-child {
+        visibility: hidden;
+      }
+    </style>
+<!-- cierra wow -->
+
+<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<script>
+    if ("loading" in HTMLImageElement.prototype) {
+      console.log("El navegador soporta `lazy-loading`...");
+    } else {
+      console.log("`lazy-loading` no soportado...");
+    }
+  </script>
+<!--PENDIENTE CURSOR CÍRCULO COLOR https://codepen.io/animaticss/pen/oNBoVbJ-->
+<!-- pendiente parallax https://www.w3schools.com/howto/howto_css_parallax.asp-->
+<!-- Cierra Animaciones-->
+
+</head>
+<!-- Cierra HTML General head-->
+
+<!-- Abre HTML BODY--> 
+<body>
+<!-- Abre HTML General Menú_galería_novedades--> 
+
+<header id="header" class="fixed-top container-fluid"><!--------------arreglar clases menu en CSS, esta sucio; OK--> 
+    <div class="menu_nav_ancho"> 
+        <a href="index.html" class="header__logo">Inés Vega</a> 
+            <div class="menu menu_float_right">         
+                <nav class="header__navigation">
+                    <ul>
+                    <li><a href="index.html" class="active hvr__underline--from-left-nav">Acerca</a></li>
+                    <li class="#"><a href="secciones/obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+                    <li class="#"><a href="secciones/muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                    <li class="#"><a href="secciones/crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
+                    <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+</header>
+<!-- Cierra HTML General Menú--> 
+
+<!--Abre margen scroll -->
+<main class="contenido__pag">
+<!--Cierra margen scroll -->
+
+<!-- Abre Home Background Photo Random con jquery ó js https://stackoverflow.com/questions/15231812/random-background-images-css3 --> 
+<section id="hero">
+    <h3>Bienvenidos <strong></strong></h3>
+    <h1>Inés Vega</h1>
+    <h2>Artista Plástica</h2>
+    <a href="#acerca" class="btn-get-started scrollto">Descubrí más</a>
+    <span class="hero__scroll tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
+        <i class="chevron bottom"></i>
+    </span>
+    <!--https://loading.io/css/
+    https://codepen.io/aaroniker/pen/omvYNZ
+
+https://codepen.io/creativeocean/pen/qBbBLyB
+https://stackoverflow.com/questions/19369426/random-background-image-on-refresh -->
+</section>
+
+<!-- Cierra Home Background Photo-->
+
+
+
+<!-- Abre Epigrafe Background Photo-->
+<!-- hover sobre texto: https://codepen.io/cassie-codes/pen/WNrOeyy-->
+<section id="epigrafe__obra--bg">
+    <div class="container-fluid">
+        <div class="rows no-gutters justify-content-start">       
+            <div class="col-md-12">
+                <div class="caja__epigrafe--img">
+                    <p class="parrafo__epigrafe"><span class="tipo__obra--nombre">_Ángel Musicante, </span></p><!-- más pequeño y justificado a la izquierda-->
+                    <p class="parrafo__epigrafe"><span class="tipo__obra--material">tela, pintura acrílica, guata.</span></p>
+                    <p class="parrafo__epigrafe"><span class="tipo__obra--medida">100 x 90 x 15 cm.</span></p>
+                    <p class="parrafo__epigrafe"><span class="tipo__obra--descripcion">Fragmento </span><span class="tipo__obra--anio">[©1998]</span></p>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!--HOVER IMG SOBRE
+    <div class="container">
+    <img src="img_avatar.png" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Hello World</div>
+    </div>
+  </div>-->
+</section> 
+<!-- Cierra Epigrafe Background Photo-->
+
+<!-- Abre Sección Acerca__alberti-->
+<section id="alberti">
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-12 feature">
+            <div class="col-md-6 order-md-2">
+                <div data-wow-iteration="4" data-wow-duration="0.15s" class="wow pulse">
+                    <div class="cezanne">
+                        <div class="caja__letra--capital-alberti">
+                        <p class="tipo__letra--capital-alberti">V</p>
+                        </div>
+                    </div>
+                </div>
+<div class="caja__destacado--alberti">
+<pre class="tipo__destacado--alberti">
+<div class="dash"></div>
+ino el que yo quería 
+el que yo llamaba. 
+No aquel que barre cielos sin defensas. 
+luceros sin cabañas, 
+lunas sin patria, 
+nieves. 
+Nieves de esas caídas de una mano, 
+un nombre, 
+un sueño, 
+una frente. 
+
+No aquel que a sus cabellos 
+ató la muerte. 
+El que yo quería. 
+Sin arañar los aires, 
+sin herir hojas ni mover cristales. 
+Aquel que a sus cabellos 
+ató el silencio. 
+Para sin lastimarme, 
+cavar una ribera de luz dulce en mi pecho 
+y hacerme el alma navegable. 
+
+<p class="tipo__copyright--alberti">«El Ángel Bueno», Rafael Alberti.</p>
+</pre>
+</div>
+</div>
+<div class="col-md-6 order-md-2">
+
+</div>
+</div>
+</div>
+</div>
+<div class="clearfix">
+</div>
+</section>
+<!--cierra alberti-->
+
+<!--abre bocetos-->
+<!--cierra bocetos-->
+
+<!--Abre acerca-->
+<section id="acerca">
+    <div class="container">
+        <div class="row acerca content"> <!--VER ESTE ESTILO acerca-->
+            <div class="col-md-6 "> 
+                <div class="caja__acerca--left-txt">
+                    <p class="tipo__acerca--left-txt">Nació en Buenos Aires, Argentina, en 1950. Se graduó en la Escuela Manuel Belgrano y en la Prilidiano Pueyrredón. En los ochenta vivió dos años en Madrid, y, entre 1989 y 1996,
+                    en París. En el 2003 obtuvo el Gran Premio de Honor del Salón Nacional de Dibujo, en el 2002 el Primer Premio del Salón de Santa Fe, Dibujo, en el 2001 el Primer Premio del Salón Manuel Belgrano, Dibujo, en el 2004 el Primer Premio Bienal de Arte Sacro, en 1999 el Premio de Escultura del Salón Fundación Fortabat, Museo Nacional de Bellas Artes, en 1994 el Premio del Jurado <span class="italic">Prix Foundation Fortabat, Maison de L`Amerique Latine, </span>Paris.
+                    Realizó exposiciones individuales en la Galería Isabel Anchorena, en <span class="italic">Aldo Castillo Gallery,</span> Chicago, Estados Unidos, en <span class="italic">Galerie Strouk,</span> Paris, en <span class="italic">Galerie Félix Valk,</span> Arnhem, Holanda, en el Fondo Nacional de las Artes. Poseen obra suya el Museo Nacional de Bellas Artes, donación Fundación Antorchas, Museo Municipal de Arte Eduardo Sivori. <span class="italic">Maison de L`Amerique Latine, </span>Paris, Francia.
+                    Colecciones privadas de España, Estados Unidos, Holanda, Francia, Argentina y Alemania.❑</p>
+                    <a href="secciones/cv.html"><span class="tipo__acerca--left-link">_Conocé más</span></a>
+                </div>
+            </div>
+            <div class="col-md-6 "> 
+                <div class="caja__acerca--right">
+                    <h1 class="tipo__acerca--right-tit">~Acerca</h1>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<!-- Cierra Sección Acerca>-->
+
+<!-- Abre General Footer LIMPIAR LAS CLASES-->
+<footer id="footer__1--navigation">
+    <div class="container-fluid footer__1__navigation__zocalocolor--100">
+        <div class="row">
+<div class="col-md-12">
+        <div class="footer__1__navigation__container--center">
+            <ul>
+                <li><a href="index.html">Acerca</a></li>
+                <li><a href="secciones/obra.html">Obra</a></li>
+                <li><a href="secciones/muestra.html">Muestra Virtual</a></li>
+                <li><a href="secciones/crono.html">Cronologías</a></li>
+                <li><a href="secciones/contacto.html">Contacto</a></li>
+            </ul>
+            <ul>
+                <li class="#"><a href="https://www.facebook.com/ines.vega.37" class="footer__media-icono"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li class="#"><a href="https://www.instagram.com/vivainesita/?hl=es-la"> <i class="fab fa-instagram fa-2x"></i></a></li>                    
+            </ul>
+    </div>
+</footer>
+    <footer id="footer__2--copyright">
+        <div class="footer__2__copyright__zocalocolor--100">
+            <div class="footer__2__copyright__areatext--90">
+                <div class="footer__2__copyright__text__container--left">
+                    <p class="footer__2__copyright--text">Hecho con <span class="change__color"> ❤ </span></p>
+                </div>
+                <div class="footer__2__copyright__text__container--right">
+                    <p class="footer__2__copyright--firma">Inés Vega<span class="footer__2__copyright--text2"> | © 2021 </span></p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Cierra General Footer-->
+</main>
+
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- cierra bootstrap-->
+<!-- Abre JSr-->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<!--<script src="js/main.js"></script> <!-- Resource jQuery -->
+<!-- cierra JSr-->
+
+<!-- Abre Enlace y activar wow.js -->
+<script src="js/wow.js"></script>
+<script>
+  wow = new WOW(
+    {
+      animateClass: 'animated',
+      offset:       100,
+      callback:     function(box) {
+        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+      }
+    }
+  );
+  wow.init();
+  document.getElementById('moar').onclick = function() {
+    var section = document.createElement('section');
+    section.className = 'section--purple wow fadeInDown';
+    this.parentNode.insertBefore(section, this);
+  };
+</script>
+<!-- Cierra Enlace y activar wow.js -->
+<!-- abre Enlace y activar aos  -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+
+    $('.hero__scroll').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1300);
+    });
+</script>
+<!-- cierra Enlace y activar aos  -->
+
+</body>
+</html>

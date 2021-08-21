@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es" id="colorbg__crono--lila">
+<!-- Abre HTML General head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inés Vega ~ Artista Plástica</title>
+
+<!-- Abre Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- Cierra Bootstrap-->
+
+<!-- Abre Css estilos -->
+    <link rel="stylesheet" href="../css/estilos.css"/>
+<!-- Cierra Css estilos -->
+
+<!--abre JS-->
+<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+<!--cierra JS-->
+
+<!-- Abre Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png"/>
+<!-- Cierra Favicon-->
+
+<!-- Abre Fuentes Tipográficas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- Cierra Fuentes Tipográficas -->
+<!-- Abre Íconos -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+<!-- Cierra Íconos -->
+<!-- abre Slider  -->
+<!-- Syntax Highlighter -->
+<link href="../css/shCore.css" rel="stylesheet" type="text/css" />
+<link href="../css/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<!-- Demo CSS -->
+  <link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+<!--cierra slider-->
+</head>
+<!-- Cierra HTML General head-->
+<!-- Abre Animaciones-->
+<link rel="stylesheet" href="../css/infinite.css">   <!-- Pulsar línea -->
+<link href="../css/demo-page.css" rel="stylesheet" media="all">
+<link href="../css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<script>
+if ("loading" in HTMLImageElement.prototype) {
+  console.log("El navegador soporta `lazy-loading`...");
+} else {
+  console.log("`lazy-loading` no soportado...");
+}
+</script>
+<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
+
+<!-- Cierra Animaciones-->
+
+<!-- Abre HTML BODY--> 
+<body class="colorbg__crono--lila">
+<!-- Abre HTML General Menú--> 
+<header id="header" class="fixed-top container-fluid"><!----------------------------------arreglar clases menu en CSS, esta sucio; OK--> 
+        <div class="menu_nav_ancho"> 
+        <a href="../index.html" class="header__logo">Inés Vega</a> 
+            <div class="menu menu_float_right"> 
+                <nav class="header__navigation">
+                    <ul>
+                        <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
+                        <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+                        <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                        <li class="dropdown"><a href="#" class="active hvr__underline--from-left-nav"><span>Cronologías</span><i class="fa-2xbi bi-chevron-down"></i></a></li>
+                            <!--<ul>
+                                  <li><a class="scrollto" href="#MuestrasIndividuales">Muestras Individuales</a></li>
+                                  <li><a class="scrollto" href="#MuestrasColectivas">Muestras Colectivas</a></li>
+                                  <li><a class="scrollto" href="#Premios">Premios</a></li>
+                            </ul>-->
+                        <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</header>
+
+<!-- Cierra HTML General Menú--> 
+<!--https://stackoverflow.com/questions/31944691/bootstrap-5-column-layout-->
+<!-- Abre crono FOTOS +WEB MARINA https://constelacionfemenina.wordpress.com/#jp-carousel-195-->
+<!--
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-8 col-xl-3">
+                <p>COL 1</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                <p>COL 2</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-8 col-xl-3">
+                <p>COL 3</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                <p>COL 4</p>
+            </div>
+        </div>
+    </div>
+-->
+<main> 
+<section id="crono">
+    <div class="individuales">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-flex align-item-left col__sticky--zi-4 crono__sticky--img col-lg-5 col-md-4 col-sm-6">
+                <div class="caja__crono--img">
+                    <div class="wrap"></div>
+                        <div class="caja__img--sticky-left">
+                            <!--<p class="tipo__crono-seccion-tit">~individuales</p>-->
+                            <img src="../img/crono/inestaller.jpg" alt="En el taller">
+                        </div>
+                </div>
+            </div>
+
+        <!--<div class="caja__crono--img col-12 col-sm-6 col-md-6 col-lg-8 col-xl-3"></div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"> <!--si lo uso en caja__img-->
+            <!--<div class="bottom">
+                <a style="position:sticky;bottom:5px;right:5px;margin:0;padding:5px 3px;" href="#">Individuales</a>
+            </div>-->
+        <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4 mb-2">
+        <p class="tipo__crono-red-tit-articulo">~Cronologías</p>
+
+            <nav id="navbar" class="navbar tipo__crono--subnav pt-5 ms-0">
+                <ul> 
+                    <li><a class="nav-link scrollto pe-1 ps-0" href="#muestras__individuales">Individuales</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#muestras__colectivas">Colectivas</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#los__premios">Premios</a></li>
+                    <li><a class="pegado"href="#">~</a></li>
+                    <li><a class="nav-link scrollto pe-1 ps-1" href="#catalogos">Catálogos</a></li>
+
+                </ul> 
+            </nav>
+            <div class="ancla" id="muestras__individuales">
+        </div>
+        <div class="ps-3 pe-5">
+        <p class="tipo__crono--individuales-start">Muestras Individuales <span class="subtitulo__crono">[SELECCIÓN]</span></p>
+        <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo p-e-100">«Constelación Femenina», Fundación Mundo Nuevo, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">2013<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujos y Objetos 2008|2013», Galería Isabel Anchorena, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">2011<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujos 1997|2010», Museo Municipal Eduardo Sívori, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">2011<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujos y Bocetos», U.N.L.A., Lanús, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion">Galería Isabel Anchorena, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Fondo Nacional de las Artes, Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">Galería Colección Alvear de Zurbarán, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Foire Internationale de Strassburg,</span> Strassburg, Francia.</span></p>
+        <p class="tipo__crono--anio">1994<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Galerie Felix Valk, Arnhem,</span> Holanda.</span></p>
+        <p class="tipo__crono--anio">1993<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Maison de L’Amerique Latine,</span> París, Francia.</span></p>
+        <p class="tipo__crono--anio">1991<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Galerie Laurent Strouk,</span> París, Francia.</span></p> 
+        <p class="tipo__crono--anio">1989<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Moss Gallery,</span> San Francisco, Estados Unidos.</span></p> 
+       
+        <div class="caja__vermas--start"><!--opción con bootstrap https://getbootstrap.com/docs/3.4/javascript/-->
+            <div class="qa">
+                <input type="checkbox" id="qa0"/>
+                <label for="qa0"><p class="tipo__w--white">Ver más</p></label>
+                <div class="caja__vermas--next">
+                    <p class="tipo__crono--anio">1988<span class="none"></span><span class="tipo__crono--descripcion">Galería Ática, Buenos Aires, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1986<span class="none"></span><span class="tipo__crono--descripcion">Arco 86, Feria Internacional Madrid, España.</span></p>
+                    <p class="tipo__crono--anio">1986<span class="none"></span><span class="tipo__crono--descripcion">Galería Ática, Buenos Aires, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1984<span class="none"></span><span class="tipo__crono--descripcion">Galería Ángelus, Buenos Aires, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1983<span class="none"></span><span class="tipo__crono--descripcion">Galería Genessy, Mendoza, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1982<span class="none"></span><span class="tipo__crono--descripcion">S.A.A.P., Buenos Aires, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1982<span class="none"></span><span class="tipo__crono--descripcion">Galería Ángelus, Buenos Aires, Argentina.</span></p>
+                    <p class="tipo__crono--anio">1980<span class="none"></span><span class="tipo__crono--descripcion">Galería Ángelus, Buenos Aires, Argentina.❑</span></p>
+                </div>
+            </div>
+            </div> 
+            </div>
+            <div id="carousel">
+                <div class="slider caja__slider pe-4 ps-3 mt-4">
+                    <div class="flexslider carousel">
+                    <ul class="slides">
+                        <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+                        <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="ancla" id="muestras__colectivas"></div>
+            </div>
+
+<!-- cierra contenido curriculum vitae__individuales -->
+
+<!-- abre contenido curriculum vitae__colectivas -->
+<div class="colectivas">   
+<div class="caja__crono--medium">
+    <div class="ps-3 pe-5 mt-5">
+    <p class="tipo__crono--next">Muestras Colectivas <span class="subtitulo__crono">[SELECCIÓN]</span></p>  
+    <p class="tipo__crono--anio">2020<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Mujer, energía creadora», Centro Cultural Eva Perón, Ministerio de Economía, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2019<span class="none"></span><span class="tipo__crono--descripcion">Centro Cultural La Blanco Encalada, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2018<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dogliotti, Sor, Vega, Esculturas», Museo Municipal de Bellas Artes Fernán Félix de Amador, Luján, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2018<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Diversidad y diálogo creativo», Museo Argentino de Artistas Plásticas, Club Alemán de Buenos Aires, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2016<span class="none"></span><span class="tipo__crono--descripcion-articulo">«A 40 años del Golpe Genocida de 1976». Espacio Cultural Doblar el Viento, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2015<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Celle-ci n´est pas Perotti»</span>, Perotti Galería de Arte, Buenos Aires, Argentina</span></p>
+    <p class="tipo__crono--anio">2015<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Homenaje a Álvaro Castagnino», Espacio de Arte Filo, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2015<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Mas Allá de la Piel», Mumbat, Museo Municipal de Bellas Artes, Tandil, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujantes Argentinos Contemporáneos», Museo Provincial de Dibujo y Grabado Artemio Alisio, Entre Ríos, Argentina.</span></p>
+    <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Sur x 4, Dibujo», Galería 2 B, Budapest, Hungría.</span></p>
+    <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo">«47 Artistas en Exposición», Galería Vallmitjana, Espacio de Arte, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Borré, Sbernini, Vega», Museo Municipal de Bellas Artes Fernán Félix de Amador, Luján, Buenos Aires, Argentina.</span></p>
+<div class="caja__vermas--start">
+<div class="qa">
+    <input type="checkbox" id="qa1"/>
+    <label for="qa1"><p class="tipo__w--white">Ver más</p></label>
+    <div class="caja__vermas--next">
+    <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Más Allá de la Piel», Mundo Nuevo <span class="italic">Gallery Art,</span> Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2013<span class="none"></span><span class="tipo__crono--descripcion">Premio «Alberto J. Trabucco», Dibujo 2013, Academia Nacional de Bellas Artes, Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2013<span class="none"></span><span class="tipo__crono--descripcion">Muestra «Ellas por Ellas», Galería Hoy en el Arte, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2012<span class="none"></span><span class="tipo__crono--descripcion">Feria «Red Dot Miami», Galería Isabel Anchorena, Miami, Florida, Estados Unidos.</span></p>
+    <p class="tipo__crono--anio">2012<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Arte en el Consejo», Honorable Consejo Deliberante de la Municipalidad de Vicente López, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2012<span class="none"></span><span class="tipo__crono--descripcion">Panorama de Dibujo Argentino, Universidad Nacional de Lanús, Lanús, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2011<span class="none"></span><span class="tipo__crono--descripcion">Los 10 Tops del Dibujo Argentino, Galería Colección Alvear de Zurbarán, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2011<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujantes Argentinos», Galería Teresa Najman, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2010<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujantes Argentinos Contemporáneos», Museo Rómulo Raggio, Vicente López, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2010<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">«Avoir 20 Ans», Galerie Lefor Openo,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">2010<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Divina Ópera», Centro Cultural Municipal,”H. San José”, Olavarría, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">«Soltanto Azzurro»,</span>Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion">Centro Cultural Alberto Rougés, Fundación Miguel Lillo, Tucumán, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion">Villanueva – Vega, Galería Raíces Americanas, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujantes Argentinos», Galería Teresa Najman, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Baleros Intervenidos», Centro Municipal de Exposiciones, San Isidro, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion-articulo">«20 + 20», Museo Eduardo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion">Museo de Arte Contemporáneo Latinoamericano, La Plata, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion">Casa Victoria Ocampo, Mar del Plata, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2009<span class="none"></span><span class="tipo__crono--descripcion">Centro de Arte y Comunicación, Centro de Conocimiento, Posadas, Misiones, Argentina.</span></p>
+    <p class="tipo__crono--anio">2008<span class="none"></span><span class="tipo__crono--descripcion-articulo">«20 + 20», Dibujantes y Grabadores Argentinos, Museo Eduardo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2008<span class="none"></span><span class="tipo__crono--descripcion-articulo">«20 + 20», Dibujantes y Grabadores Argentinos, Museo de Bellas Artes Evita, Córdoba, Argentina.</span></p>
+    <p class="tipo__crono--anio">2008<span class="none"></span><span class="tipo__crono--descripcion-articulo">«20 + 20», Museo de Arte Contemporáneo, Salta, Argentina.</span></p>
+    <p class="tipo__crono--anio">2008<span class="none"></span><span class="tipo__crono--descripcion">Museo Municipal de Artes Visuales «Sor Josefa Díaz y Clusellas», Santa Fe, Argentina.</span></p>
+    <p class="tipo__crono--anio">2007<span class="none"></span><span class="tipo__crono--descripcion">Premio Alberto J. Trabucco, Academia Nacional de Bellas Artes, Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2007<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Inspiradas», Galería Zurbarán, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2007<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Trastienda», Fundación Avon, Salas Municipales de Exposición, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2007<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Arte Clásica», Costa Salguero, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2007<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Artistas por Argentina», Edición V, Museo Eduardo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2006<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Más Rosa Que Nunca», Museo Provincial de Bellas Artes Rosa Galisteo De Rodríguez, Santa Fe, Argentina.</span></p>
+    <p class="tipo__crono--anio">2005<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Los Inmigrantes», Asociación Cultural Dante Alighieri de Chivilcoy, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Argentin Art”, Arthus Gallery, Bruxelles,</span> Bélgica.</span></p>
+    <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Arte BA», Galería Isabel Anchorena, Feria de Arte de Buenos Aires, La Rural, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion">Muestra «Las Camitas», Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Chandon por el Arte», Muestra de Premiados, Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujantes en el Casal»,<span class="italic">Casal de Catalunya</span> de Buenos Aires, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Art</span>Miami», Galería Isabel Anchorena,<span class="italic">Miami Beach Convention Center,</span> Miami, Estados Unidos.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion">Muestra «¡Ay, Patria Mía!» Museo Provincial de Bellas Artes, Doctor Pedro E. Martínez, Paraná, Entre Ríos, Argentina.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«From a Woman´s Perspective»</span> Aldo Castillo Gallery, Chicago, Estados Unidos.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Zeitgenössische Kunst aus Argentinien», Kunststation Kleinsassen,</span> Alemania.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Noordeinde in Beeld»,</span> Galería Artana, La Haya, Holanda.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Caballos en libertad», Fundación Leopoldo Torres Agüero Rozanes, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2001<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Arte BA», Galería Isabel Anchorena, Feria de Arte de Buenos Aires, La Rural, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2001<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Solo Papel», La Manufactura Papelera, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2000<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Arte BA», Galería Isabel Anchorena, Feria de Arte de Buenos Aires, La Rural, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2000<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Autorretrato», Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2000<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Figuration en March»,</span> Galería Patrice Trigano, París, Francia.</span></p>
+    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Cenicienta no es feliz», Galería Archimboldo, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Museo Municipal Dámaso Arce, Olavarría, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Siglo XX Argentino, Arte y Cultura», Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«40 Artistes Declinent un Myte», Galerie Treger,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion">Homenaje a Raquel Forner, Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion">Colección Bergara Leuman, Salón Auditorio de S. de D.D.R.A., Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1997<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Les artistes travaillent du chapeau», Lefor Openo, Galerie Treger,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">Muestra «A E I U O», Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">VII Muestra de Pintura y Escultura Latinoamericana, San Salvador, El Salvador.</span></p>
+    <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">Galerie Lefor Openo, «Les Artistes font Leurs Plats»,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Women in de Arts», The Florida Museum of Hispanic and Latin American Arts,</span> Miami, Florida, Estados Unidos.</span></p>
+    <p class="tipo__crono--anio">1994<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Les créateurs font un carton”, Galerie Lefor Openo,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">1992<span class="none"></span><span class="tipo__crono--descripcion-articulo"><span class="italic">«Expression Actuelles, 62 Artistes de L‘ Amérique Latine»,</span> Nanterre, Francia.</span></p>
+    <p class="tipo__crono--anio">1992<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Homenaje a Lola Mora», Museo Luis Perlotti, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1990<span class="none"></span><span class="tipo__crono--descripcion">Centro Cultural de la Villa, Madrid, España.</span></p>
+    <p class="tipo__crono--anio">1988<span class="none"></span><span class="tipo__crono--descripcion-articulo">«La Mujer en la Plástica», Centro Cultural Malvinas, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1988<span class="none"></span><span class="tipo__crono--descripcion-articulo">«X Jornadas de la Crítica», Centro Cultural Spinetto, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1987<span class="none"></span><span class="tipo__crono--descripcion-articulo">«IX Jornadas de la Crítica», Centro Cultural Recoleta, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1987<span class="none"></span><span class="tipo__crono--descripcion">Galería Tolmo, España.</span></p>
+    <p class="tipo__crono--anio">1985<span class="none"></span><span class="tipo__crono--descripcion">Galería RG en el Arte, Centro Cultural San Martín, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1985<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Homenaje a Carlos Gardel», Galería Centoira, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1985<span class="none"></span><span class="tipo__crono--descripcion">Museo de Bellas Artes de Bahía Blanca, Argentina.</span></p>
+    <p class="tipo__crono--anio">1985<span class="none"></span><span class="tipo__crono--descripcion">Galería RG en el Arte, Centro Cultural San Martín, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1985<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Casa de la Cultura de Coronel Suárez », Argentina.</span></p>
+    <p class="tipo__crono--anio">1984<span class="none"></span><span class="tipo__crono--descripcion">Primera Bienal de la Habana, La Habana, Cuba.</span></p>
+    <p class="tipo__crono--anio">1984<span class="none"></span><span class="tipo__crono--descripcion">Galería Angelus, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1983<span class="none"></span><span class="tipo__crono--descripcion">Galería Wildenstein, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1983<span class="none"></span><span class="tipo__crono--descripcion">Galería Hoy en el Arte, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1982<span class="none"></span><span class="tipo__crono--descripcion">Galería Angelus, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1981<span class="none"></span><span class="tipo__crono--descripcion">Galería Scheinsohn, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1981<span class="none"></span><span class="tipo__crono--descripcion">Galería del Auditorio Kraft, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1981<span class="none"></span><span class="tipo__crono--descripcion">Galería Lirolay, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1980<span class="none"></span><span class="tipo__crono--descripcion">Galería Hoy en el Arte, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1979<span class="none"></span><span class="tipo__crono--descripcion">Galería Van Riel, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1979<span class="none"></span><span class="tipo__crono--descripcion">Galería Lirolay, Buenos Aires, Argentina.❑</span></p>
+</div>
+</div>
+</div> 
+</div>
+<div id="carousel">
+    <div class="slider caja__slider pe-4 ps-3 mt-4">
+        <div class="flexslider carousel">
+        <ul class="slides">
+            <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="galeria__crono--individuales galeria__crono--individuales-right">
+    <p><span class="tipo__epigrafe--titulo-crono salto__linea">Arriba</span> 
+    <span class="tipo__epigrafe--sub-crono">Catálogos 2013 | 2011</span></p><br><!--https://qastack.mx/programming/2703601/how-to-line-break-from-css-without-using-br-->
+</div>
+<div class="ancla" id="los__premios"></div>
+
+</div>
+
+<div class="premios">
+<div class="caja__crono--medium">
+    <div class="ps-3 pe-5 mt-5">
+    <p class="tipo__crono--next">Premios<span class="subtitulo__crono">[SELECCIÓN]</span></p>
+    <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">1º Premio «IX Bienal de Arte Sacro», Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">2º Premio, «Premio Rioplatense de Artes Visuales Fundación OSDE», Sección Metropolitana, «Imago», Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2003<span class="none"></span><span class="tipo__crono--descripcion">«Gran Premio de Honor» de Dibujo, Salón Nacional de Artes Visuales, Salas Nacionales, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion">1º Premio Salón de Santa Fe de Dibujo, Museo Provincial de Bellas Artes Rosa Galisteo de Rodríguez, Santa Fe, Santa Fe.</span></p>
+    <p class="tipo__crono--anio">2001<span class="none"></span><span class="tipo__crono--descripcion">1º Premio Salón «Manuel Belgrano» de Dibujo, Museo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Premio de Escultura, Salón Fundación Fortabat, Museo Nacional de Bellas Artes, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Mención Salón «Manuel Belgrano» de Escultura, Museo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion">4º Premio «Salón de Arte Sacro», Salas Nacionales, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1997<span class="none"></span><span class="tipo__crono--descripcion">2º Premio «Salón Manuel Belgrano» de Dibujo, Museo Sívori, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">Mención «Premio de Austria», Museo Nacional de Bellas Artes, Buenos Aires, Argentina.</span></p>
+    <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion">Mención «Salón Nacional de Dibujo», Museo Provincial, San Luis, Argentina.</span></p>
+    <p class="tipo__crono--anio">1994<span class="none"></span><span class="tipo__crono--descripcion">Premio Especial del Jurado, Fundación Fortabat <span class="italic">Maison de L’ Amérique Latine,</span> París, Francia.</span></p>
+    <p class="tipo__crono--anio">1992<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Konex» a las Artes Plásticas, Diploma al Mérito, Soportes no tradicionales, Buenos Aires, Argentina.</span></p>
+    
+    <div class="caja__vermas--start">
+    <div class="qa">
+    <input type="checkbox" id="qa2" />
+    <label for="qa2"><p class="tipo__w--white">Ver más</p></label>
+    <div class="caja__vermas--next">
+        <p class="tipo__crono--anio">1989<span class="none"></span><span class="tipo__crono--descripcion">2º Premio IIº Bienal <span class="italic"> Môet Chandon,</span> Museo de Arte Moderno, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1984<span class="none"></span><span class="tipo__crono--descripcion">2º Premio Colegio Ward, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1980<span class="none"></span><span class="tipo__crono--descripcion">2º Premio «Salón de Otoño», S.A.A.P., Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1979<span class="none"></span><span class="tipo__crono--descripcion">Mención «Salón Cerealista», Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1978<span class="none"></span><span class="tipo__crono--descripcion">Premio Salón Anual de Manchas, Museo Sívori, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1977<span class="none"></span><span class="tipo__crono--descripcion">1º Premio, Salón Nacional para Estudiantes de Bellas Artes, Salas Nacionales, Buenos Aires, Argentina.❑</span></p>
+    </div>
+</div>
+</div> 
+</div>
+<div id="carousel">
+    <div class="slider pe-4 ps-3 mt-4">
+        <div class="flexslider carousel">
+        <ul class="slides">
+            <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/Catalogo3.png" alt="Catálogos"/></li>
+            <li><img src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="ancla" id="catalogos"></div>
+
+</div>
+
+<div class="catalogo">
+<div class="caja__crono--medium-catalogo">
+    <div class="ps-3 pe-5 mt-5 mb-5">
+    <p class="tipo__crono--next">Catálogos 2011 | 2013<span class="subtitulo__crono">[HACER CLICK PARA DESCARGAR]</span></p>
+<div class="galeria__cv--individuales"> <!--hover sobre imágenes: https://codepen.io/noeldelgado/pen/pGwFx-->
+    <div class="galeria__item">
+    <img class="catalogo__img" src="../img/crono/catalogo1.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/catalogo2.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/Catalogo3.png" alt="Catálogos"/>
+    </div>
+    <div class="galeria__item">
+        <img class="catalogo__img" src="../img/crono/catalogo2.png" alt="Catálogos"/>
+    </div>
+</div>
+</div>
+
+    <div class="caja__ph--copyright-izq">
+        <p><span class="tipo__ph--ubicacion-izq">Izq</span> </p>
+        <div class="tipo__ph--copyright">Ph: Alicia Schemper ©2020</div>
+    </div>
+</div><!--cierra premios-->
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- Cierra crono--> 
+
+<!-- Abre General Footer-->
+<footer id="footer__1--navigation">
+    <div class="footer__1__navigation__zocalocolor--100">
+        <div class="footer__1__navigation__container--center">
+            <ul>
+                <li><a href="../index.html">Acerca</a></li>
+                <li><a href="obra.html">Obra</a></li>
+                <li><a href="muestra.html">Muestra Virtual</a></li>
+                <li><a href="crono.html">Cronologías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <ul>
+                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fa-2x fab fa-facebook"></i></a></li>
+                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fa-2x fab fa-instagram"></i></a></li>                    
+            </ul>
+        </div>
+    </div>
+</footer>
+<footer id="footer__2--copyright">
+        <div class="footer__2__copyright__zocalocolor--100">
+            <div class="footer__2__copyright__areatext--90">
+                <div class="footer__2__copyright__text__container--left">
+                    <p class="footer__2__copyright--text">Hecho con <span class="change__color"> ❤ </span></p><!-- a Andrea Petra, te amamos ∞-->
+                </div>
+                <div class="footer__2__copyright__text__container--right">
+                    <p class="footer__2__copyright--firma">Inés Vega <span class="footer__2__copyright--text2"> | © Copyright 2021 </span></p> 
+                </div>
+            </div>
+        </div>
+</footer>
+<!-- Cierra General Footer-->
+</main>
+<!--bootstrap-->
+<script src="../js/jquery.min.js"></script>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+<!-- Abre JSr-->
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/jquery.mixitup.min.js"></script>
+<script src="../js/main.js"></script> <!-- Resource jQuery -->
+<!--<script src="../js/stickycrono.js"></script><!--https://codepen.io/Roshif/pen/zoVgLb-->
+<!-- Cierra JSr-->
+
+<!-- Syntax Highlighter -->
+<script type="text/javascript" src="../js/shCore.js"></script>
+<script type="text/javascript" src="../js/shBrushXml.js"></script>
+<script type="text/javascript" src="../js/shBrushJScript.js"></script>
+<!--cambiar tamaño de img en itemwidth https://www.it-swarm-es.com/es/javascript/tamano-fijo-de-flexslider/1068905659/-->
+
+
+  <script src="../js/jquery.easing.js"></script>
+  <script src="../js/jquery.mousewheel.js"></script>
+  <script defer src="../js/demo.js"></script>
+  <!-- Stylesheet Slider CSS File -->
+  <link rel="stylesheet" href="../css/flexslider_basic.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="../js/jquery.flexslider.js"></script>
+  
+  <!-- Optional FlexSlider Additions --><!-- FlexSlider file:///Users/macbookpro/Downloads/woocommerce-FlexSlider-690832b/demo/basic-carousel.html-->
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 140,
+        itemMargin: 10,
+        pausePlay: true,
+        start: function(slider){
+        $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  <script type="text/javascript" charset="utf-8">
+  (function() {
+ // store the slider in a local variable
+ var $window = $(window),
+     flexslider = { vars:{} };
+
+ // tiny helper function to add breakpoints
+ function getGridSize() {
+   return (window.innerWidth < 600) ? 2 :
+          (window.innerWidth < 900) ? 3 : 4;
+ }
+
+ $(function() {
+   SyntaxHighlighter.all();
+ });
+
+ $window.load(function() {
+   $('.flexslider').flexslider({
+     animation: "slide",
+     animationLoop: false,
+     itemWidth: 140,
+     itemMargin: 10,
+     minItems: getGridSize(2), // use function to pull in initial value
+     maxItems: getGridSize(3) // use function to pull in initial value
+   });
+ });
+
+ // check grid size on resize event
+ $window.resize(function() {
+   var gridSize = getGridSize();
+
+   flexslider.vars.minItems = gridSize;
+   flexslider.vars.maxItems = gridSize;
+ });
+}());
+  </script>
+
+</body>
+</html>

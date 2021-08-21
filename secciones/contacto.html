@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Abre HTML General head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inés Vega ~ Artista Plástica</title>
+
+<!-- Abre Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- Cierra Bootstrap-->
+
+<!-- Abre Css estilos -->
+    <link rel="stylesheet" href="../css/estilos.css"/>
+<!-- Cierra Css estilos -->
+
+<!--abre JS-->
+<script src="../js/modernizr.js"></script> <!-- Modernizr -->
+<!--cierra JS-->
+
+<!-- Abre Favicon-->
+    <link rel="shortcut icon" href="../img/favicon.png"/>
+<!-- Cierra Favicon-->
+
+<!-- Abre Fuentes Tipográficas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<!-- Cierra Fuentes Tipográficas -->
+<!-- Abre Íconos -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+<!-- Cierra Íconos -->
+</head>
+<!-- Cierra HTML General head-->
+
+<!-- Abre Animaciones-->
+    <link rel="stylesheet" href="../css/infinite.css">   <!-- Pulsar línea -->
+    <link href="../css/demo-page.css" rel="stylesheet" media="all">
+    <link href="../css/hover.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<script>
+    if ("loading" in HTMLImageElement.prototype) {
+      console.log("El navegador soporta `lazy-loading`...");
+    } else {
+      console.log("`lazy-loading` no soportado...");
+    }
+  </script>
+  <!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
+
+  <!-- Cierra Animaciones-->
+
+
+<!-- Abre HTML BODY--> 
+<body>
+<!-- Abre HTML General Menú--> 
+
+<header id="header" class="fixed-top"><!-----------------------------------------------------------------------arreglar clases menu en CSS, esta sucio; OK--> 
+    <div class="container__100"> 
+        <div class="menu_nav_ancho"> 
+        <a href="../index.html" class="header__logo">Inés Vega</a> 
+            <div class="menu menu_float_right">         
+                <nav class="header__navigation">
+                    <ul>
+                    <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
+                    <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+                    <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                    <li class="#"><a href="crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
+                    <li class="#"><a href="contacto.html" class="active hvr__underline--from-left-nav">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Cierra HTML General Menú--> 
+
+<!--Abre margen scroll -->
+<main class="contenido__pag">   
+<!--Cierra margen scroll -->
+
+<!-- Abre contacto ph y teléfono--> 
+<section id="hero__contacto">
+    <div class="container__contacto--titulo">
+        <p class="titulo__contacto--red">~Contacto</p>
+        <p class="subtitulo__contacto--black">¡Escribinos, te responderemos a la brevedad!</p>
+        <!-- Abre form contacto https://codepen.io/woodwoerk/pen/pgLvEr-->
+    <div class="container__contacto--form">
+        <div class="p-b-0">
+            <div class="row p-t-20">
+                <div class="col-md-6 col-sm-6 m-l-60">
+                    <form id="contact_form" method="post" action="#">
+                        <div class="row form-row">
+                            <div class="col-md-9">
+                                <input name="txtFirstName" id="textFirstName" type="text" class="form-control" placeholder="Nombre y Apellido">
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-md-9">
+                                <input name="txtCompany" id="txtTelefono" type="text" class="form-control" placeholder="Teléfono">
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-md-9">
+                                <input name="txtEmailAddress" id="txtEmailAddress" type="text" class="form-control"
+                                placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row form-row">
+                            <div class="col-md-9">
+                                <textarea id="txtDesc" name="txtMessage" type="text" class="form-control" placeholder="Mensaje"rows="4">
+                                </textarea>
+                            </div>
+                        </div>
+                        <div class="row form-row boton">
+                            <div class="col-md-9">
+                                <button type="button" id="button-send" class="contacto_btn">
+                                Enviar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div> <!--row-->
+        </div> <!--pb 60-->
+    </div>
+</section>
+<!-- Cierra Contacto ph y teléfono-->
+
+<!--abre  MAPA-->
+
+<div class="area_map-responsive_100"> 
+    <div class="map-responsive">
+        <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=san%20juan%202200,%20buenos%20aires&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>.mapouter{position:relative;text-align:right;height:300px;width:1280px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:1280px;}</style>
+    </div>
+</div>
+<!--cierra  MAPA-->
+
+<!-- Abre General Footer -temas-obra-exposiciones-->
+
+<footer id="footer__1--navigation">
+    <div class="footer__1__navigation__zocalocolor--100">
+        <div class="footer__1__navigation__container--center">
+            <ul>
+                <li><a href="../index.html">Acerca</a></li>
+                <li><a href="obra.html">Obra</a></li>
+                <li><a href="muestra.html">Muestra Virtual</a></li>
+                <li><a href="crono.html">Cronologías</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+            <ul>
+                <li class="footer__media-icono"><a href="https://www.facebook.com/ines.vega.37" class="facebook"><i class="fa-2x fab fa-facebook"></i></a></li>
+                <li class="footer__media-icono"><a href="https://www.instagram.com/vivainesita/?hl=es-la" class="instagram"> <i class="fa-2x fab fa-instagram"></i></a></li>                    
+            </ul>
+        </div>
+    </div>
+    <div class="footer__media--whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5491158804798&text=%C2%BFEn%20qu%C3%A9%20podemos%20ayudarte?" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>           </div>
+    
+    </div>
+</footer>
+    <footer id="footer__2--copyright">
+        <div class="footer__2__copyright__zocalocolor--100">
+            <div class="footer__2__copyright__areatext--90">
+                <div class="footer__2__copyright__text__container--left">
+                    <p class="footer__2__copyright--text">Hecho con <span class="change__color"> ❤ </span></p>
+                </div>
+                <div class="footer__2__copyright__text__container--right">
+                    <p class="footer__2__copyright--firma">Inés Vega <span class="footer__2__copyright--text2"> | © Copyright 2021 </span></p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Cierra General Footer-->
+</main>
+<!--bootstrap-->
+<script src="../js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<!-- Abre JSr-->
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/jquery.mixitup.min.js"></script>
+<script src="../js/main.js"></script> <!-- Resource jQuery -->
+<!-- Cierra JSr-->
+</body>
+</html>
