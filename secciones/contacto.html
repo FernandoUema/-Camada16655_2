@@ -33,36 +33,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
 <!-- Cierra Fuentes Tipográficas -->
 <!-- Abre Íconos -->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/ionicons.min.css">
 <!-- Cierra Íconos -->
-</head>
-<!-- Cierra HTML General head-->
+<!-- abre Vendor CSS Files de my portfolio-->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Vendor CSS Files de my portfolio-->
 
 <!-- Abre Animaciones-->
-    <link rel="stylesheet" href="../css/infinite.css">   <!-- Pulsar línea -->
-    <link href="../css/demo-page.css" rel="stylesheet" media="all">
-    <link href="../css/hover.css" rel="stylesheet" media="all">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="../css/infinite.css">   <!-- Pulsar línea -->
+<link href="../css/demo-page.css" rel="stylesheet" media="all">
+<link href="../css/hover.css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link rel="stylesheet" href="../dist/aos.css" />
 
 <!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
 <script>
-    if ("loading" in HTMLImageElement.prototype) {
-      console.log("El navegador soporta `lazy-loading`...");
-    } else {
-      console.log("`lazy-loading` no soportado...");
-    }
-  </script>
-  <!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
+if ("loading" in HTMLImageElement.prototype) {
+console.log("El navegador soporta `lazy-loading`...");
+} else {
+console.log("`lazy-loading` no soportado...");
+}
+</script>
+<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
 
-  <!-- Cierra Animaciones-->
-
-
-<!-- Abre HTML BODY--> 
+<!-- Cierra Animaciones-->
+</head>
 <body>
 <!-- Abre HTML General Menú--> 
 
@@ -76,7 +79,16 @@
                     <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
                     <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
                     <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                    <li class="#"><a href="crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
+                    <li class="dropdown">
+                        <a href="crono.html" class="dropbtn hvr__underline--from-left-nav">
+                            <span>Cronologías</span><i class="bi bi-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="crono.html#muestras__individuales">Muestras Individuales</a>
+                                <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
+                                <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
+                                <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
+                        </div>
                     <li class="#"><a href="contacto.html" class="active hvr__underline--from-left-nav">Contacto</a></li>
                     </ul>
                 </nav>

@@ -12,6 +12,11 @@
 <!-- Abre Bootstrap-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<!-- abre Vendor CSS Files de my portfolio-->
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Vendor CSS Files de my portfolio-->
 <!-- Cierra Bootstrap-->
 
 <!-- Abre Css estilos -->
@@ -86,8 +91,18 @@
                     <li><a href="index.html" class="active hvr__underline--from-left-nav">Acerca</a></li>
                     <li class="#"><a href="secciones/obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
                     <li class="#"><a href="secciones/muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                    <li class="#"><a href="secciones/crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
-                    <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
+                    <li class="dropdown">
+                        
+                        <a href="secciones/crono.html" class="dropbtn hvr__underline--from-left-nav">
+                            <span>Cronologías</span><i class="bi bi-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                            <a class="dropdown-item" href="secciones/crono.html#muestras__individuales">Muestras Individuales</a>
+                            <a class="dropdown-item" href="secciones/crono.html#muestras__colectivas">Muestras Colectivas</a>
+                            <a class="dropdown-item" href="secciones/crono.html#los__premios">Premios</a>
+                            <a class="dropdown-item" href="secciones/crono.html#los__salones">Salones</a>
+                            <a class="dropdown-item" href="secciones/crono.html#catalogo">Catálogos</a>
+                        </div>                    
+                        <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>

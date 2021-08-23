@@ -79,21 +79,22 @@ if ("loading" in HTMLImageElement.prototype) {
                 <nav class="header__navigation">
                     <ul>
                         <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
-                        <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+                        <li class="#"><a href="obra.html" class="active hvr__underline--from-left-nav">Obra</a></li>
                         <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                        <ul> 
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cronologías</a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Muestras Individuales</a></li>
-                                <li><a class="dropdown-item" href="#">Muestras Colectivas</a></li>
-                                <li><a class="dropdown-item" href="#">Premios</a></li>
-                                <li><a class="dropdown-item" href="#">Salones</a></li>
-                                <li><a class="dropdown-item" href="#">Catálogos</a></li>
-                            </ul>
-                            <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
-                        </ul>
+                        <li class="dropdown"> <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
+                            <a href="crono.html" class="dropbtn hvr__underline--from-left-nav">
+                            <span>Cronologías</span><i class="bi bi-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a class="dropdown-item" href="crono.html#muestras__individuales">Muestras Individuales</a>
+                                <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
+                                <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
+                                <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
+                            </div>
+                        </li>
+                        <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
                     </ul>
+                    
                 </nav>
             </div>
         </div>

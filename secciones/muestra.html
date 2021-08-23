@@ -9,6 +9,7 @@
 <!-- Abre Bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <!-- Cierra Bootstrap-->
 
 <!-- Abre Css estilos -->
@@ -36,26 +37,35 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/ionicons.min.css">
 <!-- Cierra Íconos -->
-</head>
-<!-- Cierra HTML General head-->
+<!-- abre Vendor CSS Files de my portfolio-->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!-- Vendor CSS Files de my portfolio-->
 
 <!-- Abre Animaciones-->
 <link rel="stylesheet" href="../css/infinite.css">   <!-- Pulsar línea -->
 <link href="../css/demo-page.css" rel="stylesheet" media="all">
 <link href="../css/hover.css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+<link rel="stylesheet" href="../dist/aos.css" />
 
 <!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
 <script>
 if ("loading" in HTMLImageElement.prototype) {
-  console.log("El navegador soporta `lazy-loading`...");
+console.log("El navegador soporta `lazy-loading`...");
 } else {
-  console.log("`lazy-loading` no soportado...");
+console.log("`lazy-loading` no soportado...");
 }
 </script>
 <!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
 
-<!-- Cierra Animaciones-->
+
+</head>
+<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
+
+
 
 
 <!-- Abre HTML BODY--> 
@@ -73,7 +83,16 @@ if ("loading" in HTMLImageElement.prototype) {
                             <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
                             <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
                             <li class="#"><a href="muestra.html" class="active hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                            <li class="#"><a href="crono.html" class=" hvr__underline--from-left-nav">Cronologías</a></li>
+                            <li class="dropdown">
+                                <a href="crono.html" class="dropbtn hvr__underline--from-left-nav">
+                                    <span>Cronologías</span><i class="bi bi-chevron-down"></i></a>
+                                    <div class="dropdown-content">
+                                        <a class="dropdown-item" href="crono.html#muestras__individuales">Muestras Individuales</a>
+                                        <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                        <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
+                                        <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
+                                        <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
+                                </div>
                             <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
                         </ul>
                     </ul>
