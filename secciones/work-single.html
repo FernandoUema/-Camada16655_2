@@ -71,25 +71,38 @@ if ("loading" in HTMLImageElement.prototype) {
 <!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
 
 <!-- Abre HTML BODY--> 
-<body class="colorbg__obra--gris">
+<!-- Abre HTML General Menú--> 
+<header id="header" class="fixed-top container-fluid"><!----------------------------------arreglar clases menu en CSS, esta sucio; OK--> 
+        <div class="menu_nav_ancho"> 
+        <a href="../index.html" class="header__logo">Inés Vega</a> 
+            <div class="menu menu_float_right"> 
+                <nav class="header__navigation">
+                    <ul>
+                        <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
+                        <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+                        <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                        <ul> 
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cronologías</a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Muestras Individuales</a></li>
+                                <li><a class="dropdown-item" href="#">Muestras Colectivas</a></li>
+                                <li><a class="dropdown-item" href="#">Premios</a></li>
+                                <li><a class="dropdown-item" href="#">Salones</a></li>
+                                <li><a class="dropdown-item" href="#">Catálogos</a></li>
+                            </ul>
+                            <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+</header>
 <!-- Abre HTML General Menú--> 
 
-<header id="header" class="fixed-top container-fluid"><!----------------------------------arreglar clases menu en CSS, esta sucio; OK--> 
-    <div class="menu_nav_ancho"> 
-        <a href="../index.html" class="header__logo">Inés Vega</a> 
-        <div class="menu menu_float_right"> 
-            <nav class="header__navigation">
-            <ul>
-                <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
-                <li class="#"><a href="obra.html" class="active hvr__underline--from-left-nav">Obra</a></li>
-                <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                <li class="#"><a href="crono.html" class="hvr__underline--from-left-nav">Cronologías</a></li>
-                <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
-            </ul>
-            </nav>
-        </div>
-    </div>
-</header>
+
+
+
 <!-- Cierra HTML General Menú--> 
 <!--Abre margen scroll -->
 <main class="contenido__pag">
@@ -157,6 +170,10 @@ if ("loading" in HTMLImageElement.prototype) {
 <!-- Template Main JS File -->
 <script src="../assets/js/main.js"></script>
 <!-- Abre Enlace y activar aos https://michalsnik.github.io/aos/ -->
+
+<!---MOBILE-->
+<script src=""></script>
+
 
 <script src="../dist/aos.js"></script>
 <script>

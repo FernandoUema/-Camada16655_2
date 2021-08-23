@@ -4,8 +4,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
-  "use strict";
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
+
 
   /**
    * Easy selector helper function

@@ -24,6 +24,9 @@ html, body {
     z-index:-2;
     padding-top:0;
 }
+/* importação do font-awesome para os ícones de abrir e fechar o menu responsivo */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
     Margin:0; 
     padding:0;
@@ -78,12 +81,6 @@ body::-webkit-scrollbar-thumb {
     background:#b9635d;
       color: #31383f;
 }
-/*#acerca__abre left col 1*/
-
-
-/*--------------------------------------------------------------
-# ESTILOS COMUNES
----------------------------------------------------------------*/
 /*---------------------ABRE COLORBACKGROUND--------------------*/
 /*Cronologias*/
 #colorbg__crono--lila{
@@ -99,7 +96,6 @@ body::-webkit-scrollbar-thumb {
 .colorbg__obra--gris{
     background-color:#cecece;
 }
-
 /*---------------------CIERRA COLORBACKGROUND--------------------*/
 /*-------------------------ABRE EPIGRAFES------------------------*/
 
@@ -271,8 +267,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header .menu_float_right{
-    padding-top: 28px; /*ubicación del nav*/
+    padding-top: 20px; /*ubicación del nav*/
 }
+
 /* eliminar las bullets y los números DE INES*/
 #header nav ul {
     display: flex; 
@@ -336,10 +333,9 @@ body::-webkit-scrollbar-thumb {
     width: auto;
 }
 
-/*MAIN MARGEN SUPERIOR_SCROLL*/
-.contenido_pag {
-  padding-top: 69px;
-}
+/*--------------------------------------------------------------
+# ABRE NAV MENU NAV 
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # CIERRA MENU NAV 
