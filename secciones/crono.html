@@ -78,13 +78,13 @@ if ("loading" in HTMLImageElement.prototype) {
                 <ul>
                     <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
                     <li class="#"><a href="obra.html" class=" hvr__underline--from-left-nav">Obra</a></li>
-                    <li class="#"><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                    <li class="pegado "><a href="muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
                     <li class="dropdown"> <!--https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar-->
                         <!--<a href="javascript:void(0)" class="active dropbtn hvr__underline--from-left-nav">-->
                             <a href="crono.html" class="dropbtn hvr__underline--from-left-nav">
                                 <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
                                 <div class="dropdown-content">
-                                <a class="dropdown-item" href="crono.html#muestras__individuales">Muestras Individuales</a>
+                                <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
                                 <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
                                 <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
                                 <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
@@ -124,24 +124,9 @@ if ("loading" in HTMLImageElement.prototype) {
             </div>-->
         <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4 mb-2">
         <p class="tipo__crono-red-tit-articulo">~Cronologías</p>
-
-            <!--<nav id="navbar" class="navbar tipo__crono--subnav pt-5 ms-0">
-                <ul> 
-                    <li><a class="nav-link scrollto pe-1 ps-0" href="#muestras__individuales">Individuales</a></li>
-                    <li><a class="pegado"href="#">~</a></li>
-                    <li><a class="nav-link scrollto pe-1 ps-1" href="#muestras__colectivas">Colectivas</a></li>
-                    <li><a class="pegado"href="#">~</a></li>
-                    <li><a class="nav-link scrollto pe-1 ps-1" href="#los__premios">Premios</a></li>
-                    <li><a class="pegado"href="#">~</a></li>
-                    <li><a class="nav-link scrollto pe-1 ps-1" href="#los__salones">Salones</a></li>
-                    <li><a class="pegado"href="#">~</a></li>
-                    <li><a class="nav-link scrollto pe-1 ps-1" href="#catalogos">Catálogos</a></li>
-
-                </ul> 
-            </nav>-->
-            <div class="ancla" id="muestras__individuales">
-        </div>
-        <div class="ps-3 pe-5">
+        
+        <div class="ps-3 pe-5 mt-5">
+        <div class="ancla" id="muestras__individuales"></div>
         <p class="tipo__crono--individuales-start">Muestras Individuales <span class="subtitulo__crono">[SELECCIÓN]</span></p>
         <p class="tipo__crono--anio">2014<span class="none"></span><span class="tipo__crono--descripcion-articulo p-e-100">«Constelación Femenina», Fundación Mundo Nuevo, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">2013<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Dibujos y Objetos 2008|2013», Galería Isabel Anchorena, Buenos Aires, Argentina.</span></p>
@@ -388,19 +373,20 @@ if ("loading" in HTMLImageElement.prototype) {
     <p class="tipo__crono--anio">2002<span class="none"></span><span class="tipo__crono--descripcion">1º Premio Salón de Santa Fe de Dibujo, Museo Provincial de Bellas Artes Rosa Galisteo de Rodríguez, Santa Fe, Santa Fe.</span></p>
     <p class="tipo__crono--anio">2001<span class="none"></span><span class="tipo__crono--descripcion">1º Premio Salón «Manuel Belgrano» de Dibujo, Museo Sívori, Buenos Aires, Argentina.</span></p>
     <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Premio de Escultura, Salón Fundación Fortabat, Museo Nacional de Bellas Artes, Buenos Aires, Argentina.</span></p>
-    <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Mención Salón «Manuel Belgrano» de Escultura, Museo Sívori, Buenos Aires, Argentina.</span></p>
-    <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion">4º Premio «Salón de Arte Sacro», Salas Nacionales, Buenos Aires, Argentina.</span></p>
-    <p class="tipo__crono--anio">1997<span class="none"></span><span class="tipo__crono--descripcion">2º Premio «Salón Manuel Belgrano» de Dibujo, Museo Sívori, Buenos Aires, Argentina.</span></p>
-    <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">Mención «Premio de Austria», Museo Nacional de Bellas Artes, Buenos Aires, Argentina.</span></p>
-    <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion">Mención «Salón Nacional de Dibujo», Museo Provincial, San Luis, Argentina.</span></p>
-    <p class="tipo__crono--anio">1994<span class="none"></span><span class="tipo__crono--descripcion">Premio Especial del Jurado, Fundación Fortabat <span class="italic">Maison de L’ Amérique Latine,</span> París, Francia.</span></p>
-    <p class="tipo__crono--anio">1992<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Konex» a las Artes Plásticas, Diploma al Mérito, Soportes no tradicionales, Buenos Aires, Argentina.</span></p>
+    
     
     <div class="caja__vermas--start">
     <div class="qa">
     <input type="checkbox" id="qa3" />
     <label for="qa3"><p class="tipo__w--white">Ver más</p></label>
     <div class="caja__vermas--next">
+        <p class="tipo__crono--anio">1999<span class="none"></span><span class="tipo__crono--descripcion">Mención Salón «Manuel Belgrano» de Escultura, Museo Sívori, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1998<span class="none"></span><span class="tipo__crono--descripcion">4º Premio «Salón de Arte Sacro», Salas Nacionales, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1997<span class="none"></span><span class="tipo__crono--descripcion">2º Premio «Salón Manuel Belgrano» de Dibujo, Museo Sívori, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1996<span class="none"></span><span class="tipo__crono--descripcion">Mención «Premio de Austria», Museo Nacional de Bellas Artes, Buenos Aires, Argentina.</span></p>
+        <p class="tipo__crono--anio">1995<span class="none"></span><span class="tipo__crono--descripcion">Mención «Salón Nacional de Dibujo», Museo Provincial, San Luis, Argentina.</span></p>
+        <p class="tipo__crono--anio">1994<span class="none"></span><span class="tipo__crono--descripcion">Premio Especial del Jurado, Fundación Fortabat <span class="italic">Maison de L’ Amérique Latine,</span> París, Francia.</span></p>
+        <p class="tipo__crono--anio">1992<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Konex» a las Artes Plásticas, Diploma al Mérito, Soportes no tradicionales, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">1989<span class="none"></span><span class="tipo__crono--descripcion">2º Premio IIº Bienal <span class="italic"> Môet Chandon,</span> Museo de Arte Moderno, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">1984<span class="none"></span><span class="tipo__crono--descripcion">2º Premio Colegio Ward, Buenos Aires, Argentina.</span></p>
         <p class="tipo__crono--anio">1980<span class="none"></span><span class="tipo__crono--descripcion">2º Premio «Salón de Otoño», S.A.A.P., Buenos Aires, Argentina.</span></p>
