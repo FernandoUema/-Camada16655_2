@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.whatsapp__sass {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 19%;
+  right: 90px;
+  background-color: #00c0a5;
+  border-color: #f6f5f3;
+  color: #f6f5f3;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 100; }
+  .whatsapp__sass.whatsapp__sass:hover {
+    background-color: #00e676;
+    color: #f6f5f3; }
+  .whatsapp__sass .whatsapp-icon {
+    margin-top: 14px; }

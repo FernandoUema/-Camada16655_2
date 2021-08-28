@@ -1,0 +1,58 @@
+/*txt que pisa la foto sticky*/
+.tipo__crono-seccion-tit{
+    font-family: $tipo__play;
+    color: $lila__principal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 1px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-top: 35rem;
+    padding-left: 3.5rem;
+}
+
+/*textos de cronologias*/
+#crono .tipo__crono-red-tit-articulo{
+    font-family: $tipo__play;
+    color: $rojo__principal;
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align:right;
+    letter-spacing: 4px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+}
+#crono .tipo__crono--individuales-start{ 
+    font-family: $tipo__play;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-kerning: none;
+    color:$negro;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top:3rem;
+    letter-spacing: 1px;
+}
+
+.tipo__ph--ubicacion-izq{
+    font-family: $tipo__play;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-kerning: none;
+    font-style: italic;
+    color:$rojo__btn;
+    text-align: left;
+}
+.tipo__ph--copyright{
+    font-family: $tipo__epigrafe;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-kerning: none;
+    color:$negro;
+    z-index: 1;
+}

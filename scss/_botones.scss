@@ -1,0 +1,62 @@
+.whatsapp__sass {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:19%;
+    right:90px;
+    background-color:$whats_click;
+    border-color:$blanco;
+    color:$blanco;
+    border-radius:50px;
+    text-align:center;
+    font-size:2rem;
+    z-index:100;
+    
+    &.whatsapp__sass:hover{
+        background-color:$whats_hover;
+        color:$blanco;
+    }
+.whatsapp-icon {
+    margin-top:14px;
+}
+}
+.contacto__sass--btn{
+    width: 90px;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-left: 0px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    -webkit-border-radius: 25px;
+    border-radius: 0px;
+    font-family: $tipo__play;
+    font-style: normal;
+    font-size: 0.9rem;
+    font-weight: 600;
+    background: $rojo__btn;
+    color: $blanco__secundario;
+    text-align: center;
+    letter-spacing: 0.2rem;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+    display: block;
+    transition: all 2s;       
+
+    &.contacto__sass--btn a{
+      text-decoration: none;
+      outline:none;
+    
+    &.contacto_btn:hover {
+        color: $blanco__secundario;
+        text-decoration: none;
+        background-color:$rojo__principal;
+  
+  }}}

@@ -27,15 +27,7 @@ html, body {
 /* importação do font-awesome para os ícones de abrir e fechar o menu responsivo */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-* {
-    Margin:0; 
-    padding:0;
- }
-/* eliminar subrayado*/
- a {
-    text-decoration: none;
-    list-style-type: none;
-}
+
 /*    background-color:#cecece;*/
 h1, h2, h3, h4, h5, h6, p{
 	text-rendering: optimizeLegibility;
@@ -153,60 +145,8 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 1rem;
     margin-top: 9rem;
     margin-left: 1rem;
+}
 
-}
-.tipo__ph--ubicacion-izq{
-    font-family: 'Playfair Display', serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    font-kerning: none;
-    font-style: italic;
-    color:#9d2021;
-    text-align: left;
-}
-.tipo__ph--copyright{
-    font-family: 'Jost', sans-serif;
-    font-size: 0.7rem;
-    font-weight: 400;
-    font-kerning: none;
-    color:#2d2e2f;
-    z-index: 1;
-}
-/*-------------------------CIERRA EPIGRAFES------------------------*/
-/*-------------------------ABRE LINEA HOVER LINK------------------------*/
-
-/* Underline From Left en hover.css en obra línea 89*/
-.hvr__underline--from-left-nav {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(3px) translateZ(0);
-    transform: perspective(3px) translateZ(0);
-    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
-    position: relative;
-    overflow: hidden;
-}
-.hvr__underline--from-left-nav:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: -2px;
-    background: #7e1e1b;
-    height: 5px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-}
-.hvr__underline--from-left-nav:hover:before, 
-.hvr__underline--from-left-nav:focus:before, 
-.hvr__underline--from-left-nav:active:before {
-    right: 0;
-}
-/*-------------------------CIERRA LINEA HOVER LINK------------------------*/
 
 /*-----------------------------------------------------------------------
 # CIERRA ESTILOS GENERALES
@@ -479,31 +419,7 @@ li.dropdown {
     z-index: 997;
 }
 
-/* --------------------------------------------------------------
-# ABRE CONTACTO WHATSAPP
-----------------------------------------------------------------*/
-.whatsapp {
-    position:fixed;
-    width:60px;
-    height:60px;
-    bottom:15%;
-    right:90px;
-    background-color:#00c0a5;
-    border-color:#f6f5f3;
-    color:#f6f5f3;
-    border-radius:50px;
-    text-align:center;
-    font-size:2rem;
-    z-index:100;
-}
-.whatsapp:hover{
-    background-color:#00e676;
-    color:#f6f5f3;
-}
 
-.whatsapp-icon {
-    margin-top:14px;
-}
 
 /* --------------------------------------------------------------
 # CIERRA FOOTER 1 NAVIGATION
@@ -568,18 +484,6 @@ li.dropdown {
     margin-top: 6px;
     padding-right:0px;
 }
-
-/* color corazón zócalo */
-.change__color{
-    color: #24323f;
-    font-size: 1rem;
-}
-
-.change__color:hover {
-    color:#ac8fac;
-    font-size: 1rem;
-}
-
 
 /* --------------------------------------------------------------
 #CIERRA FOOTER 2 COPYRIGHT     color:#b9635d;
@@ -1007,37 +911,7 @@ li.dropdown {
 /* vino de style.css de my portfolio*/ 
 
 
-/* Underline From Left en hover.css en obra línea 89*/ 
-.hvr__underline--from-left-brown {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(3px) translateZ(0);
-    transform: perspective(3px) translateZ(0);
-    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
-    position: relative;
-    overflow: hidden;
-  }
-.hvr__underline--from-left-brown:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: -2px;
-    background: #a28570;
-    height: 5px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-.hvr__underline--from-left-brown:hover:before, 
-.hvr__underline--from-left-brown:focus:before, 
-.hvr__underline--from-left-brown:active:before {
-    right: 0;
-}
+
 
 
   /* ZOOM HOVER */
@@ -1249,31 +1123,7 @@ li.dropdown {
     display: block;
     margin-top: 11rem;
 }
-#crono .tipo__crono--individuales-start{ 
-    font-family: 'Playfair Display', serif;
-    font-weight: 500;
-    font-size: 1.6rem;
-    font-kerning: none;
-    color:#2d2e2f;
-    font-style: italic;
-    margin-bottom: 0px;
-    padding-top:3rem;
-    letter-spacing: 1px;
-}
 
-#crono .tipo__crono-red-tit-articulo{
-    font-family: 'Playfair Display', serif;
-    color: #c4373c;
-    font-size: 5rem;
-    font-weight: 800;
-    font-style: italic;
-    text-align:right;
-    letter-spacing: 4px;
-    line-height: 0.5rem;
-    position: absolute;
-    margin-bottom: 2rem;
-    margin-left: -3rem;
-}
 /* eliminar las bullets y los números DE INES*/
 
 /* subnav crono*/
@@ -1281,11 +1131,6 @@ ul{
     padding-left: 2rem;
 }
 
-.tipo__crono--subnav nav ul li {
-    display: inline-block;
-    position: relative;
-    margin-left: -3rem;
-}
 
 .tipo__crono--subnav a{
     text-decoration: none;
@@ -1329,19 +1174,7 @@ ul{
 
 /*cierra subnav*/
 
-.tipo__crono-seccion-tit{
-    font-family: 'Playfair Display', serif;
-    color: #ac8fac;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: italic;
-    text-align:left;
-    letter-spacing: 1px;
-    line-height: 0.5rem;
-    position: absolute;
-    margin-top: 35rem;
-    padding-left: 3.5rem;
-}
+
 
 
 /*abre imágenes cv FLEXBOX*/
@@ -1372,21 +1205,15 @@ ul{
     
 }
 
-
 .galeria__item ul{
 list-style: none;
 text-decoration: none;
-
-
 }
 .galeria__item ul li{
     list-style: none;
     text-decoration: none;
 }
-.galeria__item ul li{
-    list-style: none;
-    text-decoration: none;
-}
+
 /* -------------------------------------------------------------------------- */
 /*                                   
 /*menu desplegable crono https://es.stackoverflow.com/questions/15594/crear-elementos-desplegable-para-pagina-html5
@@ -1659,7 +1486,7 @@ text-decoration: none;
 /* img home bg*/
 #hero__contacto {
     background: url("../img/contacto/esfinge2.png");
-    min-height: 100vh;
+    min-height: 120vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -2043,47 +1870,8 @@ input[type=checkbox]:checked + label {
 }
 /*boton enviar contact font-family: 'Jost', sans-serif;
   o*/
-.contacto_btn{
-  width: 90px;
-  padding-top: 15px;
-  margin-top: 20px;
-  margin-left: 0px;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  cursor: pointer;
-  padding: 8px 8px 8px 8px;
-  border: none;
-  -webkit-border-radius: 25px;
-  border-radius: 0px;
-  font-family: 'Playfair Display', serif;
-  font-style: normal;
-  font-size: 0.9rem;
-  font-weight: 600;
-  background: #9d2021;
-  color:#e5e5e5;
-  text-align: center;
-  letter-spacing: 0.2rem;
-  -o-text-overflow: clip;
-  text-overflow: clip;
-  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
-  display: block;
-  transition: all 2s;       
-}
+/*contacto__sass--btn*/
 
-.contacto_btn a{
-    text-decoration: none;
-    outline:none;
-  }
-.contacto_btn:hover {
-    color:#e5e5e5;
-    text-decoration: none;
-    background-color:#c4373c;
-
-}
 @media (min-width: 768px) {
   #button-send {
     opacity: 0.0;
@@ -2115,11 +1903,4 @@ input[type=checkbox]:checked + label {
       float: left;
   }
 /*                  TERMINA CONTACTO
---------------------------------------------------------------*/
-
-
-
-
-/*--------------------------------------------------------------
-# CIERRA-VARIABLES TEXTO_TIPOGRAFÍAS
 --------------------------------------------------------------*/
