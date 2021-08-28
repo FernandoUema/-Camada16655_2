@@ -294,9 +294,6 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     position: relative;
 }
-.pegado{
-    padding-right: -0.7rem;
-}
 /* menu_nav DE INES*/
 #header .header__navigation ul li a{
     text-decoration: none;
@@ -339,9 +336,7 @@ body::-webkit-scrollbar-thumb {
 /*--------------------------------------------------------------
 # ABRE dropdown cronologías __ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
 --------------------------------------------------------------*/
-.pegado{
-    padding-left: -0.7rem;
-}
+
 .dropbtn {
     display: inline-block;
     color:#f6f5f3;
