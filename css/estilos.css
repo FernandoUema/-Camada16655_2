@@ -1968,3 +1968,61 @@ input[type=checkbox]:checked + label {
   }
 /*                  TERMINA CONTACTO
 --------------------------------------------------------------*/
+
+.tipo__crono-seccion-tit{
+    font-family: 'Playfair Display', serif;
+    color: #ac8fac;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 1px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-top: 35rem;
+    padding-left: 3.5rem;
+}
+
+/*textos de cronologias*/
+#crono .tipo__crono-red-tit-articulo{
+    font-family: 'Playfair Display', serif;
+    color: #9d2021;
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align:right;
+    letter-spacing: 4px;
+    line-height: 0.5rem;
+    position: absolute;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+}
+#crono .tipo__crono--individuales-start{ 
+    font-family: 'Playfair Display', serif;
+    color: #212529;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-kerning: none;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding-top:3rem;
+    letter-spacing: 1px;
+}
+
+.tipo__ph--ubicacion-izq{
+    font-family: 'Playfair Display', serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-kerning: none;
+    font-style: italic;
+    color: #9d2021;
+    text-align: left;
+}
+.tipo__ph--copyright{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-kerning: none;
+    color: #212529;
+    z-index: 1;
+}
