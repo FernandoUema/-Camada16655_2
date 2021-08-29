@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/*PALETA*/
+/*background color*/
+/*color texto*/
+/*placeholder*/
+/*zocalos*/
+/*botones*/
+/*TIPOGRAFÍAS*/
+/*margenes*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.whatsapp__sass {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 19%;
+  right: 90px;
+  background-color: #00c0a5;
+  border-color: #f6f5f3;
+  color: #f6f5f3;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 100;
+}
+
+.whatsapp__sass.whatsapp__sass:hover {
+  background-color: #00e676;
+  color: #f6f5f3;
+}
+
+.whatsapp__sass .whatsapp-icon {
+  margin-top: 14px;
+}
+
+.contacto__sass--btn {
+  width: 90px;
+  padding-top: 15px;
+  margin-top: 20px;
+  margin-left: 0px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  border-radius: 0px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #9d2021;
+  color: #cecece;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.contacto__sass--btn.contacto__sass--btn a {
+  text-decoration: none;
+  outline: none;
+}
+
+.contacto__sass--btn.contacto__sass--btn a.contacto_btn:hover {
+  color: #cecece;
+  text-decoration: none;
+  background-color: #c4373c;
+}
+
+/*mixims*/
+/* color corazón zócalo */
+.change__color {
+  color: #31383f;
+  font-size: 1rem;
+}
+
+.change__color.change__color:hover {
+  color: #ac8fac;
+}
+
+.iv__index {
+  font-family: "Playfair Display", serif;
+  color: #cecece;
+  font-size: 5rem;
+}
+
+.caja__tipo--index {
+  padding-top: 100px;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+/*extend*/
+#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-font-kerning: none;
+          font-kerning: none;
+  line-height: 1.4rem;
+  z-index: 3;
+}
+
+.tipo__copyright--alberti {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  color: #f6f5f3;
+}
+
+#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  -ms-flex-wrap: row;
+      flex-wrap: row;
+  letter-spacing: 1px;
+}
+
+#acerca .tipo__acerca--left-link {
+  color: #c4373c;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#acerca .tipo__acerca--left-link:hover {
+  color: #7e1e1b;
+}
+
+#alberti .cezanne {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ac8fac;
+  z-index: 1;
+}
+/*# sourceMappingURL=styles.css.map */

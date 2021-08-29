@@ -5,8 +5,8 @@
     bottom:19%;
     right:90px;
     background-color:$whats_click;
-    border-color:$blanco;
-    color:$blanco;
+    border-color:$blanco__principal;
+    color:$blanco__principal;
     border-radius:50px;
     text-align:center;
     font-size:2rem;
@@ -14,7 +14,7 @@
     
     &.whatsapp__sass:hover{
         background-color:$whats_hover;
-        color:$blanco;
+        color:$blanco__principal;
     }
 .whatsapp-icon {
     margin-top:14px;
@@ -60,3 +60,5 @@
         background-color:$rojo__principal;
   
   }}}
+
+  

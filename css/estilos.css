@@ -519,14 +519,7 @@ li.dropdown {
     margin-left: 84%;
     margin-right: 4%;
 }
-.tipo__hero--scroll{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-weight: 400;
-    text-align: center;
-    font-kerning: auto;
-    color:#f6f5f3;
-}
+
 
 .hero__scroll .chevron {
     margin-top: 10px;
@@ -610,14 +603,7 @@ li.dropdown {
     color:#0d1b2b;
 }
 
-#alberti .cezanne {
-    width: 320px;
-    height: 320px;
-    border-radius: 50%;
-    position: absolute; 
-    background-color: #ac8fac;
-    z-index: 1;   
-}
+
 
 #alberti .caja__alberti {
     margin: 0rem 0rem 0rem 6rem;
@@ -642,26 +628,7 @@ li.dropdown {
     z-index: 3;
 }
 
-#alberti .tipo__destacado--alberti{
-    font-family: 'Playfair Display', serif;
-    color:#2d2e2f;
-    font-size: 0.9rem;
-    font-weight: 500;
-    font-style: italic;
-    font-kerning: none;
-    line-height: 1.4rem;
-    z-index: 3;
-}
 
-#alberti .tipo__copyright--alberti{
-    font-family: 'Playfair Display', serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    font-kerning: none;
-    padding-bottom: 20px;
-    color:#2d2e2f;
-}
-/*#acerca__cierra left col 1*/
 
 
 #acerca .caja__acerca--left-txt, 
@@ -676,16 +643,7 @@ li.dropdown {
     flex-direction: row;
 }
 
-#acerca .tipo__acerca--right-tit{
-    font-family: 'Playfair Display', serif;
-    font-size: 6rem;
-    font-weight: 800;
-    font-style: italic;
-    text-align:left;
-    letter-spacing: 20px;
-    flex-wrap: row;
-    color: #052c48;
-}
+
 
 #acerca .tipo__acerca--left-txt{
     font-family: 'Jost', sans-serif;
@@ -710,18 +668,7 @@ li.dropdown {
     padding-top: 1rem;
 }
 
-.tipo__acerca--left-link{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 0.9rem;
-    font-weight:500;
-    color: #c4373c;
-    letter-spacing: 1px;
-}
 
-.tipo__acerca--left-link:hover{
-    color: #7e1e1b;
-}
 /*círculo*/   /* background-color: #a28570;*/
 
 

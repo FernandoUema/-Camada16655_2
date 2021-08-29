@@ -1,0 +1,73 @@
+.iv__index{
+    font-family: $tipo__play;
+    color:$blanco__secundario;
+    font-size: 5rem;
+}
+.caja__tipo--index{
+    padding-top:100px;
+    margin-bottom: $margen__index--h1;
+    margin-left: $margen__index--h1;
+}
+
+/*extend*/
+#alberti .tipo__destacado--alberti{
+    font-family: $tipo__play;
+    color:$negro;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-style: italic;
+    font-kerning: none;
+    line-height: 1.4rem;
+    z-index: 3;
+}
+
+.tipo__copyright--alberti{
+    @extend .tipo__destacado--alberti;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.tipo__hero--scroll{
+    font-family: $tipo__play;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-kerning: auto;
+    color:$blanco__principal;
+}
+
+#acerca .tipo__acerca--right-tit{
+    font-family: $tipo__play;
+    color: $azul__principal;
+    font-size: 6rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 20px;
+    flex-wrap: row;
+    letter-spacing: 1px;
+}
+#acerca .tipo__acerca--left-link{
+    @extend .tipo__acerca--right-tit;
+    color: $rojo__principal;
+    font-size: 0.9rem;
+    font-weight:500;
+    
+    &:hover{
+    color: $bordo__principal;
+}}
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ #alberti .cezanne  {
+    @include sizes(320px, 320px);
+    border-radius: 50%;
+    position: absolute; 
+    background-color: $lila__principal;
+    z-index: 1; 
+ }
+
+ 

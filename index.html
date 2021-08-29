@@ -22,6 +22,8 @@
 <!-- Abre Css estilos -->
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
+     <link rel="stylesheet" href="scss/styles.css"/>
+
 
 <!-- Cierra Css estilos -->
 
@@ -118,23 +120,21 @@
 
 <!-- Abre Home Background Photo Random con jquery ó js https://stackoverflow.com/questions/15231812/random-background-images-css3 --> 
 <section id="hero">
-    <h3>Bienvenidos <strong></strong></h3>
-    <h1>Inés Vega</h1>
+<div class="caja__tipo--index">
+    <h3><strong>Bienvenidos </strong></h3>
+    <p class="iv__index mt-5 ps-5">Inés Vega</p>
     <h2>Artista Plástica</h2>
     <a href="#acerca" class="btn-get-started scrollto">Descubrí más</a>
-    <span class="hero__scroll tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
-        <i class="chevron bottom"></i>
-    </span>
-    <!--https://loading.io/css/
-    https://codepen.io/aaroniker/pen/omvYNZ
-
+        <span class="hero__scroll tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
+            <i class="chevron bottom"></i>
+        </span>
+    </div>
+<!--https://loading.io/css/
+https://codepen.io/aaroniker/pen/omvYNZ
 https://codepen.io/creativeocean/pen/qBbBLyB
 https://stackoverflow.com/questions/19369426/random-background-image-on-refresh -->
 </section>
-
 <!-- Cierra Home Background Photo-->
-
-
 
 <!-- Abre Epigrafe Background Photo-->
 <!-- hover sobre texto: https://codepen.io/cassie-codes/pen/WNrOeyy-->
@@ -151,13 +151,13 @@ https://stackoverflow.com/questions/19369426/random-background-image-on-refresh 
             </div>
         </div> 
     </div>
-    <!--HOVER IMG SOBRE
+<!--HOVER IMG SOBRE
     <div class="container">
     <img src="img_avatar.png" alt="Avatar" class="image">
     <div class="overlay">
       <div class="text">Hello World</div>
     </div>
-  </div>-->
+</div>-->
 </section> 
 <!-- Cierra Epigrafe Background Photo-->
 
@@ -213,10 +213,8 @@ y hacerme el alma navegable.
 </div>
 </section>
 <!--cierra alberti-->
-
 <!--abre bocetos-->
 <!--cierra bocetos-->
-
 <!--Abre acerca-->
 <section id="acerca">
     <div class="container">
@@ -227,10 +225,10 @@ y hacerme el alma navegable.
                     en París. En el 2003 obtuvo el Gran Premio de Honor del Salón Nacional de Dibujo, en el 2002 el Primer Premio del Salón de Santa Fe, Dibujo, en el 2001 el Primer Premio del Salón Manuel Belgrano, Dibujo, en el 2004 el Primer Premio Bienal de Arte Sacro, en 1999 el Premio de Escultura del Salón Fundación Fortabat, Museo Nacional de Bellas Artes, en 1994 el Premio del Jurado <span class="italic">Prix Foundation Fortabat, Maison de L`Amerique Latine, </span>Paris.
                     Realizó exposiciones individuales en la Galería Isabel Anchorena, en <span class="italic">Aldo Castillo Gallery,</span> Chicago, Estados Unidos, en <span class="italic">Galerie Strouk,</span> Paris, en <span class="italic">Galerie Félix Valk,</span> Arnhem, Holanda, en el Fondo Nacional de las Artes. Poseen obra suya el Museo Nacional de Bellas Artes, donación Fundación Antorchas, Museo Municipal de Arte Eduardo Sivori. <span class="italic">Maison de L`Amerique Latine, </span>Paris, Francia.
                     Colecciones privadas de España, Estados Unidos, Holanda, Francia, Argentina y Alemania.❑</p>
-                    <a href="secciones/cv.html"><span class="tipo__acerca--left-link">_Conocé más</span></a>
+                    <a href="secciones/crono.html"><span class="tipo__acerca--left-link">_Conocé más</span></a>
                 </div>
             </div>
-            <div class="col-md-6 "> 
+            <div class="col-md-6 order-md-1"> 
                 <div class="caja__acerca--right">
                     <h1 class="tipo__acerca--right-tit">~Acerca</h1>
                 </div>
@@ -254,7 +252,7 @@ y hacerme el alma navegable.
                 <li><a href="secciones/contacto.html">Contacto</a></li>
             </ul>
             <ul>
-                <li class="#"><a href="https://www.facebook.com/ines.vega.37" class="footer__media-icono"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li class="#"><a href="https://www.facebook.com/ines.vega.37"><i class="fab fa-facebook fa-2x"></i></a></li>
                 <li class="#"><a href="https://www.instagram.com/vivainesita/?hl=es-la"> <i class="fab fa-instagram fa-2x"></i></a></li>                    
             </ul>
     </div>
