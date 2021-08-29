@@ -86,7 +86,8 @@
 <body>
 <!-- Abre HTML General Menú_galería_novedades--> 
 
-<header id="header" class="fixed-top container-fluid"><!--------------arreglar clases menu en CSS, esta sucio; OK--> 
+<header id="header" class="fixed-top"><!--------------arreglar clases menu en CSS, esta sucio; OK--> 
+   <div class="container-fluid">
     <div class="menu_nav_ancho"> 
         <a href="index.html" class="header__logo">Inés Vega</a> 
             <div class="menu menu_float_right">         
@@ -100,17 +101,18 @@
                         <a href="secciones/crono.html" class="dropbtn hvr__underline--from-left-nav">
                             <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
                             <div class="dropdown-content">
-                            <a class="dropdown-item" href="secciones/crono.html">Muestras Individuales</a>
-                            <a class="dropdown-item" href="secciones/crono.html#muestras__colectivas">Muestras Colectivas</a>
-                            <a class="dropdown-item" href="secciones/crono.html#los__premios">Premios</a>
-                            <a class="dropdown-item" href="secciones/crono.html#los__salones">Salones</a>
-                            <a class="dropdown-item" href="secciones/crono.html#catalogo">Catálogos</a>
-                        </div>                    
-                        <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
+                                <a class="dropdown-item" href="secciones/crono.html">Muestras Individuales</a>
+                                <a class="dropdown-item" href="secciones/crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                <a class="dropdown-item" href="secciones/crono.html#los__premios">Premios</a>
+                                <a class="dropdown-item" href="secciones/crono.html#los__salones">Salones</a>
+                                <a class="dropdown-item" href="secciones/crono.html#catalogo">Catálogos</a>
+                            </div>                    
+                             <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
                     </ul>
                 </nav>
             </div>
     </div>
+</div>
 </header>
 <!-- Cierra HTML General Menú--> 
 
@@ -120,20 +122,27 @@
 
 <!-- Abre Home Background Photo Random con jquery ó js https://stackoverflow.com/questions/15231812/random-background-images-css3 --> 
 <section id="hero">
-<div class="caja__tipo--index">
-    <h3><strong>Bienvenidos </strong></h3>
-    <p class="iv__index mt-5 ps-5">Inés Vega</p>
-    <h2>Artista Plástica</h2>
-    <a href="#acerca" class="btn-get-started scrollto">Descubrí más</a>
-        <span class="hero__scroll tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
+    <div class="container">
+        <div class="row">
+            <div class="caja__tipo--index">
+                <h3 class="tipo__ivindex--bvnd"><strong>Bienvenidos </strong></h3>
+                <p class="tipo__ivindex--name mt-5 ps-5">Inés Vega</p>
+                <h2>Artista Plástica</h2>
+                <a href="#acerca" class="btn-get-started scrollto">Descubrí más</a>
+            </div>
+        </div>
+        <div>
+            <span class="hero__scroll tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
             <i class="chevron bottom"></i>
-        </span>
+            </span>
+        </div>
     </div>
+</section>
 <!--https://loading.io/css/
 https://codepen.io/aaroniker/pen/omvYNZ
 https://codepen.io/creativeocean/pen/qBbBLyB
 https://stackoverflow.com/questions/19369426/random-background-image-on-refresh -->
-</section>
+
 <!-- Cierra Home Background Photo-->
 
 <!-- Abre Epigrafe Background Photo-->
@@ -167,8 +176,8 @@ https://stackoverflow.com/questions/19369426/random-background-image-on-refresh 
         <div class="row content">
             <div class="col-md-12 feature">
             <div class="col-md-6 order-md-2">
-                <div data-wow-iteration="4" data-wow-duration="0.15s" class="wow pulse">
-                    <div class="cezanne">
+                <!--<div data-wow-iteration="4" data-wow-duration="0.15s" class="wow pulse">-->
+                    <div class="cezanne fade-in">
                         <div class="caja__letra--capital-alberti">
                         <p class="tipo__letra--capital-alberti">V</p>
                         </div>
@@ -242,7 +251,7 @@ y hacerme el alma navegable.
 <footer id="footer__1--navigation">
     <div class="container-fluid footer__1__navigation__zocalocolor--100">
         <div class="row">
-<div class="col-md-12">
+<div class="col-md-8">
         <div class="footer__1__navigation__container--center">
             <ul>
                 <li><a href="index.html">Acerca</a></li>

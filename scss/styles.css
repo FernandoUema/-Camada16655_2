@@ -84,7 +84,6 @@ a {
   background-color: #c4373c;
 }
 
-/*mixims*/
 /* color corazón zócalo */
 .change__color {
   color: #31383f;
@@ -95,19 +94,70 @@ a {
   color: #ac8fac;
 }
 
+.caja__tipo--index {
+  padding-top: 140px;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
 .iv__index {
   font-family: "Playfair Display", serif;
   color: #cecece;
   font-size: 5rem;
 }
 
-.caja__tipo--index {
-  padding-top: 100px;
-  margin-bottom: 5rem;
-  margin-left: 5rem;
+/*extend*/
+/* ----------------------------------------
+ * animation slide-in-blurred-topAnimista
+ * ----------------------------------------*/
+.slide-in-blurred-top {
+  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
-/*extend*/
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/*animación cezanne*/
 #alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
   font-family: "Playfair Display", serif;
   color: #31383f;
