@@ -108,51 +108,127 @@ a {
 
 /*extend*/
 /* ----------------------------------------
- * animation slide-in-blurred-topAnimista
+ * animation fade-in Animista
  * ----------------------------------------*/
-.slide-in-blurred-top {
-  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: slide-in-blurred-top 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-@-webkit-keyframes slide-in-blurred-top {
+@-webkit-keyframes fade-in {
   0% {
-    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-    transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
     opacity: 1;
   }
 }
 
-@keyframes slide-in-blurred-top {
+@keyframes fade-in {
   0% {
-    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
     opacity: 0;
   }
   100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-    transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/*animación cezanne*/
+#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  -webkit-font-kerning: none;
+          font-kerning: none;
+  line-height: 1.4rem;
+  z-index: 3;
+}
+
+.tipo__copyright--alberti {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+.tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  -webkit-font-kerning: auto;
+          font-kerning: auto;
+  color: #f6f5f3;
+}
+
+#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  -ms-flex-wrap: row;
+      flex-wrap: row;
+  letter-spacing: 1px;
+}
+
+#acerca .tipo__acerca--left-link {
+  color: #c4373c;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#acerca .tipo__acerca--left-link:hover {
+  color: #7e1e1b;
+}
+
+#alberti .cezanne {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ac8fac;
+  z-index: 1;
+}
+
+.caja__tipo--index {
+  padding-top: 140px;
+  margin-bottom: 5rem;
+  margin-left: 5rem;
+}
+
+.iv__index {
+  font-family: "Playfair Display", serif;
+  color: #cecece;
+  font-size: 5rem;
+}
+
+/*extend*/
+/* ----------------------------------------
+ * animation fade-in Animista
+ * ----------------------------------------*/
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
