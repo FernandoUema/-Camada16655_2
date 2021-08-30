@@ -146,8 +146,40 @@ body::-webkit-scrollbar-thumb {
     margin-top: 9rem;
     margin-left: 1rem;
 }
-
-
+/**
+ * ----------------------------------------
+ * animation kenburns-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
 /*-----------------------------------------------------------------------
 # CIERRA ESTILOS GENERALES
 --------------------------------------------------------------------------*/
@@ -514,9 +546,7 @@ li.dropdown {
     display: block;
     cursor: pointer;
     padding-bottom: 40px;
-
 }
-
 
 .hero__scroll .chevron {
     margin-top: 10px;
@@ -600,34 +630,22 @@ li.dropdown {
     color:#0d1b2b;
 }
 
-
-
 #alberti .caja__alberti {
     margin: 0rem 0rem 0rem 6rem;
 }
 
 #alberti .caja__letra--capital-alberti{
     position: absolute;
-    margin: 4rem 0rem 0rem 3.3rem;
+    margin: 1.5rem 0rem 0rem 4rem;
     z-index: 2;
 }
 
-#alberti .tipo__letra--capital-alberti{
-    font-family: 'Playfair Display', serif;
-    color:#0d1b2b;
-    font-size: 7rem;
-    font-weight: 800;
-    font-style: italic;
-}
+
 #alberti .caja__destacado--alberti{
     position: absolute;
-    margin: 6.4rem 0rem 0rem 6.5rem;
+    margin: 4.5rem 0rem 0rem 8rem;
     z-index: 3;
 }
-
-
-
-
 #acerca .caja__acerca--left-txt, 
 .caja__acerca--right-tit{
     z-index: 2;
