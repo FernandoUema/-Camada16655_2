@@ -48,6 +48,8 @@ h1, h2, h3, h4, h5, h6, p{
     box-sizing: border-box;
 }
 
+/*menu hamburguer https://codepen.io/matthewmain/pen/NWKoPXJ*/
+
 
 /*scroll personal de https://www.youtube.com/watch?v=E-Npbuksob0 */
 
@@ -504,15 +506,15 @@ li.dropdown {
     color:#2d2e2f;
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 6px;
 }
 .footer__2__copyright--firma{
     color:#2d2e2f;
     font-family: 'Playfair Display', serif;
     font-size: 0.8rem;
-    font-weight: 400;
-    margin-top: 6px;
+    font-weight: 700;
+    margin-top: 2px;
     padding-right:0px;
 }
 
@@ -1932,7 +1934,7 @@ input[type=checkbox]:checked + label {
 
 @media (min-width: 768px) {
   #button-send {
-    opacity: 0.0;
+    opacity: 1;
 
   }
 }
