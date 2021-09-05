@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../scss/styles.css"/>
-
-
 <!-- Cierra Css estilos -->
 
 <!--abre JS-->
@@ -63,11 +61,27 @@ console.log("El navegador soporta `lazy-loading`...");
 console.log("`lazy-loading` no soportado...");
 }
 </script>
-<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
-
+<!--back to top https://www.codexworld.com/back-to-top-button-using-jquery-css/-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+</script>
+<style type="text/css"></style>
+<!--cierraback to top https://www.codexworld.com/back-to-top-button-using-jquery-css/-->
 
 </head>
-<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
 
 
 
@@ -76,34 +90,55 @@ console.log("`lazy-loading` no soportado...");
 <body>
 <!-- Abre HTML General Menú--> 
 
-<header id="header" class="fixed-top container-fluid"><!----------------------------------arreglar clases menu en CSS, esta sucio; OK--> 
-    <div class="container__100"> 
-        <div class="menu_nav_ancho"> 
-        <a href="../index.html" class="header__logo">Inés Vega</a> 
-            <div class="menu menu_float_right">         
-                <nav class="header__navigation">
-                    <ul>
-                        <ul>
-                            <li><a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a></li>
-                            <li class="#"><a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
-                            <li class="#"><a href="muestra.html" class="active hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                            <li class="dropdown">
-                                <a href="crono.html" class="dropbtn hvr__underline--from-left-nav">
-                                    <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
-                                    <div class="dropdown-content">
-                                        <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
-                                        <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
-                                        <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
-                                        <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
-                                        <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
-                                </div>
-                            <li class="#"><a href="contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
-                        </ul>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
+<header id="header" class="fixed-top container-fluid">
+        <div class="menu_nav_ancho">
+    <div class="navigation-wrap bg-light start-header start-style">
+			<div class="row">
+				<div class="col-12">
+                    <div class="menu menu_float_right">   
+ 					<nav class="navbar navbar-expand-md navbar-light ">
+                        <a href="../index.html" class="header__logo logo float-left" target="_blank"><img src="../img/logo.svg" onerror="this.onerror=null; this.src='../img/logo.png'"></a> 
+						<button class="navbar-toggler-iv" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--modificacion clase toggler bootstrap-->
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse menu_float_right header__navigation" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto py-4 py-md-0">
+								<li class="nav-item pl-ac pl-md-0 ml-0 ml-md-4">
+                                <a href="../index.html" class="hvr__underline--from-left-nav">Acerca</a>
+                            </li>
+								</li>
+								<li class="nav-item pl2 pl-md-0 ml-0 ml-md-4">
+                                <a href="obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
+								</li>
+                                <li class="nav-item pl2 pl-md-0 ml-0 ml-md-4">
+                                <a href="muestra.html" class="active hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                                </li>
+                                
+                                <li class="nav-item pl1 pl-md-0 ml-0 ml-md-4">
+                                    <li class="dropdown">
+                                        <a href="secciones/crono.html" class="dropbtn hvr__underline--from-left-nav" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                            <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
+
+                                        <!--<a class="dropbtn hvr__underline--from-left-nav" data-toggle="#" href="crono.html" role="button" aria-haspopup="true" aria-expanded="false">Cronologías</a>-->
+                                            <div class="dropdown-content">
+                                                <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
+                                                <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                                <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
+                                                <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
+                                                <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
+                                        </div>
+                            			<li class="nav-item pl2 pl-md-0 ml-0 ml-md-4">
+                                        <a href="contacto.html" class=" hvr__underline--from-left-nav">Contacto</a></li>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>		
+				</div>
+			</div>
+		</div>
+	</div>
+    
 </header>
 <!-- Cierra HTML General Menú--> 
 <!--https://uicookies.com/bootstrap-4-carousel/-->
@@ -111,21 +146,6 @@ console.log("`lazy-loading` no soportado...");
 <!--Abre margen scroll -->
 <main class="contenido__pag">
 <!--Cierra margen scroll -->
-<!--Abre muestra scroll horizontal-->
-    <section id="muestra"> <!--https://codepen.io/OscarTBeamish/pen/GPgOzy lookbook-->
-        <div class="wow animate__animated animate__slideInUp" data-wow-duration="2s">
-            <div class="contenedor_full_blanco"> 
-                <div class="flexslider carousel">
-                    <ul class="slides">
-                        <li><p>~</p></li>
-                        <li><p>DIBUJOS</p></li>
-                        
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
 
 <!-- Abre General Footer -temas-obra-exposiciones-->
 <footer id="footer__1--navigation">
@@ -163,6 +183,7 @@ console.log("`lazy-loading` no soportado...");
 <script src="../js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 <!-- cierra bootstrap-->
 
 <!-- Abre JSr-->

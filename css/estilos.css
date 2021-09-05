@@ -24,6 +24,8 @@ html, body {
     z-index:-2;
     padding-top:0;
 }
+body,html,html a{-webkit-font-smoothing:antialiased}
+
 /* importação do font-awesome para os ícones de abrir e fechar o menu responsivo */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -59,7 +61,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: rgba(255, 255, 255, 0.5);
+	background: #f6f5f3;
 	border-radius: 10px;
 	border-right: 2px solid #7c8e95;
 }
@@ -74,6 +76,11 @@ body::-webkit-scrollbar-thumb {
   *::-moz-selection {
     background:#b9635d;
       color: #31383f;
+}
+::selection {
+    color:#f6f5f3;
+    background: #ae952e;
+    text-shadow: none;
 }
 /*---------------------ABRE COLORBACKGROUND--------------------*/
 /*Cronologias*/
@@ -90,6 +97,13 @@ body::-webkit-scrollbar-thumb {
 .colorbg__obra--gris{
     background-color:#cecece;
 }
+/*nav toggle*/
+.bg-light {
+	background-color: #fff !important;
+    background-color:#f6f5f3;
+    transition: all 200ms linear;
+}
+
 /*---------------------CIERRA COLORBACKGROUND--------------------*/
 /*-------------------------ABRE EPIGRAFES------------------------*/
 
@@ -193,9 +207,10 @@ body::-webkit-scrollbar-thumb {
     width:100%;
     background:#f6f5f3;
     height: 85px;
-    padding: 29px, 0px;
+    padding: 25px, 0px;
     transition: all 0.5s;
     box-shadow: 0px 0px 20px rgba(136, 147, 170, 0.3);
+    border-bottom: 3px #9d2021 solid;
     position: fixed;
     left:0px;
     top: 0px;
@@ -203,36 +218,27 @@ body::-webkit-scrollbar-thumb {
     z-index: 997;
  }
  
-#header .header__logo {
-    font-family: 'Playfair Display', serif;
-    color:#0d1b2b;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.8rem;
-    padding-top: 8px;/*era 23*/
+.header__logo {
+    background-size: contain;
     display:flex;
-    justify-content: left;
-    font-kerning: none;
-    letter-spacing: 0.8px;
-    word-spacing: 4px;
+    justify-content:left;
+    text-indent: -9999px;
+    width: 150px;
+    height: 82px;
+    margin-left: 4rem;
 } 
+
 
 #header .header__logo a {
     text-decoration: none;
 }
 
-.header__logo:hover {
-    color:#0d1b2b;
-}
-/*menu full*//*el margin   margin-top: 9px; lo ubica*/
 #header .menu_nav_ancho { 
-    width: 93%;
     height: 75px;
     display: flex;
     margin:auto;
     flex-direction:row;
     justify-content: space-between;
-    align-items: center;
 } 
 
 #header .header__navigation  {
@@ -241,7 +247,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header .menu_float_right{
-    padding-top: 20px; /*ubicación del nav*/
+    padding-top: 0px; /*ubicación del nav*/
+    justify-content: flex-end;
+    margin-right: 2.25rem;
+
 }
 
 /* eliminar las bullets y los números DE INES*/
@@ -251,7 +260,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 0;
     text-align: center;
     list-style-type: none;
-    gap:5px;
 }
 
 #header nav ul li {
@@ -262,18 +270,28 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 1px;
     font-size: 1rem; /*cambia el tamaño de las tipos del nav*/
     font-weight: 650;
-    margin: 5px; 
-    padding-left:0.3rem;
-    padding-right:0.3rem;
     display: inline-block;
     position: relative;
+    gap:5px;
+    padding-top: 0.4rem;/*cambia padding de las tipos del nav*/
+}
+.pl2{
+    padding-left: 1.5rem;/*cambia padding de las tipos del nav x crono*/
+}
+.pl1{
+    padding-left: 0.75rem;/*cambia padding de las tipos del nav x crono*/
+}
+.pl-ac{
+    padding-left: 4rem;/*cambia padding de las tipos del nav x crono*/
+}
+.pr-con{
+    padding-right: 4rem;/*cambia padding de las tipos del nav x crono*/
 }
 /* menu_nav DE INES*/
 #header .header__navigation ul li a{
     text-decoration: none;
     justify-content: flex-end;
     color:#0d1b2b;
-    padding-top:10px;
 }
 
 #header .header__navigation li:hover > ul {
@@ -282,7 +300,6 @@ body::-webkit-scrollbar-thumb {
 
 #header .header__navigation ul li a {
     color:#2d2e2f;
-    text-decoration: none;
 }
 
 #header ul li:hover ul {
@@ -306,7 +323,38 @@ body::-webkit-scrollbar-thumb {
     display: inline-block;
     width: auto;
 }
-
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #c4373c;
+    color:#f6f5f3;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 1;
+    font-size: 1rem;
+    border-radius: 50%;
+    right: 70px;
+    bottom: 135px;
+    transition: all 100ms ease;;
+    z-index: 11;
+    border: 4px solid transparent;
+    transform: scale(1);
+  }
+  .back-to-top:hover{
+    transform: scale(1.1);
+  }
+  
+  .back-to-top i {
+    padding-top: 11px;
+    color:#f6f5f3;
+  }
+  
+  @media (max-width: 768px) {
+    .back-to-top {
+      bottom: 15px;
+    }
+  }
 /*--------------------------------------------------------------
 # ABRE dropdown cronologías __ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
 --------------------------------------------------------------*/
@@ -332,27 +380,26 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color:#f6f5f3;
-    min-width: 178px;
+    min-width: 195px;
     box-shadow: 0px 0px 0px 0px #b09ab020!important;
     z-index: 1;
 }
   
 .dropdown-content a {
     color:#2d2e2f;
-    padding: 14px 7px 7px 10px;
+    padding: 14px 7px 8px 11px;
     text-decoration: none;
     display: block;
     text-align: left;
     font-family: 'Nunito', sans-serif;
     list-style-type: none;
-    font-size: 0.8rem; /*cambia el tamaño de las tipos del nav*/
+    font-size: 0.9rem; /*cambia el tamaño de las tipos del nav*/
     font-weight: 650;
 }
   
 
 .dropdown-content a:hover {
-    min-width: 180px;
-    text-align: left;
+    min-width: 195px;
     background-color: #21252920;
 
 }
@@ -365,7 +412,7 @@ li.dropdown {
     display: block;
     width: 100%;
     padding-left: 0.7rem;
-    padding-right: 0.5rem!important;
+    padding-right: 0.7rem;
     clear: both;
     font-weight: 650;
     color: #212529;
@@ -381,13 +428,554 @@ li.dropdown {
     background-color: transparent;
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23292b2c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3E%3C/svg%3E")!important;
     background-repeat: no-repeat;
-    background-position: 5rem .6rem!important;
-    background-size: .75rem .75rem!important;
+    background-position: 0.5rem .6rem!important;
+    background-size: 10rem;
 }
 
 /*--------------------------------------------------------------
 # CIERRE DROPDOWN __ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# ABRE NUEVO NAV https://codepen.io/ig_design/pen/omQXoQ
+--------------------------------------------------------------*/
+
+.start-header {
+	transform: translateY(0);
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.start-header.scroll-on {
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+	padding: 10px 0;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.start-header.scroll-on .navbar-brand img{
+	height: 38px;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navigation-wrap{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+.navbar{
+	padding: 0;
+}
+.navbar-brand img{
+	height: 38px;
+	width: auto;
+	display: block;
+    filter: brightness(10%);
+	-webkit-transition : all 0.3s ease-out;
+	transition : all 0.3s ease-out;
+}
+
+
+/*modificaciones de bootstrap*/
+.navbar-toggler-iv {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.15s ease-in-out;
+    float: right;
+    border: none;
+    padding-right: 3rem; /*ubicación hamburguer el logo está en 4, pero acá necesita menos*/
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .navbar-toggler-iv {
+      transition: none;
+    }
+  }
+  .navbar-toggler-iv:hover {
+    text-decoration: none;
+  }
+  .navbar-toggler-iv:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+
+/*traido de bootstrap*/
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  .navbar-nav-scroll {
+    max-height: var(--bs-scroll-height, 75vh);
+    overflow-y: auto;
+  }
+  
+  @media (min-width: 576px) {
+  /*propio*/   
+    .pr-con{
+          padding-right: 0rem;
+      }
+
+/*propio*/
+    .navbar-expand-sm {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-sm .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-expand-sm .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-sm .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-sm .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-sm .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-sm .navbar-toggler-iv {
+      display: none;
+    }
+    .navbar-expand-sm .offcanvas-header {
+      display: none;
+    }
+    .navbar-expand-sm .offcanvas {
+      position: inherit;
+      bottom: 0;
+      z-index: 1000;
+      flex-grow: 1;
+      visibility: visible !important;
+      background-color: transparent;
+      border-right: 0;
+      border-left: 0;
+      transition: none;
+      transform: none;
+    }
+    .navbar-expand-sm .offcanvas-top,
+  .navbar-expand-sm .offcanvas-bottom {
+      height: auto;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .navbar-expand-sm .offcanvas-body {
+      display: flex;
+      flex-grow: 0;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+  @media (min-width: 768px) {
+        /*propio*/   
+    .pr-con{
+        padding-right: 0rem;
+    }
+
+/*propio*/
+    .navbar-expand-md {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-md .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-md .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-md .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-md .navbar-toggler-iv {
+      display: none;
+    }
+    .navbar-expand-md .offcanvas-header {
+      display: none;
+    }
+    .navbar-expand-md .offcanvas {
+      position: inherit;
+      bottom: 0;
+      z-index: 1000;
+      flex-grow: 1;
+      visibility: visible !important;
+      background-color: transparent;
+      border-right: 0;
+      border-left: 0;
+      transition: none;
+      transform: none;
+    }
+    .navbar-expand-md .offcanvas-top,
+  .navbar-expand-md .offcanvas-bottom {
+      height: auto;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .navbar-expand-md .offcanvas-body {
+      display: flex;
+      flex-grow: 0;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-expand-lg {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-lg .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-lg .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-toggler-iv {
+      display: none;
+    }
+    .navbar-expand-lg .offcanvas-header {
+      display: none;
+    }
+    .navbar-expand-lg .offcanvas {
+      position: inherit;
+      bottom: 0;
+      z-index: 1000;
+      flex-grow: 1;
+      visibility: visible !important;
+      background-color: transparent;
+      border-right: 0;
+      border-left: 0;
+      transition: none;
+      transform: none;
+    }
+    .navbar-expand-lg .offcanvas-top,
+  .navbar-expand-lg .offcanvas-bottom {
+      height: auto;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .navbar-expand-lg .offcanvas-body {
+      display: flex;
+      flex-grow: 0;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+  @media (min-width: 1200px) {
+    .navbar-expand-xl {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-xl .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-xl .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-xl .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-xl .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-xl .navbar-toggler-iv {
+      display: none;
+    }
+    .navbar-expand-xl .offcanvas-header {
+      display: none;
+    }
+    .navbar-expand-xl .offcanvas {
+      position: inherit;
+      bottom: 0;
+      z-index: 1000;
+      flex-grow: 1;
+      visibility: visible !important;
+      background-color: transparent;
+      border-right: 0;
+      border-left: 0;
+      transition: none;
+      transform: none;
+    }
+    .navbar-expand-xl .offcanvas-top,
+  .navbar-expand-xl .offcanvas-bottom {
+      height: auto;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .navbar-expand-xl .offcanvas-body {
+      display: flex;
+      flex-grow: 0;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+  @media (min-width: 1400px) {
+    .navbar-expand-xxl {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+    .navbar-expand-xxl .navbar-nav {
+      flex-direction: row;
+    }
+    .navbar-expand-xxl .navbar-nav .dropdown-menu {
+      position: absolute;
+    }
+    .navbar-expand-xxl .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-expand-xxl .navbar-nav-scroll {
+      overflow: visible;
+    }
+    .navbar-expand-xxl .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto;
+    }
+    .navbar-expand-xxl .navbar-toggler-iv {
+      display: none;
+    }
+    .navbar-expand-xxl .offcanvas-header {
+      display: none;
+    }
+    .navbar-expand-xxl .offcanvas {
+      position: inherit;
+      bottom: 0;
+      z-index: 1000;
+      flex-grow: 1;
+      visibility: visible !important;
+      background-color: transparent;
+      border-right: 0;
+      border-left: 0;
+      transition: none;
+      transform: none;
+    }
+    .navbar-expand-xxl .offcanvas-top,
+  .navbar-expand-xxl .offcanvas-bottom {
+      height: auto;
+      border-top: 0;
+      border-bottom: 0;
+    }
+    .navbar-expand-xxl .offcanvas-body {
+      display: flex;
+      flex-grow: 0;
+      padding: 0;
+      overflow-y: visible;
+    }
+  }
+  .navbar-expand {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .navbar-expand .navbar-nav-scroll {
+    overflow: visible;
+  }
+  .navbar-expand .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-expand .navbar-toggler-iv {
+    display: none;
+  }
+  .navbar-expand .offcanvas-header {
+    display: none;
+  }
+  .navbar-expand .offcanvas {
+    position: inherit;
+    bottom: 0;
+    z-index: 1000;
+    flex-grow: 1;
+    visibility: visible !important;
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    transition: none;
+    transform: none;
+  }
+  .navbar-expand .offcanvas-top,
+  .navbar-expand .offcanvas-bottom {
+    height: auto;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  .navbar-expand .offcanvas-body {
+    display: flex;
+    flex-grow: 0;
+    padding: 0;
+    overflow-y: visible;
+  }
+  
+  .navbar-light .navbar-brand {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-light .navbar-nav .show > .nav-link,
+  .navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-toggler-iv {
+    color: rgba(0, 0, 0, 0.55);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+  /*color entre líneas icono*/
+  .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-light .navbar-text {
+    color: rgba(0, 0, 0, 0.55);
+  }
+  .navbar-light .navbar-text a,
+  .navbar-light .navbar-text a:hover,
+  .navbar-light .navbar-text a:focus {
+    color: rgba(0, 0, 0, 0.9);
+  }
+
+/*termina traidos de bootstrap*/
+/*lo tenía de antes*/
+.navbar-toggler-iv:active,
+.navbar-toggler-iv:focus {
+	outline: none;
+}
+.navbar-light .navbar-toggler-icon {
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 3px solid #212529; /*linea del ultimo*/
+    transition: all 300ms linear;
+    border-radius: 1px;
+
+}
+.navbar-light .navbar-toggler-icon:after, 
+.navbar-light .navbar-toggler-icon:before{
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #212529;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+    transition: all 300ms linear;
+    border-radius: 1px;
+}
+.navbar-light .navbar-toggler-icon:after{
+	top: 8px;
+}
+.navbar-toggler-iv[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+}
+.navbar-toggler-iv[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler-iv[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+/*termina lo tenía de antes*/
+
+
+
+.nav-link{
+    transition: all 200ms linear;
+    font-family: 'Nunito', sans-serif;
+    color:#0d1b2b;
+    text-transform: none;
+    list-style-type: none;
+    letter-spacing: 1px;
+    font-size: 0.9rem; /*cambia el tamaño de las tipos del nav*/
+    font-weight: 650;
+ 
+}
+.nav-item:hover .nav-link{
+	color: transparent;
+}
+.nav-item.active .nav-link{
+	color: #9d2929;
+}
+.nav-link {
+	position: relative;
+	padding: 5px 0 !important;
+}
+.nav-item:after{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	content: '';
+	opacity: 0;
+    transition: all 200ms linear;
+}
+.nav-item:hover:after{
+	bottom: 0;
+	opacity: 1;
+}
+.nav-item.active:hover:after{
+	opacity: 0;
+}
+.nav-item{
+	position: relative;
+    transition: all 200ms linear;
+}
+
+/*--------------------------------------------------------------
+# CIERRA MENU NAV https://codepen.io/ig_design/pen/omQXoQ
+--------------------------------------------------------------*/
+
 /*--------------------------------------------------------------
 # CIERRA MENU NAV 
 --------------------------------------------------------------*/
@@ -451,7 +1039,6 @@ li.dropdown {
     font-weight: 600;
     z-index: 997;
 }
-
 
 
 /* --------------------------------------------------------------
@@ -581,7 +1168,6 @@ li.dropdown {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0); } }
   
-
 .chevron::before {
     border-style: solid;
     border-width: 0.25em 0.25em 0 0;
@@ -860,7 +1446,7 @@ li.dropdown {
   }
   
   .filters a.active {
-    color: #000;
+    color: #212529;
   }
   
   .filters a.active:before {
@@ -870,7 +1456,7 @@ li.dropdown {
     right: 10px;
     bottom: 0;
     height: 1px;
-    background-color: #000;
+    background-color: #212529;
   }*/
 /* vino de style.css de my portfolio*/ 
 
@@ -2022,3 +2608,5 @@ input[type=checkbox]:checked + label {
     color: #212529;
     z-index: 1;
 }
+
+

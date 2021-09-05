@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
      <link rel="stylesheet" href="scss/styles.css"/>
+     <link rel="stylesheet" href="css/media.css"/>
 
 
 <!-- Cierra Css estilos -->
@@ -86,10 +87,12 @@
 <body>
 <!-- Abre HTML General Menú_galería_novedades--> 
 
-<header id="header" class="fixed-top"><!--------------arreglar clases menu en CSS, esta sucio; OK--> 
+<header id="header" class="fixed-top">
    <div class="container-fluid">
     <div class="menu_nav_ancho"> 
-        <a href="index.html" class="header__logo">Inés Vega</a> 
+        <div class="logo float-left">
+            <a href="index.html" class="header__logo"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'"></a> 
+        </div>
             <div class="menu menu_float_right">         
                 <nav class="header__navigation">
                     <ul>
@@ -100,22 +103,16 @@
                         
                         <a href="secciones/crono.html" class="dropbtn hvr__underline--from-left-nav">
                             <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
-                            <div class="dropdown-content">
+                            <div class="dropdown-content dropdown-menu">
                                 <a class="dropdown-item" href="secciones/crono.html">Muestras Individuales</a>
                                 <a class="dropdown-item" href="secciones/crono.html#muestras__colectivas">Muestras Colectivas</a>
                                 <a class="dropdown-item" href="secciones/crono.html#los__premios">Premios</a>
                                 <a class="dropdown-item" href="secciones/crono.html#los__salones">Salones</a>
                                 <a class="dropdown-item" href="secciones/crono.html#catalogo">Catálogos</a>
+                                <a class="dropdown-item" href="secciones/cv.pdf">Curriculum Vitae [Pdf]</a>                                
                             </div>                    
                              <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
                     </ul>
-                    <div id="b4" class="box">
-                        <svg id="i4" class="icon" viewBox="0 0 100 100">
-                          <polyline id="top-line-4" points="30 37 50 37 70 37"></polyline>
-                          <path id="middle-line-4" 	d="M30,50 L70,50 Z"></path>
-                          <path id="bottom-line-4" 	d="M30,63 L70,63 Z"></path>
-                        </svg>  
-                      </div>
                 </nav>
             </div>
     </div>
@@ -251,6 +248,9 @@ y hacerme el alma navegable.
         </div>
 </section>
 <!-- Cierra Sección Acerca>-->
+<!-- Abre backtotop>-->
+<a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
+    <!-- Cierra backtotop>-->
 
 <!-- Abre General Footer LIMPIAR LAS CLASES-->
 <footer id="footer__1--navigation">
@@ -268,6 +268,7 @@ y hacerme el alma navegable.
                 <li class="#"><a href="https://www.instagram.com/vivainesita/?hl=es-la"> <i class="fab fa-instagram fa-2x"></i></a></li>                    
             </ul>
     </div>
+
 </footer>
     <footer id="footer__2--copyright">
         <div class="footer__2__copyright__zocalocolor--100">
@@ -292,7 +293,9 @@ y hacerme el alma navegable.
 <!-- Abre JSr-->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/jquery.mixitup.min.js"></script>
-<!--<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script> <!-- backtotop -->
+<script src="js/simplescrollup.js"></script> <!-- backtotop -->
+
 <!-- cierra JSr-->
 
 <!-- Abre Enlace y activar wow.js -->
