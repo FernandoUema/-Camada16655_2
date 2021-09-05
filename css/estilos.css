@@ -268,24 +268,38 @@ body::-webkit-scrollbar-thumb {
     text-transform: none;
     list-style-type: none;
     letter-spacing: 1px;
-    font-size: 1rem; /*cambia el tamaño de las tipos del nav*/
-    font-weight: 650;
+    font-size: 1.1rem; /*cambia el tamaño de las tipos del nav*/
+    font-weight: 800;
     display: inline-block;
     position: relative;
     gap:5px;
     padding-top: 0.4rem;/*cambia padding de las tipos del nav*/
 }
+#header a {
+  font-family: 'Nunito', sans-serif;
+  color:#0d1b2b;
+  font-size: 1.1rem; /*cambia el tamaño de las tipos del nav*/
+  font-weight: 800;
+}
+
 .pl2{
-    padding-left: 1.5rem;/*cambia padding de las tipos del nav x crono*/
+    padding-left: 1.4rem;/*cambia padding de las tipos del nav x crono*/
+}
+.pl2-1{
+  padding-left: 1.3rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pl1{
-    padding-left: 0.75rem;/*cambia padding de las tipos del nav x crono*/
+    padding-left: 0.7rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pl-ac{
     padding-left: 4rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pr-con{
     padding-right: 4rem;/*cambia padding de las tipos del nav x crono*/
+}
+.pr-2{
+  padding-left: 0.3rem;/*cambia padding de las tipos del nav x crono*/
+
 }
 /* menu_nav DE INES*/
 #header .header__navigation ul li a{
@@ -309,13 +323,13 @@ body::-webkit-scrollbar-thumb {
 #header .header__navigation ul li a:hover { 
   color: #7e1e1b;
   display:inline-block;
-  font-weight: 650;
+  font-weight: 800;
   width: auto;
 }
 
 #header .header__navigation ul li a.active { 
     color: #c4373c;
-    font-weight: 650;
+    font-weight: 800;
 }
 
 #header .header__navigation ul li a:after {
@@ -365,7 +379,6 @@ body::-webkit-scrollbar-thumb {
     text-align: left;
     text-decoration: none; 
     margin-left: 0.7rem;
-
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -380,14 +393,14 @@ li.dropdown {
     display: none;
     position: absolute;
     background-color:#f6f5f3;
-    min-width: 195px;
+    min-width: 230px;
     box-shadow: 0px 0px 0px 0px #b09ab020!important;
     z-index: 1;
 }
   
 .dropdown-content a {
     color:#2d2e2f;
-    padding: 14px 7px 8px 11px;
+    padding: 14px 5px 9px 10px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -396,12 +409,11 @@ li.dropdown {
     font-size: 0.9rem; /*cambia el tamaño de las tipos del nav*/
     font-weight: 650;
 }
-  
 
 .dropdown-content a:hover {
-    min-width: 195px;
+    min-width: 230px;
     background-color: #21252920;
-
+    padding: 14px 5px 9px 10px;
 }
   
 .dropdown:hover .dropdown-content {
@@ -596,15 +608,16 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
     }
     .navbar-expand-md .navbar-nav-scroll {
       overflow: visible;
     }
     .navbar-expand-md .navbar-collapse {
-      display: flex !important;
+      display: flex;
       flex-basis: auto;
+
     }
     .navbar-expand-md .navbar-toggler-iv {
       display: none;
@@ -991,16 +1004,16 @@ li.dropdown {
      margin-top: 2rem;
 }
 #footer__1--navigation .footer__1__navigation__zocalocolor--100 {
-    padding: 30px 0 20px 0;
+    padding: 10px 0 20px 0;
     background-color:#7c8e95;
     height: 27vh;
 }
 
-#footer__1--navigation .footer__1__navigation__container--center{
+#footer__1--navigation .tipo__footer--links{
     text-transform: none;
     box-sizing: border-box;
     padding-top: 1.6rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     z-index: 997;
 }
 
@@ -1009,34 +1022,38 @@ li.dropdown {
     box-sizing: border-box;
     z-index: 997;    
 }
-#footer__1--navigation .footer__1__navigation__container--center ul  {
+#footer__1--navigation .tipo__footer--links ul  {
     list-style-type: none;
     text-transform: none;
-    margin-bottom: 2rem;
-    margin-left:1rem;
     padding:0;
     z-index: 997;
 }
 
-#footer__1--navigation .footer__1__navigation__container--center ul li {
+#footer__1--navigation .tipo__footer--links ul li {
     list-style-type: none;
     text-transform: none;
-    margin-left: 3rem;
-    line-height: 1.14rem;
     display:inline;
 }
-#footer__1--navigation .footer__1__navigation__container--center ul li a {
-    color: #31383f;
+.tipo__footer--links ul li a {
+  color: #31383f;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 800;
 }
-#footer__1--navigation .footer__1__navigation__container--center ul li a:hover {
+.tipo__footer--links a {
+  color: #31383f;
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+
+}
+
+.tipo__footer--links a:hover {
     text-decoration: none;
     color:#e5e5e5;
-    font-weight: 600;
+    font-weight: 800;
     z-index: 997;
 }
 
@@ -1086,14 +1103,13 @@ li.dropdown {
     color:#2d2e2f;
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
-    font-weight: 400;
-    padding-left:25px;
+    font-weight: 500;
 }
 .footer__2__copyright--text2{
     color:#2d2e2f;
     font-family: 'Jost', sans-serif;
     font-size: 0.8rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 6px;
 }
 .footer__2__copyright--firma{
@@ -1679,7 +1695,6 @@ ul{
     padding-left: 2rem;
 }
 
-
 .tipo__crono--subnav a{
     text-decoration: none;
     list-style-type: none;
@@ -1732,7 +1747,7 @@ ul{
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
     position: relative;
     overflow: hidden;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 .hvr__underline--from-left-nav:before {
     content: "";
@@ -1811,7 +1826,7 @@ ul{
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
     position: relative;
     overflow: hidden;
-    padding-bottom: 3px;
+    padding-bottom: 2px;
 }
 .hvr__underline--from-left-fot:before {
     content: "";
