@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
     // Variables
-    var back-to-top = document.querySelector('a[href="#up"]');
+    var buttonUp = document.querySelector('a[href="#up"]');
     var easings = {
         linear(t) {
             return t;
