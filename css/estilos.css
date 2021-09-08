@@ -1011,6 +1011,23 @@ li.dropdown {
     transition: all 200ms linear;
 }
 
+@media (max-width: 768px) {
+  .nav-item {
+    display: inline;
+    align-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+.dropdown-content .dropdown-item {
+  display: none;
+}
+.dropicon {
+  display: none;
+}
+}
 /*--------------------------------------------------------------
 # CIERRA MENU NAV https://codepen.io/ig_design/pen/omQXoQ
 --------------------------------------------------------------*/
@@ -1105,7 +1122,6 @@ li.dropdown {
     height: auto
 
 }
-
 }
 /* --------------------------------------------------------------
 # CIERRA FOOTER 1 NAVIGATION
