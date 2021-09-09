@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-<!-- Abre HTML General head-->
+<!-- Abre Head General head-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inés Vega ~ Artista Plástica</title>
-    <!-- Abre Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Artistas plásticas argentinas mujeres contemporáneas, Artistas plásticos argentinos, Escultoras argentinas, piezas escultóricas, regalar arte, Artista plástica, pintoras argentinas, comprar esculturas, comprar dibujos, comprar cuadros, Esculturas blandas, Artes plásticas, Escultura, Escultora, Dibujo, Pinturas, Materiales no convencionales, Comprar arte argentino contemporáneo, Mujeres artistas plásticas, comprar arte online argentino, Invertir en arte, Dogliotti, Sor, Vega, donde comprar arte argentino.">
+<meta name="description" content="Inés Vega es una artista plástica argentina contemporánea, escultora, dibujante y pintora de extraordinaria calidad dentro del mundo de la figuración.">
+<title>Inés Vega ~ Artista Plástica Argentina</title>
+
+<!-- Abre Favicon-->
+<link rel="shortcut icon" href="img/favicon.png"/>
 <!-- Cierra Favicon-->
 
 <!-- Abre Bootstrap-->
@@ -24,7 +27,6 @@
     <link rel="stylesheet" href="css/styles.css"/>
      <link rel="stylesheet" href="scss/styles.css"/>
      <link rel="stylesheet" href="css/media.css"/>
-
 
 <!-- Cierra Css estilos -->
 
@@ -85,52 +87,68 @@
 
 <!-- Abre HTML BODY--> 
 <body>
-<!-- Abre HTML General Menú_galería_novedades--> 
 
-<header id="header" class="fixed-top">
-   <div class="container-fluid">
-    <div class="menu_nav_ancho"> 
-        <div class="logo float-left">
-            <a href="index.html" class="header__logo"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'"></a> 
-        </div>
-            <div class="menu menu_float_right">         
-                <nav class="header__navigation">
-                    <ul>
-                    <li><a href="index.html" class="active hvr__underline--from-left-nav">Acerca</a></li>
-                    <li class="#"><a href="secciones/obra.html" class="hvr__underline--from-left-nav">Obra</a></li>
-                    <li class="#"><a href="secciones/muestra.html" class="hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                    <li class="dropdown">
-                        
-                        <a href="secciones/crono.html" class="dropbtn hvr__underline--from-left-nav">
-                            <span>Cronologías</span><i class="fas fa-chevron-down ps-2"></i></a>
-                            <div class="dropdown-content dropdown-menu">
-                                <a class="dropdown-item" href="secciones/crono.html">Muestras Individuales</a>
-                                <a class="dropdown-item" href="secciones/crono.html#muestras__colectivas">Muestras Colectivas</a>
-                                <a class="dropdown-item" href="secciones/crono.html#los__premios">Premios</a>
-                                <a class="dropdown-item" href="secciones/crono.html#los__salones">Salones</a>
-                                <a class="dropdown-item" href="secciones/crono.html#catalogo">Catálogos</a>
-                                <a class="dropdown-item" href="secciones/cv.pdf">Curriculum Vitae [Pdf]</a>                                
-                            </div>                    
-                             <li class="#"><a href="secciones/contacto.html" class="hvr__underline--from-left-nav">Contacto</a></li>
-                    </ul>
-                </nav>
+<!-- Abre HTML General Menú--> 
+<header id="header" class="fixed-top container-fluid">
+    <div class="menu_nav_ancho">
+        <div class="navigation-wrap bg-light start-header start-style">
+            <div class="row">
+                <div class="container">
+                    <div class="menu_float_right">   
+                        <nav class="navbar navbar-expand-md navbar-light px-5">
+                            <a href="index.html" class="header__logo logo float-left col-xs-6" target="_blank"><img src="img/logo.svg" onerror="this.onerror=null; this.src='img/logo.png'"></a> 
+                            <button class="navbar-toggler-iv" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--modificacion clase toggler bootstrap-->
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse menu_float_right header__navigation col-xs-6" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                    <li class="nav-item lasagna pl-ac pl-md-0 ml-0 ml-md-4">
+                                    <a href="index.html" class="nav-link active hvr__underline--from-left-nav">Acerca</a>
+                                    </li>
+                                    <li class="nav-item lasagna pl2 pl-md-0 ml-0 ml-md-4">
+                                    <a href="secciones/obra.html" class="nav-link hvr__underline--from-left-nav">Obra</a></li>
+                                    </li>
+                                    <li class="nav-item lasagna pl2-1 pl-md-0 ml-0 ml-md-4">
+                                    <a href="secciones/muestra.html" class="nav-link hvr__underline--from-left-nav">Muestra Virtual</a></li>
+                                    </li>
+                                    <li class="nav-item lasagna dropiconnone pl1 pl-md-0 ml-0 ml-md-4">
+                                        <li class="dropdown">
+                                        <a href="secciones/crono.html" class="nav-link  dropbtn hvr__underline--from-left-nav" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <span>Cronologías</span><i id="dropicon" class="fas fa-chevron-down pr-2 "></i></a>
+                                        <div class="dropdown-content">
+                                            <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
+                                            <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
+                                            <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
+                                            <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
+                                            <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
+                                            <a class="dropdown-item" href="cv.pdf">Curriculum Vitae [Pdf]</a>                                
+                                        </div>
+                                        </li>
+                                        <li class="nav-item lasagna pl2 pl-md-0 ml-0 ml-md-4">
+                                        <a href="secciones/contacto.html" class="nav-link  hvr__underline--from-left-nav">Contacto</a>
+                                        </li>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>		
+                    </div>
+                </div>
             </div>
     </div>
-</div>
-</header>
-<!-- Cierra HTML General Menú--> 
+    </header>
+    <!-- Cierra HTML General Menú--> 
 
 <!--Abre margen scroll -->
 <main class="contenido__pag">
 <!--Cierra margen scroll -->
 
 <!-- Abre Home Background Photo Random con jquery ó js https://stackoverflow.com/questions/15231812/random-background-images-css3 --> 
-<section id="hero" class="kenburns-top">
+<section id="hero" class="kenburns-top" alt="Angel Musicante">
     <div class="container">
             <div class="caja__tipo--index">
-                <h3 class="tipo__ivindex--bvnd"><strong>Bienvenidos </strong></h3>
-                <h3 class="tipo__ivindex--name">Inés Vega</h3>
-                <h3>Artista Plástica</h3>
+                <h2 class="tipo__ivindex--bvnd"><strong>Bienvenidos </strong></h2>
+                <h2 class="tipo__ivindex--name">Inés Vega</h2>
+                <h2>Artista Plástica</h2>
                 <a href="#acerca" class="btn-get-started scrollto">Descubrí más</a>
             </div>
         <div>
@@ -150,7 +168,7 @@ https://stackoverflow.com/questions/19369426/random-background-image-on-refresh 
 <!-- Abre Epigrafe Background Photo-->
 <!-- hover sobre texto: https://codepen.io/cassie-codes/pen/WNrOeyy-->
 <section id="epigrafe__obra--bg">
-    <div class="container>
+    <div class="container">
         <div class="rows no-gutters justify-content-start">       
             <div class="col-md-12">
                 <div class="caja__epigrafe--img">

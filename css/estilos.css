@@ -518,7 +518,7 @@ li.dropdown {
     transition: box-shadow 0.15s ease-in-out;
     float: right;
     border: none;
-    padding-right: 2rem; /*ubicación hamburguer el logo está en 4, pero acá necesita menos*/
+    padding-right: 0rem; /*ubicación hamburguer*/
   }
  
   @media (prefers-reduced-motion: reduce) {
@@ -539,7 +539,7 @@ li.dropdown {
     display: inline-block;
     width: 1rem;
     height: 1rem;
-    vertical-align: middle;
+    vertical-align: right;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
