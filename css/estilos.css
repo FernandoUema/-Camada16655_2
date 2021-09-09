@@ -380,8 +380,7 @@ body::-webkit-scrollbar-thumb {
 .simplescrollup__button {
   bottom: 15px;
   }
-  #header nav ul li {
-
+#header nav ul li {
     padding-top: 0rem;/*cambia padding de las tipos del nav*/
 }
 
@@ -1119,15 +1118,7 @@ li.dropdown {
     font-weight: 700;
     z-index: 997;
 }
-.lamedia{
-  color: #31383f;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-.lamedia:hover{
-  color:#e5e5e5;
 
-}
 @media (max-width: 768px) {
   .tipo__footer--links {
     display: inline;

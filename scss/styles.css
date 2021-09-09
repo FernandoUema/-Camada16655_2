@@ -341,4 +341,15 @@ a {
   z-index: 1;
   margin-left: 1rem;
 }
+
+/*FOOTER*/
+.lamedia {
+  color: #31383f;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.lamedia:hover {
+  color: #cecece;
+}
 /*# sourceMappingURL=styles.css.map */
