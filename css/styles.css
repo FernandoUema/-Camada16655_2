@@ -1,3 +1,13 @@
+@charset "UTF-8";
+/*PALETA*/
+/*background color*/
+/*color texto*/
+/*placeholder*/
+/*zocalos*/
+/*botones*/
+/*TIPOGRAFÍAS*/
+/*margenes*/
+/*variables bootstrap pisadas*/
 * {
   margin: 0;
   padding: 0;
@@ -27,3 +37,252 @@ a {
     color: #f6f5f3; }
   .whatsapp__sass .whatsapp-icon {
     margin-top: 14px; }
+
+.contacto__sass--btn {
+  width: 90px;
+  margin-top: 40px;
+  margin-left: 60px;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+  padding: 8px 8px 8px 8px;
+  border: none;
+  -webkit-border-radius: 25px;
+  border-radius: 0px;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #9d2021;
+  color: #cecece;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  -webkit-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -moz-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  -o-transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  transition: background 0.2s cubic-bezier(0.25, 0.25, 0.75, 0.75);
+  display: block;
+  transition: all 2s; }
+  .contacto__sass--btn.contacto__sass--btn a {
+    text-decoration: none;
+    outline: none; }
+    .contacto__sass--btn.contacto__sass--btn a.ontacto__sass--btn:hover {
+      color: #cecece;
+      text-decoration: none;
+      background-color: #e0aab6; }
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #007bff;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 1;
+  font-size: 1rem;
+  border-radius: 50%;
+  right: 70px;
+  bottom: 135px;
+  transition: all 200ms ease;
+  z-index: 11;
+  border: 4px solid transparent;
+  transform: scale(1); }
+  .back-to-top.back-to-top:hover {
+    transform: scale(1.1); }
+    .back-to-top.back-to-top:hover.back-to-top i {
+      padding-top: 11px;
+      color: #fff; }
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: 15px; } }
+
+/* color corazón zócalo */
+.change__color {
+  color: #31383f;
+  font-size: 1rem; }
+  .change__color.change__color:hover {
+    color: #ac8fac; }
+
+.line__inner {
+  display: block; }
+
+.caja__tipo--index {
+  padding-top: 140px; }
+
+.iv__index {
+  font-family: "Playfair Display", serif;
+  color: #cecece;
+  font-size: 3rem; }
+
+/*extend*/
+/* ----------------------------------------
+ * animation fade-in Animista
+ * ----------------------------------------*/
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*animación cezanne*/
+#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  font-kerning: none;
+  line-height: 1.4rem;
+  z-index: 3; }
+
+.tipo__copyright--alberti {
+  font-weight: 700;
+  padding-bottom: 20px; }
+
+.tipo__letra--capital-alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 7rem;
+  font-weight: 800; }
+
+.tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  color: #f6f5f3;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  font-kerning: auto; }
+
+#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  flex-wrap: row;
+  letter-spacing: 1px; }
+
+#acerca .tipo__acerca--left-link {
+  color: #c4373c;
+  font-size: 1rem;
+  font-weight: 600; }
+  #acerca .tipo__acerca--left-link:hover {
+    color: #7e1e1b; }
+
+#alberti .cezanne {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ac8fac;
+  z-index: 1;
+  margin-left: 1rem; }
+
+.caja__tipo--index {
+  padding-top: 140px; }
+
+.iv__index {
+  font-family: "Playfair Display", serif;
+  color: #cecece;
+  font-size: 3rem; }
+
+/*extend*/
+/* ----------------------------------------
+ * animation fade-in Animista
+ * ----------------------------------------*/
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*animación cezanne*/
+#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  font-kerning: none;
+  line-height: 1.4rem;
+  z-index: 3; }
+
+.tipo__copyright--alberti {
+  font-weight: 700;
+  padding-bottom: 20px; }
+
+.tipo__letra--capital-alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 7rem;
+  font-weight: 800; }
+
+.tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  color: #f6f5f3;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  font-kerning: auto; }
+
+#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  flex-wrap: row;
+  letter-spacing: 1px; }
+
+#acerca .tipo__acerca--left-link {
+  color: #c4373c;
+  font-size: 1rem;
+  font-weight: 600; }
+  #acerca .tipo__acerca--left-link:hover {
+    color: #7e1e1b; }
+
+#alberti .cezanne {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ac8fac;
+  z-index: 1;
+  margin-left: 1rem; }
+
+/*FOOTER*/
+.lamedia {
+  color: #31383f;
+  padding-bottom: 1rem;
+  text-align: center; }
+  .lamedia:hover {
+    color: #cecece; }
