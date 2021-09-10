@@ -70,7 +70,7 @@
     </style>
 <!-- cierra wow -->
 
-<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<!--lazy-->
 <script>
     if ("loading" in HTMLImageElement.prototype) {
       console.log("El navegador soporta `lazy-loading`...");
@@ -78,9 +78,19 @@
       console.log("`lazy-loading` no soportado...");
     }
   </script>
-<!--PENDIENTE CURSOR CÍRCULO COLOR https://codepen.io/animaticss/pen/oNBoVbJ-->
-<!-- pendiente parallax https://www.w3schools.com/howto/howto_css_parallax.asp-->
+
 <!-- Cierra Animaciones-->
+
+<script type="text/javascript"> 
+    var totalCount = 8;
+    function ChangeIt() 
+    {
+    var num = Math.ceil( Math.random() * totalCount );
+    document.body.background = 'img/hero'+num+'.jpg';
+    document.body.style.backgroundRepeat = "repeat";// Background repeat
+    }
+    </script>
+<!-- Cierra hero random-->
 
 </head>
 <!-- Cierra HTML General head-->
@@ -136,13 +146,13 @@
             </div>
     </div>
     </header>
-    <!-- Cierra HTML General Menú--> 
+<!-- Cierra HTML General Menú--> 
 
 <!--Abre margen scroll -->
 <main class="contenido__pag">
 <!--Cierra margen scroll -->
 
-<!-- Abre Home Background Photo Random con jquery ó js https://stackoverflow.com/questions/15231812/random-background-images-css3 --> 
+<!-- Abre Home Background Photo Random con jquery ó js --> 
 <section id="hero" class="kenburns-top" alt="Angel Musicante">
     <div class="container">
             <div class="caja__tipo--index">
@@ -359,6 +369,12 @@ y hacerme el alma navegable.
     });
 </script>
 <!-- cierra Enlace y activar aos  -->
+<!-- abre js hero random  -->
+
+<script type="text/javascript"> 
+    ChangeIt();
+    </script> 
+ <!-- cierra js hero random  -->
 
 </body>
 </html>

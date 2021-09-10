@@ -2374,6 +2374,21 @@ text-decoration: none;
     line-height: 0.5rem;
     text-align: left;
 }
+
+.titulo__contacto--mostaza{
+  font-family: 'Playfair Display', serif;
+  color:#cd9742;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 7px;
+  line-height: 0.5rem;
+  text-align: left;
+}
+
+
+
+
 .subtitulo__contacto--black{
     font-family: 'Jost', sans-serif;
     color: #24323f;
