@@ -5,7 +5,7 @@
 @media (max-width: 767px) { 
 
     .header__logo{
-        margin-left: ;
+        margin-left: 0px;
     }
 	.nav-item:after{
 		display: none;
@@ -15,7 +15,7 @@
 		display: block;
 		top: 15px;
 		left: 0;
-		width: 11px;
+		width: 1px;
 		height: 1px;
 		content: "";
 		border: none;
@@ -27,7 +27,7 @@
 		top: 10px;
 		left: 423px;
 		width: 1px;
-		height: 11px;
+		height: 0px;
 		content: "";
 		border: none;
         background-color: #212529;
@@ -46,4 +46,17 @@
 	.dropdown-toggle[aria-expanded="true"] + .dropdown-menu {
 		margin-top: 10px !important;
 		margin-bottom: 20px !important;
-	}}
+	}
+
+	#acerca .tipo__acerca--left-txt{
+		font-family: 'Jost', sans-serif;
+		font-size: 0.9rem;
+		font-weight: 400;
+		text-align:left;
+		justify-content: start;
+		margin-bottom: 3rem;
+		line-height: 1.2rem;
+		color: #0d1b2b;
+		
+	}
+}

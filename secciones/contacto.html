@@ -132,49 +132,47 @@ console.log("`lazy-loading` no soportado...");
 
 <section id="hero__contacto">
     <div class="container__contacto--titulo container">
-        <p class="titulo__contacto--red">~Contacto</p>
-        <p class="subtitulo__contacto--black">¡Escribinos, te responderemos a la brevedad!</p>
+        <h1 class="titulo__contacto--red pt-1 pb-4">~Contacto</h1>
+        <h3 class="subtitulo__contacto--black pb-3">¡Escribinos, te responderemos a la brevedad!</h3>
         <!-- Abre form contacto https://codepen.io/woodwoerk/pen/pgLvEr-->
-    <div class="container__contacto--form">
-        <div class="p-b-0">
-            <div class="row p-t-20">
-                <div class="col-md-6 col-sm-6 m-l-60">
-                    <form id="contact_form" method="post" action="#">
-                        <div class="row form-row">
-                            <div class="col-md-9">
-                                <input name="txtFirstName" id="textFirstName" type="text" class="form-control" placeholder="Nombre y Apellido">
+
+    <div class="container__contacto--form contact-section ">
+            <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <form>
+                            <div class="form-group">
+                            <label for="name"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nombre(s) y Apellido(s)">
                             </div>
-                        </div>
-                        <div class="row form-row">
-                            <div class="col-md-9">
-                                <input name="txtCompany" id="txtTelefono" type="text" class="form-control" placeholder="Teléfono">
+                            <div class="form-group">
+                            <label for="exampleInputEmail1"></label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su email">
                             </div>
-                        </div>
-                        <div class="row form-row">
-                            <div class="col-md-9">
-                                <input name="txtEmailAddress" id="txtEmailAddress" type="text" class="form-control"
-                                placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="row form-row">
-                            <div class="col-md-9">
-                                <textarea id="txtDesc" name="txtMessage" type="text" class="form-control" placeholder="Mensaje"rows="4">
-                                </textarea>
-                            </div>
-                        </div>
-                        <div class="row form-row boton">
-                            <div class="col-md-9">
-                                <button type="button" id="button-send" class="contacto__sass--btn">
+                            <label for="exampleDataList" class="form-label"></label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Asunto">
+                            <datalist id="datalistOptions">
+                            <option value="Comprar obra">
+                            <option value="Montar una muestra">
+                            <option value="Tomar clases">
+                            <option value="Nota para un medio">
+                            <option value="Otro">
+                            </datalist>
+
+                            <label for="exampleInputEmail1"></label>
+                            <textarea class="form-control" rows="5" placeholder="Escriba aquí su mensaje"></textarea>
+
+                            <div class="row form-row boton pb-4 mb-5">
+                                <div class="col-md-9">
+                                <button type="button submit" id="button-send" class="contacto__sass--btn btn btn-default">
                                 Enviar
                                 </button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                      </div>
                 </div>
-                </div>
-            </div> <!--row-->
-        </div> <!--pb 60-->
-    </div>
+            </div>
+    </div> <!--row-->
 </section>
 <!-- Cierra Contacto ph y teléfono-->
 

@@ -22,9 +22,8 @@
 }
 .contacto__sass--btn{
     width: 90px;
-    padding-top: 15px;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: 40px;
+    margin-left: 60px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -54,10 +53,10 @@
       text-decoration: none;
       outline:none;
     
-    &.contacto_btn:hover {
+    &.ontacto__sass--btn:hover {
         color: $blanco__secundario;
         text-decoration: none;
-        background-color:$rojo__principal;
+        background-color:$rosa__dior;
   
   }}}
 

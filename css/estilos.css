@@ -161,6 +161,32 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 1rem;
     margin-left: 1rem;
 }
+/*hover obra*/
+.pincelhover::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.pincelhover:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.pincelhover::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #937a6850;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.pincelhover{
+  position: relative;
+  font-size: 5rem;
+}
 /**
  * ----------------------------------------
  * animation kenburns-top
@@ -1362,13 +1388,11 @@ li.dropdown {
     flex-direction: row;
 }
 
-
-
 #acerca .tipo__acerca--left-txt{
     font-family: 'Jost', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    text-align:right;
+    text-align:left;
     justify-content: start;
     margin-bottom: 3rem;
     line-height: 1.2rem;
@@ -2053,7 +2077,7 @@ text-decoration: none;
 }
 .qa input:checked ~ label:before {
     content:"-";
-    background:#a28570;
+    background:#e1aab5;
 }
 .qa input:checked ~ div {
     display:block;
@@ -2258,11 +2282,84 @@ text-decoration: none;
 
 /* ubicación de _contacto*/
 .container__contacto--titulo{
-    padding-top: 10rem;
+    padding-top: 11rem;
     padding-left: 12vh;
     z-index: 3;
 
 }
+/*pisado*/
+.form-text {
+  margin-top: 0.25rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #bcbebf;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-control {
+    transition: none;
+  }
+}
+.form-control[type=file] {
+  overflow: hidden;
+}
+.form-control[type=file]:not(:disabled):not([readonly]) {
+  cursor: pointer;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.form-control::-webkit-date-and-time-value {
+  height: 1.5em;
+}
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.form-control:disabled, .form-control[readonly] {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+.form-control::file-selector-button {
+  padding: 0.375rem 0.75rem;
+  margin: -0.375rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+  margin-inline-end: 0.75rem;
+  color: #212529;
+  background-color: #e9ecef;
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/*termina pisado bootstrap*/
 
 /*color: #7e1e1b;*/
 
@@ -2274,6 +2371,7 @@ text-decoration: none;
     font-style: italic;
     letter-spacing: 7px;
     line-height: 0.5rem;
+    text-align: left;
 }
 .subtitulo__contacto--black{
     font-family: 'Jost', sans-serif;
@@ -2284,338 +2382,29 @@ text-decoration: none;
     line-height: 0.5rem;
     padding-left: 4.5rem;
     padding-top: 2.5rem;
+    padding-bottom: 0.2rem;
 }
 .container__contacto--form{
-    padding-top: 2rem;
-    padding-left: 4.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
-/*style*/ /*** Forms Elements***/ 
-label,
-input,
-button,
-select,
-textarea {
-  font-size:0.8rem;
-  font-weight: normal;
-  line-height: 20px;
+
+.contact-section input {
+  margin: 0 auto;
+  border-radius: 0;
+  height: 50px;
+  border: 0;
+  width: 80%;
 }
 
-input,
-button,
-select,
-textarea {
-    font-family: "Jost", sans-serif;
+.contact-section textarea {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 0;
+  height: 130px;
+  border: 0;
 }
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-label.done{
-  color:#1C3643;;
-  text-decoration:line-through;
-}
-.uneditable-input,
-textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
-
-    font-family: "Jost",sans-serif;
-    -webkit-appearance: none;   
-    color: #282323;
-    outline: 0;
-    height: 300;
-    padding: 6px 9px;
-    line-height: 15px;
-    font-size: 0.9rem; /*hasta email*/
-    font-weight: normal;
-    vertical-align: top;  
-    background-color:#cecece; /*bkg hasta email*/
-    opacity: 80%;
-    min-height: 30px; /*medida celdas nombre, apellido*/
-    filter: none;
-	  -webkit-box-shadow: none;
-	     -moz-box-shadow: none;
-	          box-shadow: none !important; /*esto es lo que le quita el shadow horrible*/
-	  -webkit-border-radius: 0px;
-	     -moz-border-radius: 0px;
-	          border-radius: 0px;   
-		-webkit-border-radius: 0px;
--moz-border-radius: 0px;
-border-radius: 0px;
-border: 3px solid #1C3643; /*border hasta email*/
-transition: background 0.2s linear 0s, box-shadow 0.2s linear 0s;
-}
-input.no-boarder {
-  border: none;
-}
-input.dark {
-    background-color:#f6f5f3;
-    border: none;
-}
-input {
-  border: 0px solid #cecece;
-}
-
-textarea {
-  height: auto;
-}
-
-.uneditable-input.focus,
-textarea:focus,
-select:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.m-uneditable-input:focus {
-  border-color: #e5e9ec; /*borde celdas*/
-  background-color:#f6f5f3;
-  outline: 4px;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;      
-          background-color:#f6f5f3;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  	margin: 4px 0 0;
-  	margin-top: 1px;
-  	line-height: normal;
-	  cursor: pointer;		
-  	-webkit-box-sizing: border-box;
-	  -moz-box-sizing: border-box;
-	  box-sizing: border-box;		
-}
-
-select,
-input[type="file"] {
-  height: 34px;
-  /* In IE7, the height of the select element cannot be changed by height, only font-size */
-  margin-top: 4px;
-  /* For IE7, add top margin to align select with labels */
-  line-height: 30px;
-}
-
-select {
-  width: 220px;
-  background-color:#f6f5f3;
-  background-image: none;
-  filter: none;
-  border: 1px solid #e5e5e5;
-  outline: none;
-  min-height:15px;
-}
-
-select[multiple],
-select[size] {
-  height: auto;
-}
-
-select:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted #696565;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;  
-  -webkit-box-shadow: none ;
-     -moz-box-shadow: none ;
-          box-shadow: none ;
-}
-
-input[class*="span"]
-{
-  float: none;
-  height: 34px ;
-  margin-left: 0;
-
-}
-
-select[class*="span"],
-textarea[class*="span"]
-{
-  float: none;
-  margin-left: 0;
-}
-/*ACA TENDRÍA QUE VENIR TODO LO QUE QUEDO EN STYLE*/
-/*** Form stuff ***/
-form legend {
-    margin: 5px 0px 10px 0px;
-  }
-  .column-seperation > div[class*="col-"]{
-      border-right:1px solid #cecece;
-  }
-  .column-seperation > div[class*="col-"]:last-child{
-      border-right:0px;
-  }
-  /*
-  .form-no-horizontal-spacing .row-fluid [class*="span"]{
-  }*/
-  .form-no-horizontal-spacing .row-fluid .side-label{
-      border-right:1px solid #fff;
-  }
-  
-  .radio, .checkbox{
-      padding-left:0px;
-  }
-  /*** General forms settings ***/
-  input.placeholder,
-  textarea.placeholder {
-    color: #aaa;
-  }
-  
-  .help-block {
-   margin-top: 10px;
-  }
-  
-  .form-inline input {
-    margin-bottom: 0px;
-  }
-  
-  .form-label {
-    margin-top: 2px;
-  }
-  
-  .form-label .required {
-    color: #c4373c;
-    font-size: 12px;
-    padding-left: 2px;
-  }
-  
-  .help-inline {
-    margin-top: 6px;
-  }
-  
-  .help-small {
-    font-size: 12px;
-    padding-top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  
-  .success .help-inline.ok:before {
-    content: "\f00c";
-    font-size: 16px;
-    font-family: "FontAwesome";
-    font-weight: normal;
-    font-style: normal;
-    display: inline-block;
-  }
- 
-  form legend,
-  .form-view legend {
-    margin-bottom: 15px;
-  }
-  
-  .controls > .radio .checker,
-  .controls > .checkbox .checker {
-    margin-right: 2px;
-  }
-  
-  .controls > .radio,
-  .controls > .checkbox {
-    display: inline-block;
-    padding: 0;
-    margin: 0 ;
-    margin-top: 8px;
-    margin-right: 2px;
-  }
-  
-  .controls > .radio.line,
-  .controls > .checkbox.line {
-    display: block;
-    padding: 0 ;
-    margin: 0;
-    margin-top: 5px;
-  }
-  
-  .controls .inline {
-    margin-top: 8px; 
-  }
-  
-  .form-view .control-group {
-    margin-top: 0px;
-    margin-bottom: 5px;
-  }
-  
-  .uploader {
-    margin-top: 2px;
-  }
-  .hint{ 
-      padding:5px 0px 0px 10px;
-  }
-  
-  .form form {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  .form .form-actions{
-    background-color:#f6f5f3;
-    margin-top: 0px;
-    margin-top: 40px;
-    padding-left: 190px;
-  }
-  
-  .form-group{
-      margin-bottom:20px;
-  }
-  
-  .form-group .form-label{
-      color:#55606e;
-      display:inline-block;
-      margin-right:8px;
-  }
-  
-  .form-group .help{
-      color: #747172;
-      font-size: 12px;
-  }
-  
-  .form-group .controls{
-      margin-top:8px;
-  }
-  .form-control{
-      border:4px solid #1C3643; /*color borde mensaje*/
-  }
-  .form-row input, .form-row select, .form-row textarea, .form-row select2{
-      margin-bottom:10px;
-  }
-  .form-row .radio {
-      margin-bottom:7px;
-  }
-  .form-row:last-child{
-      margin-bottom:0;
-  }
-  .section.table{
-      margin-bottom:0;
-  }
 
 
  /*BOTON ENVIAR*/

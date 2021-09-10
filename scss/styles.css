@@ -49,9 +49,8 @@ a {
 
 .contacto__sass--btn {
   width: 90px;
-  padding-top: 15px;
-  margin-top: 20px;
-  margin-left: 0px;
+  margin-top: 40px;
+  margin-left: 60px;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   cursor: pointer;
@@ -79,10 +78,10 @@ a {
   outline: none;
 }
 
-.contacto__sass--btn.contacto__sass--btn a.contacto_btn:hover {
+.contacto__sass--btn.contacto__sass--btn a.ontacto__sass--btn:hover {
   color: #cecece;
   text-decoration: none;
-  background-color: #c4373c;
+  background-color: #e0aab6;
 }
 
 .back-to-top {
@@ -130,6 +129,10 @@ a {
 
 .change__color.change__color:hover {
   color: #ac8fac;
+}
+
+.line__inner {
+  display: block;
 }
 
 .caja__tipo--index {
