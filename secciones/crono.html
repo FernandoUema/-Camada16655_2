@@ -104,7 +104,7 @@ if ("loading" in HTMLImageElement.prototype) {
                                     <li class="nav-item lasagna dropiconnone pl1 pl-md-0 ml-0 ml-md-4">
                                         <li class="dropdown">
                                         <a href="crono.html" class="nav-link active dropbtn hvr__underline--from-left-nav" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <span>Cronologías</span><i id="dropicon" class="fas fa-chevron-down pr-2 "></i></a>
+                                        <span>Cronologías</span><em id="dropicon" class="fas fa-chevron-down pr-2 "></em></a>
                                         <div class="dropdown-content">
                                             <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
                                             <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
@@ -144,8 +144,8 @@ if ("loading" in HTMLImageElement.prototype) {
                 </div>
             </div>
 
-        <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4 mb-2">
-        <p class="tipo__titulo--crono  col__content-title">~Cronologías</p>
+        <div class="caja__crono--start col-lg-7 col-md-4 col-sm-6 pe-4 mb-2" data-aos="fade-up" data-aos-delay="100">
+        <h1 class="tipo__titulo tipo__titulo--crono col__content-title">~Cronologías</h1>
         
         <div class="ps-3 pe-5 mt-5">
         <div class="ancla" id="muestras__individuales"></div>
@@ -484,8 +484,8 @@ if ("loading" in HTMLImageElement.prototype) {
                 <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="contacto.html">Contacto</a></h6></div>
             </div>
             <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" class="lamedia"><i class="fa-lg fab fa-facebook px-2"></i></a>
-                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <i class="fa-lg fab fa-instagram px-2"></i></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <i class="fa-lg fas fa-envelope px-2"></i></a></div>                    
+                <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
+                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a></div>                    
             </div>
         </div>
     </div>
@@ -573,8 +573,8 @@ if ("loading" in HTMLImageElement.prototype) {
      animationLoop: false,
      itemWidth: 140,
      itemMargin: 10,
-     minItems: getGridSize(2), // use function to pull in initial value
-     maxItems: getGridSize(3) // use function to pull in initial value
+     minItems: getGridSize(3), // use function to pull in initial value
+     maxItems: getGridSize(4) // use function to pull in initial value
    });
  });
 
@@ -587,6 +587,23 @@ if ("loading" in HTMLImageElement.prototype) {
  });
 }());
   </script>
+ <!-- Vendor JS Files -->
+ <script src="../assets/vendor/aos/aos.js"></script>
+ <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="../assets/vendor/php-email-form/validate.js"></script>
+ <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+ 
+<!-- Abre Enlace y activar aos https://michalsnik.github.io/aos/ -->
+
+<script src="../dist/aos.js"></script>
+<script>
+ AOS.init({
+   easing: 'ease-in-out-sine'
+ });
+</script>
+<!-- Cierra Enlace y activar aos https://michalsnik.github.io/aos/ -->
 
 </body>
 </html>
