@@ -344,15 +344,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header .header__navigation ul li a:hover { 
-  color: #7e1e1b;
+  color: #c4373c;
   display:inline-block;
   font-weight: 800;
   width: auto;
 }
 
 #header .header__navigation ul li a.active { 
-    color: #c4373c;
     font-weight: 800;
+    color: #7e1e1b;
+
 }
 
 #header .header__navigation ul li a:after {
