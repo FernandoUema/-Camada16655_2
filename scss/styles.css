@@ -27,7 +27,7 @@ a {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 19%;
+  bottom: 18%;
   right: 90px;
   background-color: #00c0a5;
   border-color: #f6f5f3;
@@ -187,27 +187,32 @@ a {
   padding-top: 140px;
 }
 
-.tipo__index, .tipo__index--iv, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll, .tipo__index--bvnd, .tipo__index--bvnd-2 {
+.tipo__index, .tipo__index--iv, .tipo__index--bvnd, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll, .tipo__index--bvnd-2 {
   font-size: 2rem;
   color: #cecece;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   margin-left: 2rem;
+  margin-top: 5rem;
 }
 
-.tipo__index--iv, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll {
+.tipo__index--iv, .tipo__index--bvnd, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll {
   font-family: "Playfair Display", serif;
   font-style: italic;
   margin-bottom: 0rem;
+  font-size: 4rem;
+  text-align: left;
 }
 
-.tipo__index--bvnd, .tipo__index--bvnd-2 {
-  font-family: "Jost", sans-serif;
+.tipo__index--bvnd {
+  padding-bottom: 1rem;
+  margin-top: 0rem;
+  font-size: 1.5rem;
 }
 
 .tipo__index--bvnd-2 {
   font-size: 1.5rem;
-  padding-bottom: 1rem;
   padding-top: 0rem;
+  margin-top: 1rem;
 }
 
 .tipo__acerca--link-hero {

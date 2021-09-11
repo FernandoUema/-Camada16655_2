@@ -6,25 +6,31 @@
 .tipo__index{
   font-size: 2rem;
   color:$blanco__secundario;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
   margin-left: 2rem;
+  margin-top: 5rem;
 }
 .tipo__index--iv{
   @extend .tipo__index;
     font-family: $tipo__play;
     font-style: italic;
     margin-bottom: 0rem;
+    font-size: 4rem;
+    text-align: left;
 }
 .tipo__index--bvnd{
-  @extend .tipo__index;
-  font-family: $tipo__epigrafe;
+  @extend .tipo__index--iv;
+  padding-bottom: 1rem;
+  margin-top: 0rem;
+  font-size: 1.5rem;
 
 }
+
 .tipo__index--bvnd-2{
-  @extend .tipo__index--bvnd;
+  @extend .tipo__index;
   font-size: 1.5rem;
-  padding-bottom: 1rem;
   padding-top: 0rem;
+  margin-top: 1rem;
 
 
 }

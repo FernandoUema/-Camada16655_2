@@ -86,8 +86,8 @@
     function ChangeIt() 
     {
     var num = Math.ceil( Math.random() * totalCount );
-    document.body.background = 'img/hero'+num+'.jpg';
-    document.body.style.backgroundRepeat = "repeat";// Background repeat
+    document.hero.background = 'img/hero'+num+'.jpg';
+    document.hero.style.backgroundRepeat = "repeat";// Background repeat
     }
     </script>
 <!-- Cierra hero random-->
@@ -153,16 +153,15 @@
 <!--Cierra margen scroll -->
 
 <!-- Abre Home Background Photo Random con jquery ó js --> 
-<section id="hero" alt="Angel Musicante">
+<section id="hero" alt="Obras Inés Vega Random" class="img-fluid">
     <div class="container-fluid">
             <div class="caja__tipo--index">
-                <h2 class="tipo index tipo__index--bvnd"><strong>Bienvenidos </strong></h2>
-                <h3 class="tipo index tipo__index--iv">Inés Vega</h3>
-                <h4 class="tipo index tipo__index--bvnd-2">Artista Plástica</h4>
-                <a href="#acerca" class="tipo__acerca--link-hero btn-get-started scrollto">_Descubrí más</a>
+                <h1 class="tipo index tipo__index--iv">Inés Vega</h1>
+                <h2 class="tipo index tipo__index--bvnd">Artista Plástica</h2>
+                <h3 class="tipo index tipo__index--bvnd-2">Bienvenidos</h3>
             </div>
         <div>
-            <span class="hero__scroll tipo index tipo__hero--scroll px-4" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
+            <span class="hero__scroll tipo index tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
             <em class="chevron bottom"></em>
             </span>
         </div>
@@ -283,21 +282,20 @@ y hacerme el alma navegable.
 
 <!-- Abre Footer  -->
 <footer id="footer__1--navigation">
-    <div class="footer__1__navigation__zocalocolor--100 container-fluid text-center">
-        <div class="container">
-            <div class="row d-flex justify-content-center pb-3 pt-4">
-                <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="index.html">Acerca</a></h6></div>
-                <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/obra.html">Obra</a></h6></div>
-                <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/muestra.html">Muestra Virtual</a></h6></div>
-                <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/crono.html">Cronologías</a></h6></div>
-                <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/contacto.html">Contacto</a></h6></div>
-            </div>
-            <div class="row d-flex justify-content-center pb-2">
+    <div class="footer__1__navigation__zocalocolor--100 text-center">
+            <ul class="footer__nav container-fluid">
+                <div class="row d-flex justify-content-center pb-3 pt-4">
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="index.html">Acerca</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/obra.html">Obra</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/muestra.html">Muestra Virtual</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/crono.html">Cronologías</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/contacto.html">Contacto</a></h6></li>
+                </div>                    
                 <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
-                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a></div>                    
-            </div>
+                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a>
+                </div>
+            <ul>
         </div>
-    </div>
 </footer>
 <footer id="footer__2--copyright">
     <div class="footer__2 container-fluid">

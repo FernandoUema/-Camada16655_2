@@ -1260,7 +1260,7 @@ li.dropdown {
 --------------------------------------------------------------*/
 /* img home bg*/
 #hero {
-    background: url("../img/acerca/musicante.jpg");
+  background: url("../img/hero/1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1270,6 +1270,7 @@ li.dropdown {
     margin-bottom: 20px;
     margin-top: 0;
     background-color:#747172;
+    image-rendering: optimizeQuality;
 }
 /*aos animación scroll - https://michalsnik.github.io/aos/*/
 .hero__scroll {
