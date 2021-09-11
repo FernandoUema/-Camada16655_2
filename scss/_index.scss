@@ -2,12 +2,49 @@
 .caja__tipo--index{
     padding-top:140px;
 }
-.iv__index{
+
+.tipo__index{
+  font-size: 2rem;
+  color:$blanco__secundario;
+  padding-bottom: 2rem;
+  margin-left: 2rem;
+}
+.tipo__index--iv{
+  @extend .tipo__index;
     font-family: $tipo__play;
-    color:$blanco__secundario;
-    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 0rem;
+}
+.tipo__index--bvnd{
+  @extend .tipo__index;
+  font-family: $tipo__epigrafe;
+
+}
+.tipo__index--bvnd-2{
+  @extend .tipo__index--bvnd;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+
+
+}
+.tipo__index--desc{
+  @extend .tipo__index--iv;
+
+}
+.tipo__acerca--link-hero{
+  @extend .tipo__index--iv;
+  font-size: 1.2rem;
+
+  &:hover{
+  color: $amarillo__naranja;
+  }
 }
 
+.tipo__hero--scroll{
+  @extend .tipo__index--iv;
+  font-size: 1.2rem;
+}
 /*extend*/
 
 

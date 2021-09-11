@@ -61,7 +61,7 @@ a {
   font-style: normal;
   font-size: 0.9rem;
   font-weight: 600;
-  background: #9d2021;
+  background: #7a3116;
   color: #cecece;
   text-align: center;
   letter-spacing: 0.2rem;
@@ -81,7 +81,7 @@ a {
 .contacto__sass--btn.contacto__sass--btn a.contacto__sass--btn:hover {
   color: #cecece;
   text-decoration: none;
-  background-color: #9b3a17;
+  background-color: #7a3116;
 }
 
 .back-to-top {
@@ -157,6 +157,7 @@ a {
   letter-spacing: 4px;
   margin-bottom: 2rem;
   margin-left: -2rem;
+  margin-TOP: 1rem;
   font-size: 5rem;
 }
 
@@ -165,7 +166,7 @@ a {
 }
 
 .tipo__titulo--contacto {
-  color: #9b3a17;
+  color: #7a3116;
 }
 
 /* color corazón zócalo */
@@ -186,10 +187,39 @@ a {
   padding-top: 140px;
 }
 
-.iv__index {
-  font-family: "Playfair Display", serif;
+.tipo__index, .tipo__index--iv, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll, .tipo__index--bvnd, .tipo__index--bvnd-2 {
+  font-size: 2rem;
   color: #cecece;
-  font-size: 3rem;
+  padding-bottom: 2rem;
+  margin-left: 2rem;
+}
+
+.tipo__index--iv, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  margin-bottom: 0rem;
+}
+
+.tipo__index--bvnd, .tipo__index--bvnd-2 {
+  font-family: "Jost", sans-serif;
+}
+
+.tipo__index--bvnd-2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0rem;
+}
+
+.tipo__acerca--link-hero {
+  font-size: 1.2rem;
+}
+
+.tipo__acerca--link-hero:hover {
+  color: #fd9d25;
+}
+
+.tipo__hero--scroll {
+  font-size: 1.2rem;
 }
 
 /*extend*/
