@@ -121,6 +121,53 @@ a {
   }
 }
 
+/*FOOTER*/
+.lamedia {
+  color: #31383f;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.lamedia:hover {
+  color: #cecece;
+}
+
+.tipo__titulo, .tipo__titulo--acerca, .tipo__titulo--obra, .tipo__titulo--crono, .tipo__titulo--muestra, .tipo__titulo--contacto {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 6px;
+  line-height: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.tipo__titulo--acerca {
+  color: #aa3232;
+}
+
+.tipo__titulo--obra {
+  color: #7e1e1b;
+}
+
+.tipo__titulo--crono {
+  color: #9d2021;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+  margin-left: -2rem;
+  font-size: 5rem;
+}
+
+.tipo__titulo--muestra {
+  color: #7e1e1b;
+}
+
+.tipo__titulo--contacto {
+  color: #c4373c;
+}
+
 /* color corazón zócalo */
 .change__color {
   color: #31383f;
@@ -240,119 +287,7 @@ a {
   margin-left: 1rem;
 }
 
-.caja__tipo--index {
-  padding-top: 140px;
-}
-
-.iv__index {
-  font-family: "Playfair Display", serif;
-  color: #cecece;
-  font-size: 3rem;
-}
-
-/*extend*/
-/* ----------------------------------------
- * animation fade-in Animista
- * ----------------------------------------*/
-.fade-in {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-/*animación cezanne*/
-#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
-  font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 0.9rem;
-  font-weight: 500;
-  font-style: italic;
-  -webkit-font-kerning: none;
-          font-kerning: none;
-  line-height: 1.4rem;
-  z-index: 3;
-}
-
-.tipo__copyright--alberti {
-  font-weight: 700;
-  padding-bottom: 20px;
-}
-
-.tipo__letra--capital-alberti {
-  font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 7rem;
-  font-weight: 800;
-}
-
-.tipo__hero--scroll {
-  font-family: "Playfair Display", serif;
-  color: #f6f5f3;
-  font-style: italic;
-  font-weight: 400;
-  text-align: center;
-  -webkit-font-kerning: auto;
-          font-kerning: auto;
-}
-
-#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
-  font-family: "Playfair Display", serif;
-  color: #052c48;
-  font-size: 6rem;
-  font-weight: 800;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 20px;
-  -ms-flex-wrap: row;
-      flex-wrap: row;
-  letter-spacing: 1px;
-}
-
-#acerca .tipo__acerca--left-link {
-  color: #c4373c;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-#acerca .tipo__acerca--left-link:hover {
-  color: #7e1e1b;
-}
-
-#alberti .cezanne {
-  height: 320px;
-  width: 320px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #ac8fac;
-  z-index: 1;
-  margin-left: 1rem;
-}
-
-/*FOOTER*/
-.lamedia {
-  color: #31383f;
-  padding-bottom: 1rem;
-  text-align: center;
-}
-
-.lamedia:hover {
-  color: #cecece;
+.container__contacto--titulo {
+  padding-top: 11rem;
 }
 /*# sourceMappingURL=styles.css.map */

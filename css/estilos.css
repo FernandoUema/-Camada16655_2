@@ -409,6 +409,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 0rem;/*cambia padding de las tipos del nav*/
 }
 
+
   }
 /*--------------------------------------------------------------
 # ABRE dropdown cronologías
@@ -1434,18 +1435,7 @@ li.dropdown {
     margin-bottom: 1rem;
 }
 
-.tipo__obra--titulo-filter-brown{
-    font-family: 'Playfair Display', serif;
-    color: #9d2929;
-    font-size: 6rem;
-    font-weight: 800;
-    font-style: italic;
-    text-align:left;
-    letter-spacing: 10px;
-    line-height: 0.5rem;
-    position: relative;
-    padding-bottom: 1rem;
-}
+
 
 .caja__obra--filter {
     display: flex;
@@ -2145,33 +2135,6 @@ text-decoration: none;
     padding-right:6px;
 }
 
-/*
-#crono .none{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    font-kerning: none;
-    line-height: 2rem;
-    color:#f6f5f3;
-}
-
-#crono .pegado{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    font-kerning: none;
-    line-height: 1.2rem;    
-}
-
-#crono .despegado{
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
-    font-size: 0.9rem;
-    font-kerning: none;
-    line-height: 2rem;  
-    margin-top: 0.6rem;    
-}*/
-
 .tipo__crono--descripcion{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -2213,33 +2176,6 @@ text-decoration: none;
 }
 /*abre imágenes crono FLEXBOX*/
 
-/*reemplazado en crono_cronologías por el slider
-.galeria__item{
-    height: 155px;
-    width: 155px;
-    opacity: 85%;
-    border: #2d2e2f;
-    border-style: solid;
-}*/
-
-
-/*abre manejo interlínea
-#crono .pegadito{
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    font-kerning: none;
-    line-height: 1.2rem;    
-}
-#crono .despegadito{
-    font-family: 'Jost', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    font-kerning: none;
-    line-height: 2rem;  
-    margin-top: 0.6rem;  
-}*/
-
 /*--------------------------------------------------------------
 # ABRE MUESTRA VIRTUAL
 --------------------------------------------------------------*/
@@ -2276,17 +2212,24 @@ text-decoration: none;
     background-attachment: fixed;
     background-position: center;
     position: relative;
-    background-color:#c4373c;
+    background-color:#9d2929;
     opacity:initial;
 }
-
-/* ubicación de _contacto*/
 .container__contacto--titulo{
-    padding-top: 11rem;
-    padding-left: 12vh;
-    z-index: 3;
-
+  padding-top: 11rem;
 }
+.titulo__contacto--mostaza{
+  font-family: 'Playfair Display', serif;
+  color:#9d2929;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 7px;
+  line-height: 0.5rem;
+  text-align: left;
+}
+/* ubicación de _contacto*/
+
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
@@ -2375,20 +2318,6 @@ text-decoration: none;
     text-align: left;
 }
 
-.titulo__contacto--mostaza{
-  font-family: 'Playfair Display', serif;
-  color:#cd9742;
-  font-size: 6rem;
-  font-weight: 800;
-  font-style: italic;
-  letter-spacing: 7px;
-  line-height: 0.5rem;
-  text-align: left;
-}
-
-
-
-
 .subtitulo__contacto--black{
     font-family: 'Jost', sans-serif;
     color: #24323f;
@@ -2438,12 +2367,7 @@ input[type=checkbox]:checked + label {
   o*/
 /*contacto__sass--btn*/
 
-@media (min-width: 768px) {
-  #button-send {
-    opacity: 1;
 
-  }
-}
 #contacto .area_map-responsive_100{ 
     background-color: #31383f;
     width: 100%;
@@ -2468,6 +2392,12 @@ input[type=checkbox]:checked + label {
       position:absolute;
       float: left;
   }
+  @media (min-width: 768px) {
+    #button-send {
+      opacity: 1;
+    }
+
+  }
 /*                  TERMINA CONTACTO
 --------------------------------------------------------------*/
 
@@ -2486,19 +2416,7 @@ input[type=checkbox]:checked + label {
 }
 
 /*textos de cronologias*/
-#crono .tipo__crono-red-tit-articulo{
-    font-family: 'Playfair Display', serif;
-    color: #9d2021;
-    font-size: 5rem;
-    font-weight: 800;
-    font-style: italic;
-    text-align:right;
-    letter-spacing: 4px;
-    line-height: 0.5rem;
-    position: absolute;
-    margin-bottom: 2rem;
-    margin-left: -2rem;
-}
+
 #crono .tipo__crono--individuales-start{ 
     font-family: 'Playfair Display', serif;
     color: #212529;
