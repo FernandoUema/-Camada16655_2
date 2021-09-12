@@ -207,6 +207,29 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   font-size: 5rem;
 }
+
+/*las obras*/
+.readmore {
+  display: inline-block;
+  border: 1px solid #0d1b2b;
+  padding: 10px 15px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color:#0d1b2b;;
+  transition: .2s all ease;
+  font-weight: 700;
+}
+
+.readmore:active, .readmore:focus, .readmore:hover {
+  outline: none;
+}
+
+.readmore:hover {
+  color: #f6f5f3;
+  text-decoration: none;
+  background:#0d1b2b;;
+}
+
 /**
  * ----------------------------------------
  * animation kenburns-top
@@ -414,11 +437,11 @@ body::-webkit-scrollbar-thumb {
     background: #937a68;
   }
   
-.simplescrollup__button i {
+.simplescrollup__button em {
   padding-top: 8px;
   color:#f6f5f3;
   }
-.simplescrollup__button:hover i {
+.simplescrollup__button:hover em {
   padding-top: 8px;
   color:#9d2929;
   }
@@ -1280,7 +1303,7 @@ li.dropdown {
 --------------------------------------------------------------*/
 /* img home bg*/
 #hero {
-  background: url("../img/hero/1.jpg");
+  background: url("../img/hero/musicante.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1457,7 +1480,11 @@ li.dropdown {
     margin-bottom: 1rem;
 }
 
-
+.caja__obra--carrito{
+  margin-top:6rem;
+  margin-left: 0rem;
+  margin-bottom: 1rem;
+}
 
 .caja__obra--filter {
     display: flex;

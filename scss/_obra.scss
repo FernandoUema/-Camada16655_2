@@ -1,0 +1,39 @@
+.tipo__obra--titulo{
+font-family: $tipo__play;
+color: $bordo__principal;
+font-size: 2rem;
+font-weight: 800;
+font-style: italic;
+text-align:left;
+letter-spacing: 2px;
+line-height: 0.5rem;
+position: relative;
+padding-bottom: 1rem;
+overflow-wrap: break-word;
+hyphens: auto;
+line-height: 1;
+}
+
+.link a{
+    text-decoration: none;
+    }
+
+.tipo__acerca--right-tit{
+    font-family: $tipo__play;
+    color: $rojo__principal;
+    font-size: 6rem;
+    font-weight: 800;
+    font-style: italic;
+    text-align:left;
+    letter-spacing: 20px;
+    flex-wrap: row;
+    letter-spacing: 1px;
+}
+.tipo__acerca--left-link{
+    @extend .tipo__acerca--right-tit;
+    font-size: 1rem;
+    font-weight:600;
+    
+    &:hover{
+    color: $bordo__principal;
+}}
