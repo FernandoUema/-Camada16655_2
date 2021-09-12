@@ -97,6 +97,13 @@ body::-webkit-scrollbar-thumb {
 .colorbg__obra--gris{
     background-color:#cecece;
 }
+#colorbg__muestra--celeston{
+  background-color:#929f9b;
+}
+.colorbg__muestra--celeston{
+  background-color:#929f9b;
+}
+
 /*nav toggle*/
 .bg-light {
 	background-color: #fff !important;
@@ -133,6 +140,19 @@ body::-webkit-scrollbar-thumb {
     color:#f6f5f3;
     letter-spacing: 0.8px;
     word-spacing: 1px;
+}
+.tipo__muestra--elena{
+  font-family: 'Jost';
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-kerning: none;
+  font-style: italic;
+  color:#f9f0d5;
+  margin-right:5%
+}
+
+.caja__muestra--elena{
+  margin-left:50px;
 }
 
 #epigrafe__obra--bg .tipo__obra--material, 
@@ -2332,7 +2352,7 @@ text-decoration: none;
     padding-bottom: 0.2rem;
 }
 .container__contacto--form{
-    padding-left: 1rem;
+    padding-left: 1.6rem;
     padding-bottom: 1rem;
 }
 
@@ -2372,9 +2392,10 @@ input[type=checkbox]:checked + label {
 
 #contacto .area_map-responsive_100{ 
     background-color: #31383f;
+    border-top: #f6f5f3;
     width: 100%;
     padding:0px;
-    height: auto;
+    height: 75%;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box; 

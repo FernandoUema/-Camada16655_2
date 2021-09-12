@@ -27,9 +27,9 @@ a {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 18%;
-  right: 90px;
-  background-color: #00c0a5;
+  bottom: 17%;
+  right: 150px;
+  background-color: #0ab39c;
   border-color: #f6f5f3;
   color: #f6f5f3;
   border-radius: 50px;
@@ -39,7 +39,7 @@ a {
 }
 
 .whatsapp__sass.whatsapp__sass:hover {
-  background-color: #00e676;
+  background-color: #03da72;
   color: #f6f5f3;
 }
 
@@ -142,6 +142,11 @@ a {
   line-height: 0.5rem;
   position: relative;
   padding-bottom: 1rem;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  line-height: 1;
 }
 
 .tipo__titulo--acerca {
@@ -162,7 +167,16 @@ a {
 }
 
 .tipo__titulo--muestra {
-  color: #7e1e1b;
+  color: #506948;
+  margin-bottom: 2rem;
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  z-index: 100;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .tipo__titulo--contacto {
@@ -322,7 +336,91 @@ a {
   margin-left: 1rem;
 }
 
+:root {
+  --text-color: #111;
+  --bg-color: #b9b3a9;
+}
+
+.colorbg__muestra--celeston {
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.section__scroll:not(#sectionPin) {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center;
+}
+
+.imgscroll {
+  height: 80vh;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 0;
+  background: #31383f;
+}
+
+.pin-wrap {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 10vw;
+}
+
+.pin-wrap > * {
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+
+.pscroll {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5;
+}
+
 .container__contacto--titulo {
-  padding-top: 11rem;
+  padding-top: 13rem;
+}
+
+.contacto__txt--remember {
+  font: "Jost", sans-serif;
+  font-size: 0.9rem;
+  padding-left: 3.3rem;
 }
 /*# sourceMappingURL=styles.css.map */

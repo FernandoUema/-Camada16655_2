@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="colorbg__muestra--celeston">
 <!-- Abre Head General head-->
 <head>
 <meta charset="UTF-8">
@@ -85,12 +85,8 @@ $(document).ready(function(){
 </head>
 <!-- Cierra Head--> 
 
-
-
-<!--cierraback to top https://www.codexworld.com/back-to-top-button-using-jquery-css/-->
-
 <!-- Abre HTML BODY--> 
-<body>
+<body class="colorbg__muestra--celeston">
 
 <!-- Abre HTML General Menú--> 
 <header id="header" class="fixed-top container-fluid">
@@ -118,7 +114,7 @@ $(document).ready(function(){
                                 <li class="nav-item lasagna dropiconnone pl1 pl-md-0 ml-0 ml-md-4">
                                     <li class="dropdown">
                                     <a href="crono.html" class="nav-link dropbtn hvr__underline--from-left-nav" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                    <span>Cronologías</span><i id="dropicon" class="fas fa-chevron-down pr-2 "></i></a>
+                                    <span>Cronologías</span><em id="dropicon" class="fas fa-chevron-down pr-2 "></em></a>
                                     <div class="dropdown-content">
                                         <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
                                         <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
@@ -143,9 +139,36 @@ $(document).ready(function(){
 <!-- Cierra HTML General Menú--> 
 
 <!--Abre margen scroll -->
-<main class="contenido__pag">
 <!--Cierra margen scroll -->
+<!--Abre muestra -->
+<main> 
+<section id="muestra" class="caja__obra--titulo-filter section__scroll">
+    <div class="container container__muestra">
+            <h1 data-scroll data-scroll-speed="1"><span class="tipo__titulo tipo__titulo--muestra">~Re-visiones</span></h1>
+            <span class="tipo__subtitulo--muestra">Un viaje por la obra de Inés Vega</span>
+            <p data-scroll data-scroll-speed="2" class="pscroll" data-scroll-delay="0.2">Muestra Virtual</p>
 
+    </div>
+</section>
+    
+<section id="sectionPin" class="section__scroll">
+          <div class="pin-wrap">
+            <div class="caja__muestra--elena">
+            <h6 class="tipo__muestra--elena">"Ubicados entre la pintura, el relieve y la escultura, los trabajos de Inés Vega sorprenden por su efecto de extrañeza".</h6></div>
+         <img src="../img/muestra/dibujos/Amanecer.JPG" class="imgscroll" alt="Amanecer, 150x140 cm, Acrlico,pastel tiza,sobre tela, año 2009">
+            <img src="../img/muestra/dibujos/Nadando sola,año 2010, 150 x 140 cm,carbon,pastel,acrilico sobre tela.png" class="imgscroll" alt="Nadando Sola">
+            <img src="../img/muestra/dibujos/La Buza.jpg" class="imgscroll" alt="La Buza,130x120, 2010,Pastel Tiza, acrilico,sobre tela">
+            <img src="../img/muestra/dibujos/Almalibro.jpg" class="imgscroll" alt="Almalibro">
+
+    
+          </div>
+        </section>
+        <section>
+            <img src="../img/muestra/El Aleman,año 2007,grafitosobre papel,50 x 40 cmt.png" alt="La Buza">
+        </section>
+      </div>
+
+</section>
 
 <!-- Abre Footer  -->
 <footer id="footer__1--navigation">
@@ -159,8 +182,8 @@ $(document).ready(function(){
                 <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="contacto.html">Contacto</a></h6></div>
             </div>
             <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" class="lamedia"><i class="fa-lg fab fa-facebook px-2"></i></a>
-                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <i class="fa-lg fab fa-instagram px-2"></i></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <i class="fa-lg fas fa-envelope px-2"></i></a></div>                    
+                <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
+                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a></div>                    
             </div>
         </div>
     </div>
@@ -192,5 +215,7 @@ $(document).ready(function(){
 <script src="../js/jquery.mixitup.min.js"></script>
 <script src="../js/main.js"></script>  
 <!-- Cierra JSr-->
+<!--js scroll-->
+<script src="../js/scrollhorizontal.js"></script>
 </body>
 </html>
