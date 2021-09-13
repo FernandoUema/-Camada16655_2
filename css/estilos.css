@@ -209,6 +209,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*las obras*/
+.scroll__pag--obra {
+  padding-top: 79px;
+}
+
 .readmore {
   display: inline-block;
   border: 1px solid #0d1b2b;
@@ -229,7 +233,11 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   background:#0d1b2b;;
 }
-
+.sticky-content {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
 /**
  * ----------------------------------------
  * animation kenburns-top
@@ -1456,7 +1464,21 @@ li.dropdown {
     text-align:right;
     padding-top: 1rem;
 }
+.tipo__link--right{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  text-align:left;
+  letter-spacing: 20px;
+  flex-wrap: row;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight:600;
+  color: #aa3232;
+}
+.tipo__link--right:hover{
+  color: #c4373c;
 
+}
 
 /*círculo*/   /* background-color: #a28570;*/
 
@@ -1474,6 +1496,24 @@ li.dropdown {
     margin: 10px auto;
     border: 0;
 }
+.tipo__titulo--obra-small{
+  font-size: 4rem;   
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align:left;
+  letter-spacing: 6px;
+  line-height: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1;
+  color: #7e1e1b;
+
+}
+
 .caja__obra--titulo-filter{
     margin-top:12rem;
     margin-left: 0rem;
@@ -1481,9 +1521,8 @@ li.dropdown {
 }
 
 .caja__obra--carrito{
-  margin-top:6rem;
+  margin-top:5rem;
   margin-left: 0rem;
-  margin-bottom: 1rem;
 }
 
 .caja__obra--filter {

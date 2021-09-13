@@ -18,22 +18,3 @@ line-height: 1;
     text-decoration: none;
     }
 
-.tipo__acerca--right-tit{
-    font-family: $tipo__play;
-    color: $rojo__principal;
-    font-size: 6rem;
-    font-weight: 800;
-    font-style: italic;
-    text-align:left;
-    letter-spacing: 20px;
-    flex-wrap: row;
-    letter-spacing: 1px;
-}
-.tipo__acerca--left-link{
-    @extend .tipo__acerca--right-tit;
-    font-size: 1rem;
-    font-weight:600;
-    
-    &:hover{
-    color: $bordo__principal;
-}}

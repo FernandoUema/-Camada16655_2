@@ -125,15 +125,7 @@
     flex-wrap: row;
     letter-spacing: 1px;
 }
-#acerca .tipo__acerca--left-link{
-    @extend .tipo__acerca--right-tit;
-    color: $rojo__principal;
-    font-size: 1rem;
-    font-weight:600;
-    
-    &:hover{
-    color: $bordo__principal;
-}}
+
 
 @mixin sizes($width, $height) {
     height: $height;

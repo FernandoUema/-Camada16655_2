@@ -747,3 +747,21 @@ window.addEventListener("load", function () {
 
   ScrollTrigger.refresh();
 });
+
+/*hero randomize*/
+// Random Background Hero on Page Load and Refresh
+// http://stackoverflow.com/questions/19369426/random-background-image-on-refresh
+
+function randomHero() {
+  var heroPics = ['../img/hero/musicante.jpg','https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/pink-floyd-division-bell-228953.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/northstar.jpg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/392/womensrights.jpg'];
+
+  $('body').css({
+      'background' : 'url('+ heroPics[Math.floor(Math.random() * heroPics.length)] + ') no-repeat',
+      'background-attachment' : 'scroll',
+      'background-position' : '50% 50%',
+      'background-size' : 'cover'
+  });
+}
+
+// Show Random Image on Page Load
+randomHero();

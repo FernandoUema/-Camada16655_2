@@ -303,7 +303,7 @@ a {
           font-kerning: auto;
 }
 
-#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
+#acerca .tipo__acerca--right-tit {
   font-family: "Playfair Display", serif;
   color: #052c48;
   font-size: 6rem;
@@ -314,16 +314,6 @@ a {
   -ms-flex-wrap: row;
       flex-wrap: row;
   letter-spacing: 1px;
-}
-
-#acerca .tipo__acerca--left-link {
-  color: #c4373c;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-#acerca .tipo__acerca--left-link:hover {
-  color: #7e1e1b;
 }
 
 #alberti .cezanne {
@@ -356,28 +346,6 @@ a {
 
 .link a {
   text-decoration: none;
-}
-
-.tipo__acerca--right-tit, #acerca .tipo__acerca--left-link, .tipo__acerca--left-link {
-  font-family: "Playfair Display", serif;
-  color: #c4373c;
-  font-size: 6rem;
-  font-weight: 800;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 20px;
-  -ms-flex-wrap: row;
-      flex-wrap: row;
-  letter-spacing: 1px;
-}
-
-.tipo__acerca--left-link {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.tipo__acerca--left-link:hover {
-  color: #7e1e1b;
 }
 
 :root {
