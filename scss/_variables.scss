@@ -14,6 +14,7 @@ $amarillo__naranja: #fd9d25;
 
 
 $azul__principal:#052c48;
+$azul__secundario:#084977;
 
 /*color texto*/
 $negro:#31383f!default;
@@ -53,5 +54,9 @@ $parrafo__caracter--titulo: bold 0.9rem/'Playfair Display', serif;
 $margen__index--h1: 5rem;
 $margen__index--h3: $margen__index--h1/2;
 
-/*variables bootstrap pisadas*/
+/*variables bootstrap*/
+$pagination-padding-y:              .5rem !default;
+$pagination-padding-x:              .75rem !default;
+$pagination-border-color:           $azul__principal !default;
+$pagination-bg:                     $azul__principal !default;
 

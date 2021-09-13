@@ -7,7 +7,7 @@
 /*botones*/
 /*TIPOGRAFÍAS*/
 /*margenes*/
-/*variables bootstrap pisadas*/
+/*variables bootstrap*/
 * {
   margin: 0;
   padding: 0;
@@ -154,7 +154,7 @@ a {
 }
 
 .tipo__titulo--obra {
-  color: #7e1e1b;
+  color: #052c48;
 }
 
 .tipo__titulo--crono {
@@ -328,10 +328,9 @@ a {
 
 .tipo__obra--titulo {
   font-family: "Playfair Display", serif;
-  color: #7e1e1b;
+  color: #052c48;
   font-size: 2rem;
   font-weight: 800;
-  font-style: italic;
   text-align: left;
   letter-spacing: 2px;
   line-height: 0.5rem;
@@ -346,6 +345,23 @@ a {
 
 .link a {
   text-decoration: none;
+}
+
+.tipo__link--right {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  -ms-flex-wrap: row;
+      flex-wrap: row;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.tipo__link--right:hover {
+  color: #084977;
 }
 
 :root {

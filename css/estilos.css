@@ -1464,21 +1464,7 @@ li.dropdown {
     text-align:right;
     padding-top: 1rem;
 }
-.tipo__link--right{
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  text-align:left;
-  letter-spacing: 20px;
-  flex-wrap: row;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  font-weight:600;
-  color: #aa3232;
-}
-.tipo__link--right:hover{
-  color: #c4373c;
 
-}
 
 /*círculo*/   /* background-color: #a28570;*/
 
@@ -1648,7 +1634,102 @@ li.dropdown {
   }
 /*viene de style.css de myportfolio*/
 
+/*pisar boot*/
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
 
+/*page link bootstrap pisado*/
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+.page__link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  position: relative;
+  display: block;
+  color: #052c48;
+  text-decoration: none;
+  background-color: #7c8e95;
+  border: 1px solid #cecece;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .page__link {
+    transition: none;
+  }
+}
+.page__link:hover {
+  z-index: 2;
+  color: #084977;
+  background-color: #e9ecef;
+}
+.page__link:focus {
+  z-index: 3;
+  color: #084977;
+  background-color: #e9ecef;
+  outline: 0;
+}
+
+.page__item:not(:first-child) .page__link {
+  margin-left: -1px;
+}
+.page__item.active .page__link {
+  z-index: 3;
+  color: #fff;
+  background-color: #084977;
+}
+.page__item.disabled .page__link {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #f6f5f3;
+  border-color: #6c757d;
+}
+
+.page__link {
+  padding: 0.375rem 0.75rem;
+}
+
+.page__item:first-child .page__link {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.page__item:last-child .page__link {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.pagination-lg .page__link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+.pagination-lg .page__item:first-child .page__link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.pagination-lg .page__item:last-child .page__link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.pagination-sm .page__link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+.pagination-sm .page__item:first-child .page__link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem;
+}
+.pagination-sm .page__item:last-child .page__link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem;
+}
+/*fin pisar boot*/
 /*
   .filters a:hover, .filters a:focus, .filters a:active {
     text-decoration: none;

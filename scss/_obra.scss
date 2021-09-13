@@ -1,9 +1,8 @@
 .tipo__obra--titulo{
 font-family: $tipo__play;
-color: $bordo__principal;
+color: $azul__principal;
 font-size: 2rem;
 font-weight: 800;
-font-style: italic;
 text-align:left;
 letter-spacing: 2px;
 line-height: 0.5rem;
@@ -17,4 +16,18 @@ line-height: 1;
 .link a{
     text-decoration: none;
     }
-
+.tipo__link--right{
+        font-family: $tipo__play;
+        color: $azul__principal;
+        font-style: italic;
+        text-align:left;
+        letter-spacing: 20px;
+        flex-wrap: row;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        font-weight:600;
+      }
+      .tipo__link--right:hover{
+        color: $azul__secundario;
+      
+      }
