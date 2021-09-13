@@ -328,7 +328,7 @@ a {
 .tipo__obra--titulo {
   font-family: "Playfair Display", serif;
   color: #052c48;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   text-align: left;
   letter-spacing: 2px;
@@ -340,6 +340,7 @@ a {
       -ms-hyphens: auto;
           hyphens: auto;
   line-height: 1;
+  font-style: italic;
 }
 
 .link a {

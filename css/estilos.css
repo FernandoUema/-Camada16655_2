@@ -293,6 +293,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 80%;
     z-index: 997;
  }
+
  
 .header__logo {
     background-size: contain;
@@ -1483,20 +1484,18 @@ li.dropdown {
     border: 0;
 }
 .tipo__titulo--obra-small{
-  font-size: 4rem;   
+  font-size: 2rem;   
   font-family: 'Playfair Display', serif;
-  font-size: 4rem;
   font-weight: 800;
   font-style: italic;
   text-align:left;
   letter-spacing: 6px;
   line-height: 0.5rem;
   position: relative;
-  padding-bottom: 1rem;
   overflow-wrap: break-word;
   hyphens: auto;
   line-height: 1;
-  color: #7e1e1b;
+  color: #0d1b2b;
 
 }
 

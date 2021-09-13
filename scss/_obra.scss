@@ -1,7 +1,7 @@
 .tipo__obra--titulo{
 font-family: $tipo__play;
 color: $azul__principal;
-font-size: 2rem;
+font-size: 2.5rem;
 font-weight: 800;
 text-align:left;
 letter-spacing: 2px;
@@ -11,6 +11,7 @@ padding-bottom: 1rem;
 overflow-wrap: break-word;
 hyphens: auto;
 line-height: 1;
+font-style: italic;
 }
 
 .link a{
