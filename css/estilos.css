@@ -179,7 +179,7 @@ body::-webkit-scrollbar-thumb {
 .caja__ph--copyright-izq{
     line-height: 0;
     padding-bottom: 1rem;
-    margin-left: 1rem;
+    margin-left: 0rem;
 }
 /*hover obra*/
 .pincelhover::before {  
