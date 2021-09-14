@@ -231,7 +231,7 @@ body::-webkit-scrollbar-thumb {
 .readmore:hover {
   color: #f6f5f3;
   text-decoration: none;
-  background:#0d1b2b;;
+  background:#a28570;
 }
 .sticky-content {
   position: sticky;
@@ -1500,9 +1500,8 @@ li.dropdown {
 }
 
 .caja__obra--titulo-filter{
-    margin-top:12rem;
+    margin-top:9rem;
     margin-left: 0rem;
-    margin-bottom: 1rem;
 }
 
 .caja__obra--carrito{
@@ -1518,7 +1517,6 @@ li.dropdown {
     flex-direction: row;
     gap: 30px;
     margin-top: 3rem;
-    margin-bottom: 1rem;
 }
 
 .caja__obra--filter a {
@@ -1732,6 +1730,12 @@ li.dropdown {
 }
 /*breadcrumb boot pisado*/
 /*ultimo*/
+ol{
+  text-decoration: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+
 ol a{
   text-decoration: none;
   margin-left: 0px;
@@ -1751,11 +1755,12 @@ a{
   flex-wrap: wrap;
   list-style: none;
   border-radius: 0.25rem;
+  font-size: 0.9 rem;
 }
 
 .breadcrumb-iv-item + .breadcrumb-iv-item {
   padding-left: 0.5rem;
-  color: #052c48;
+  color: #28292a;
 
 }
 
@@ -1778,8 +1783,8 @@ a{
 
 }
 
-.breadcrumb-iv-item.active {
-  color: #141516;
+.breadcrumb-iv-item .activado {
+  color: #084977;
 }
 /*breadcrumb boot pisado*/
 /*fin pisar boot*/
