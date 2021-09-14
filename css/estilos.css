@@ -1730,6 +1730,58 @@ li.dropdown {
   border-top-right-radius: 0.2rem;
   border-bottom-right-radius: 0.2rem;
 }
+/*breadcrumb boot pisado*/
+/*ultimo*/
+ol a{
+  text-decoration: none;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+a{
+  text-decoration: none;
+  
+}
+.breadcrumb-iv {
+  color: #28292a;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  border-radius: 0.25rem;
+}
+
+.breadcrumb-iv-item + .breadcrumb-iv-item {
+  padding-left: 0.5rem;
+  color: #052c48;
+
+}
+
+.breadcrumb-iv-item + .breadcrumb-iv-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #052c48;
+  content: ">";
+}
+
+.breadcrumb-iv-item + .breadcrumb-iv-item:hover::before {
+  text-decoration: underline;
+  color: #052c48;
+
+}
+
+.breadcrumb-iv-item + .breadcrumb-iv-item:hover::before {
+  text-decoration: none;
+  color: #052c48;
+
+}
+
+.breadcrumb-iv-item.active {
+  color: #141516;
+}
+/*breadcrumb boot pisado*/
 /*fin pisar boot*/
 /*
   .filters a:hover, .filters a:focus, .filters a:active {
