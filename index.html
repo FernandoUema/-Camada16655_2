@@ -79,17 +79,17 @@
     }
   </script>
 
-<!-- Cierra Animaciones-->
+<!-- Cierra Animaciones https://gist.github.com/stephenscaff/8266351-->
 
-<script type="text/javascript"> 
-    var totalCount = 8;
-    function ChangeIt() 
-    {
-    var num = Math.ceil( Math.random() * totalCount );
-    document.hero.background = 'img/hero'+num+'.jpg';
-    document.hero.style.backgroundRepeat = "repeat";// Background repeat
-    }
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+<!--New images on load -->
+<script>
+    //Add your images, we'll set the path in the next step
+        var images = ['hero_01.jpg', 'hero_02.jpg', 'banner-3.jpg', 'banner-4.jpg'];
+        $('<img class="fade-in" src="img/hero' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#banner-load');
     </script>
+
 <!-- Cierra hero random-->
 
 </head>
@@ -155,11 +155,11 @@
 <!-- Abre Home Background Photo Random con jquery ó js --> 
 <section id="hero" alt="Obras Inés Vega Random" class="img-fluid">
     <div class="container-fluid">
-            <div class="caja__tipo--index">
-                <h1 class="tipo index tipo__index--iv">Inés Vega</h1>
-                <h2 class="tipo index tipo__index--bvnd">Artista Plástica</h2>
-                <h3 class="tipo index tipo__index--bvnd-2">Bienvenidos</h3>
-            </div>
+        <div class="caja__tipo--index">
+            <h1 class="tipo index tipo__index--iv">Inés Vega</h1>
+            <h2 class="tipo index tipo__index--bvnd">Artista Plástica</h2>
+            <h3 class="tipo index tipo__index--bvnd-2">Bienvenidos</h3>
+        </div>
         <div>
             <span class="hero__scroll tipo index tipo__hero--scroll" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
             <em class="chevron bottom"></em>
@@ -186,13 +186,7 @@
             </div>
         </div> 
     </div>
-<!--HOVER IMG SOBRE
-    <div class="container">
-    <img src="img_avatar.png" alt="Avatar" class="image">
-    <div class="overlay">
-      <div class="text">Hello World</div>
-    </div>
-</div>-->
+
 </section> 
 <!-- Cierra Epigrafe Background Photo-->
 
@@ -343,7 +337,6 @@ y hacerme el alma navegable.
 </script>
 <!-- Cierra Enlace y activar wow.js -->
 <!-- abre Enlace y activar aos  -->
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

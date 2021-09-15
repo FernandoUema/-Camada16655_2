@@ -1315,8 +1315,18 @@ li.dropdown {
 # ABRE ACERCA
 --------------------------------------------------------------*/
 /* img home bg*/
+/*    #hero { 
+     position:fixed; left: 0px; 
+     top: 0px; background-size:100%;  
+      width:100%; height:100%; 
+      -webkit-user-select: none; -khtml-user-select: none; 
+      -moz-user-select: none; -o-user-select: none; user-select: none; 
+       z-index:9990; 
+     }
+*/
+
 #hero {
-  background: url("../img/hero/musicante.jpg");
+  background: url("../img/hero/hero_01.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -1327,6 +1337,8 @@ li.dropdown {
     margin-top: 0;
     background-color:#747172;
     image-rendering: optimizeQuality;
+    -webkit-user-select: none; -khtml-user-select: none; 
+    -moz-user-select: none; -o-user-select: none; user-select: none; 
 }
 /*aos animación scroll - https://michalsnik.github.io/aos/*/
 .hero__scroll {
