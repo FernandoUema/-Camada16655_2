@@ -30,6 +30,11 @@
 <script src="../../js/modernizr.js"></script> <!-- Modernizr -->
 <script src="../../js/simplescrollup.js"></script> <!-- backtotop -->
 <!--cierra JS-->
+<!--Abre cloud zoom-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../js/cloud-zoom.js"></script>
+<link rel="stylesheet" href="../../css/cloud-zoom.css" type="text/css">
+<!--Cierra cloud zoom-->
 
 <!-- Abre Fuentes Tipográficas -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,8 +154,9 @@ if ("loading" in HTMLImageElement.prototype) {
     <div class="site-section pb-0">
       <div class="container">
         <div class="row">
-        <div class="col-md-6" data-aos="fade-up">
-            <img src="../../img/obra/0_1.jpg" alt="Las Alas" class="img-fluid mb-5">
+        <div class="col-md-6 " data-aos="fade-up">
+          <a href="../../img/obra/0_1.jpg" class="cloud-zoom">
+            <img src="../../img/obra/0_1.jpg" alt="Las Alas" class="img-fluid mb-5"></a>
             <div class="caja__ph--copyright-izq">
               <p> <span class="tipo__ph--ubicacion-izq">Arriba</span></p> 
               <p class="tipo__ph--copyright">Ph: Gustavo Sosa Pinilla</p>
@@ -174,7 +180,7 @@ if ("loading" in HTMLImageElement.prototype) {
 
               </ul>
 
-              <p class="px-5"><a class="readmore mb-4" href="mailto:vegainesemilia@gmail.com">Consultar Precio</a></p>
+              <p class="px-5"><a class="readmore mb-4" href="mailto:vegainesemilia@gmail.com">Consultar Valor</a></p>
  
                 <a class="tipo__link--right px-5" href="../obra.html">
                 <span class="back-arrow">&larr;</span>
