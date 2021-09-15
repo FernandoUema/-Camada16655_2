@@ -122,6 +122,10 @@ body::-webkit-scrollbar-thumb {
     text-align: end;
     line-height: 0.1rem;
 }
+.parrafo__epigrafe{
+  text-align: end;
+  line-height: 0.1rem;
+}
 #epigrafe__obra--bg .tipo__obra--nombre, 
 .tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
@@ -1630,7 +1634,7 @@ li.dropdown {
     visibility: visible;
   }
 
-  
+
  /* .zoom__img {
  
     overflow: hidden;
