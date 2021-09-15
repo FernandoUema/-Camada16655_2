@@ -1748,14 +1748,14 @@ a{
 .breadcrumb-iv {
   color: #28292a;
   font-family: 'Jost', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
   border-radius: 0.25rem;
-  font-size: 0.9 rem;
+  font-size: 0.9rem;
 }
 
 .breadcrumb-iv-item + .breadcrumb-iv-item {
