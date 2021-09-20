@@ -22,6 +22,10 @@
 <!-- Vendor CSS Files de my portfolio-->
 <!-- Cierra Bootstrap-->
 
+<!-- abre animación sobre link de obra-->
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+
 <!-- Abre Css estilos -->
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
@@ -151,7 +155,7 @@
             <h3 class="tipo index tipo__index--bvnd-2 px-2">Bienvenid@s</h3>
         </div>
         <div>
-            <span class="hero__scroll tipo index tipo__hero--scroll px-2" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Scroll down
+            <span class="hero__scroll tipo index tipo__hero--scroll px-2" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Ir abajo
             <em class="chevron bottom"></em>
             </span>
         </div>
@@ -162,22 +166,22 @@
 <!-- Cierra Home Background Photo-->
 
 <!-- Abre Epigrafe Background Photo-->
-<!-- hover sobre texto: https://codepen.io/cassie-codes/pen/WNrOeyy-->
 <section id="epigrafe__obra--bg">
     <div class="container">
         <div class="rows no-gutters justify-content-start">       
             <div class="col-md-12">
                 <div class="caja__epigrafe--img">
-                    <p class="parrafo__epigrafe"><span class="tipo__obra--nombre pincelhover">_Ángel Musicante,</span></p><!-- más pequeño y justificado a la izquierda-->
+                    <div class="parrafo__epigrafe mt-2 mb-3"  data-fx="6">
+                     <a class=" tipo__obra--nombre" data-img="img/acerca/04.jpg"><span>_Ángel Musicante,</span></a>
+                    </div>
                     <p class="parrafo__epigrafe"><span class="tipo__obra--material">tela, pintura acrílica, guata.</span></p>
                     <p class="parrafo__epigrafe"><span class="tipo__obra--medida">100 x 90 x 15 cm.</span></p>
-                    <p class="parrafo__epigrafe"><span class="tipo__obra--descripcion">Fragmento </span><span class="tipo__obra--anio">[©1998]</span></p>
+                    <p class="parrafo__epigrafe"><span class="tipo__obra--descripcion">Detalle</span><span class="tipo__obra--anio">[1998]</span></p>
                 </div>
             </div>
         </div> 
     </div>
-
-</section> 
+</section>
 <!-- Cierra Epigrafe Background Photo-->
 
 <!-- Abre Sección Home__alberti-->
@@ -185,8 +189,8 @@
     <div class="container">
         <div class="row content">
             <div class="col-md-12 feature">
-            <div class="col-md-6 order-md-2">
-                    <div class="cezanne fade-in">
+            <div class="col-md-6 order-md-1">
+                    <div class="cezanne">
                         <div class="caja__letra--capital-alberti">
                         <p class="tipo__letra--capital-alberti">V</p>
                         </div>
@@ -250,7 +254,7 @@ y hacerme el alma navegable.
                     en París. En el 2003 obtuvo el Gran Premio de Honor del Salón Nacional de Dibujo, en el 2002 el Primer Premio del Salón de Santa Fe, Dibujo, en el 2001 el Primer Premio del Salón Manuel Belgrano, Dibujo, en el 2004 el Primer Premio Bienal de Arte Sacro, en 1999 el Premio de Escultura del Salón Fundación Fortabat, Museo Nacional de Bellas Artes, en 1994 el Premio del Jurado <span class="italic">Prix Foundation Fortabat, Maison de L`Amerique Latine, </span>Paris.
                     Realizó exposiciones individuales en la Galería Isabel Anchorena, en <span class="italic">Aldo Castillo Gallery,</span> Chicago, Estados Unidos, en <span class="italic">Galerie Strouk,</span> Paris, en <span class="italic">Galerie Félix Valk,</span> Arnhem, Holanda, en el Fondo Nacional de las Artes. Poseen obra suya el Museo Nacional de Bellas Artes, donación Fundación Antorchas, Museo Municipal de Arte Eduardo Sivori. <span class="italic">Maison de L`Amerique Latine, </span>Paris, Francia.
                     Colecciones privadas de España, Estados Unidos, Holanda, Francia, Argentina y Alemania.❑</p>
-                    <a href="secciones/crono.html"><p class="tipo__link--right">_Conocé más</p></a>
+                    <a href="secciones/crono.html"><p class="tipo__link--right pl-4">_Conocé más</p></a>
                 </div>
             </div>    
         </div>
@@ -353,6 +357,13 @@ y hacerme el alma navegable.
     ChangeIt();
     </script> 
  <!-- cierra js hero random  -->
+  <!-- Abre js de animación de img de obra titulada -->
+
+ <script src="js/js/charming.min.js"></script>
+ <script src="js/js/imagesloaded.pkgd.min.js"></script>
+ <script src="js/js/TweenMax.min.js"></script>
+ <script src="js/js/demo.js"></script>
+<!-- Cierra js de animación de img de obra titulada -->
 
 </body>
 </html>

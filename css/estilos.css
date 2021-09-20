@@ -73,6 +73,7 @@ body::-webkit-scrollbar-thumb {
     background:#b9635d;
     color: #31383f;
 }
+
   *::-moz-selection {
     background:#b9635d;
       color: #31383f;
@@ -82,6 +83,8 @@ body::-webkit-scrollbar-thumb {
     background: #ae952e;
     text-shadow: none;
 }
+
+
 /*---------------------ABRE COLORBACKGROUND--------------------*/
 /*Cronologias*/
 #colorbg__crono--lila{
@@ -115,8 +118,8 @@ body::-webkit-scrollbar-thumb {
 /*-------------------------ABRE EPIGRAFES------------------------*/
 
 #epigrafe__obra--bg .caja__epigrafe--img {
-    margin-right: 4%;
-    margin-top: 2%;
+    margin-right:2rem;
+    margin-top: 2rem;
 }
 #epigrafe__obra--bg .parrafo__epigrafe{
     text-align: end;
@@ -219,10 +222,11 @@ body::-webkit-scrollbar-thumb {
 
 .readmore {
   display: inline-block;
+  font-family: 'Playfair Display', serif;
+
   border: 1px solid #0d1b2b;
   padding: 10px 15px;
   font-size: 12px;
-  text-transform: uppercase;
   color:#0d1b2b;;
   transition: .2s all ease;
   font-weight: 700;
@@ -235,7 +239,7 @@ body::-webkit-scrollbar-thumb {
 .readmore:hover {
   color: #f6f5f3;
   text-decoration: none;
-  background:#a28570;
+  background:#c4373c;
 }
 .sticky-content {
   position: sticky;
@@ -1490,9 +1494,10 @@ li.dropdown {
 /*--------------------------------------------------------------
 # ABRE OBRA - BOOTSTRAP
 --------------------------------------------------------------*/
+/*placeholder img obra*/
 
 #obra img {
-    background:#b9635d;
+    background:#084977;
     width: auto;
     height: auto;
     display: block;
@@ -1690,6 +1695,7 @@ li.dropdown {
 
 .page__link {
   font-family: 'Nunito', sans-serif;
+  font-size: 0.8rem;
   font-weight: 600;
   position: relative;
   display: block;
@@ -1697,7 +1703,10 @@ li.dropdown {
   text-decoration: none;
   background-color: #e9ecef;
   border: 1px solid #cecece;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, 
+  background-color 0.15s ease-in-out, 
+  border-color 0.15s ease-in-out, 
+  box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .page__link {
@@ -1723,7 +1732,7 @@ li.dropdown {
 }
 .page__item.active .page__link {
   z-index: 3;
-  color: #fff;
+  color: #f6f5f3;
   background-color: #24323f;
 }
 .page__item.disabled .page__link {
@@ -2717,5 +2726,4 @@ input[type=checkbox]:checked + label {
     color: #212529;
     z-index: 1;
 }
-
 

@@ -31,6 +31,12 @@
 <script src="../../js/simplescrollup.js"></script> <!-- backtotop -->
 <!--cierra JS-->
 
+<!--Abre cloud zoom-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../../js/cloud-zoom.js"></script>
+<link rel="stylesheet" href="../../css/cloud-zoom.css" type="text/css">
+<!--Cierra cloud zoom-->
+
 <!-- Abre Fuentes Tipográficas -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -150,7 +156,8 @@ if ("loading" in HTMLImageElement.prototype) {
       <div class="container">
         <div class="row">
         <div class="col-md-6" data-aos="fade-up">
-            <img src="../../img/obra/23_1.jpg" alt="La Maga" class="img-fluid mb-5">
+          <a href="../../img/obra/23_1.jpg" class="cloud-zoom">
+            <img src="../../img/obra/23_1.jpg" alt="La Maga" class="img-fluid mb-5"></a>
             <div class="caja__ph--copyright-izq">
                 <p> <span class="tipo__ph--ubicacion-izq">Arriba</span></p> 
                 <p class="tipo__ph--copyright">Ph: Gustavo Sosa Pinilla</p>
@@ -174,7 +181,7 @@ if ("loading" in HTMLImageElement.prototype) {
 
               </ul>
 
-              <p class="px-5"><a class="readmore mb-4" href="mailto:vegainesemilia@gmail.com">Consultar Precio</a></p>
+              <p class="px-5"><a class="readmore mb-4" href="mailto:vegainesemilia@gmail.com">Consultar Valor</a></p>
  
                 <a class="tipo__link--right px-5" href="../obra.html">
                 <span class="back-arrow">&larr;</span>
@@ -190,7 +197,7 @@ if ("loading" in HTMLImageElement.prototype) {
     <nav aria-label="Page navigation example">
         <ul class="pagination justify-content-center">
             <li class="page__item">
-            <a class="page__link" href="../obra.html" aria-label="Previous">
+            <a class="page__link" href="lasalas.html" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
               <span class="sr-only">Previous</span>
             </a>
@@ -198,8 +205,10 @@ if ("loading" in HTMLImageElement.prototype) {
           <li class="page__item "><a class="page__link" href="lasalas.html">1</a></li>
           <li class="page__item active"><a class="page__link" href="lamaga.html">2</a></li>
           <li class="page__item"><a class="page__link" href="labuza.html">3</a></li>
-          <li class="page__item">
-            <a class="page__link" href="#" aria-label="Next">
+          <li class="page__item"><a class="page__link" href="elcielo.html">4</a></li>
+          <li class="page__item"><a class="page__link" href="#">...</a></li>
+          <li class="page__item"><a class="page__link" href="nadandosola.html">36</a></li>
+          <li class="page__item"><a class="page__link" href="labuza.html" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
               <span class="sr-only">Next</span>
             </a>
