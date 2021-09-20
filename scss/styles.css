@@ -150,6 +150,7 @@ a {
 
 .tipo__titulo--acerca {
   color: #aa3232;
+  overflow-wrap: break-word;
 }
 
 .tipo__titulo--obra {
@@ -223,9 +224,10 @@ a {
 }
 
 .tipo__index--bvnd-2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-top: 0rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  font-style: normal;
 }
 
 .tipo__acerca--link-hero {
