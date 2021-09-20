@@ -7,7 +7,6 @@
 /*botones*/
 /*TIPOGRAFÍAS*/
 /*margenes*/
-/*variables bootstrap pisadas*/
 * {
   margin: 0;
   padding: 0;
@@ -23,9 +22,9 @@ a {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 19%;
-  right: 90px;
-  background-color: #00c0a5;
+  bottom: 17%;
+  right: 150px;
+  background-color: #0ab39c;
   border-color: #f6f5f3;
   color: #f6f5f3;
   border-radius: 50px;
@@ -33,7 +32,7 @@ a {
   font-size: 2rem;
   z-index: 100; }
   .whatsapp__sass.whatsapp__sass:hover {
-    background-color: #00e676;
+    background-color: #03da72;
     color: #f6f5f3; }
   .whatsapp__sass .whatsapp-icon {
     margin-top: 14px; }
@@ -54,7 +53,7 @@ a {
   font-style: normal;
   font-size: 0.9rem;
   font-weight: 600;
-  background: #9d2021;
+  background: #7a3116;
   color: #cecece;
   text-align: center;
   letter-spacing: 0.2rem;
@@ -69,10 +68,10 @@ a {
   .contacto__sass--btn.contacto__sass--btn a {
     text-decoration: none;
     outline: none; }
-    .contacto__sass--btn.contacto__sass--btn a.ontacto__sass--btn:hover {
+    .contacto__sass--btn.contacto__sass--btn a.contacto__sass--btn:hover {
       color: #cecece;
       text-decoration: none;
-      background-color: #e0aab6; }
+      background-color: #7a3116; }
 
 .back-to-top {
   position: fixed;
@@ -101,6 +100,51 @@ a {
   .back-to-top {
     bottom: 15px; } }
 
+/*FOOTER*/
+.lamedia {
+  color: #31383f;
+  padding-bottom: 1rem;
+  text-align: center; }
+  .lamedia:hover {
+    color: #cecece; }
+
+.tipo__titulo, .tipo__titulo--acerca, .tipo__titulo--obra, .tipo__titulo--crono, .tipo__titulo--muestra, .tipo__titulo--contacto {
+  font-family: "Playfair Display", serif;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 6px;
+  line-height: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1; }
+  .tipo__titulo--acerca {
+    color: #aa3232;
+    overflow-wrap: break-word; }
+  .tipo__titulo--obra {
+    color: #052c48; }
+  .tipo__titulo--crono {
+    color: #9d2021;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    margin-left: -2rem;
+    margin-TOP: 1rem;
+    font-size: 5rem; }
+  .tipo__titulo--muestra {
+    color: #506948;
+    margin-bottom: 2rem;
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    z-index: 100;
+    overflow-wrap: break-word;
+    hyphens: auto; }
+  .tipo__titulo--contacto {
+    color: #7a3116; }
+
 /* color corazón zócalo */
 .change__color {
   color: #31383f;
@@ -114,175 +158,199 @@ a {
 .caja__tipo--index {
   padding-top: 140px; }
 
-.iv__index {
-  font-family: "Playfair Display", serif;
+.tipo__index, .tipo__index--iv, .tipo__index--bvnd, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll, .tipo__index--bvnd-2 {
+  font-size: 2rem;
   color: #cecece;
-  font-size: 3rem; }
+  padding-bottom: 1.5rem;
+  margin-left: 2rem;
+  margin-top: 5rem; }
 
-/*extend*/
-/* ----------------------------------------
- * animation fade-in Animista
- * ----------------------------------------*/
-.fade-in {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-/*animación cezanne*/
-#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+.tipo__index--iv, .tipo__index--bvnd, .tipo__index--desc, .tipo__acerca--link-hero, .tipo__hero--scroll {
   font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 0.9rem;
-  font-weight: 500;
   font-style: italic;
-  font-kerning: none;
-  line-height: 1.4rem;
-  z-index: 3; }
+  margin-bottom: 0rem;
+  font-size: 4rem;
+  text-align: left; }
 
-.tipo__copyright--alberti {
-  font-weight: 700;
-  padding-bottom: 20px; }
-
-.tipo__letra--capital-alberti {
-  font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 7rem;
-  font-weight: 800; }
-
-.tipo__hero--scroll {
-  font-family: "Playfair Display", serif;
-  color: #f6f5f3;
-  font-style: italic;
-  font-weight: 400;
-  text-align: center;
-  font-kerning: auto; }
-
-#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
-  font-family: "Playfair Display", serif;
-  color: #052c48;
-  font-size: 6rem;
-  font-weight: 800;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 20px;
-  flex-wrap: row;
-  letter-spacing: 1px; }
-
-#acerca .tipo__acerca--left-link {
-  color: #c4373c;
-  font-size: 1rem;
-  font-weight: 600; }
-  #acerca .tipo__acerca--left-link:hover {
-    color: #7e1e1b; }
-
-#alberti .cezanne {
-  height: 320px;
-  width: 320px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #ac8fac;
-  z-index: 1;
-  margin-left: 1rem; }
-
-.caja__tipo--index {
-  padding-top: 140px; }
-
-.iv__index {
-  font-family: "Playfair Display", serif;
-  color: #cecece;
-  font-size: 3rem; }
-
-/*extend*/
-/* ----------------------------------------
- * animation fade-in Animista
- * ----------------------------------------*/
-.fade-in {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-@keyframes fade-in {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
-/*animación cezanne*/
-#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
-  font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 0.9rem;
-  font-weight: 500;
-  font-style: italic;
-  font-kerning: none;
-  line-height: 1.4rem;
-  z-index: 3; }
-
-.tipo__copyright--alberti {
-  font-weight: 700;
-  padding-bottom: 20px; }
-
-.tipo__letra--capital-alberti {
-  font-family: "Playfair Display", serif;
-  color: #31383f;
-  font-size: 7rem;
-  font-weight: 800; }
-
-.tipo__hero--scroll {
-  font-family: "Playfair Display", serif;
-  color: #f6f5f3;
-  font-style: italic;
-  font-weight: 400;
-  text-align: center;
-  font-kerning: auto; }
-
-#acerca .tipo__acerca--right-tit, #acerca .tipo__acerca--left-link {
-  font-family: "Playfair Display", serif;
-  color: #052c48;
-  font-size: 6rem;
-  font-weight: 800;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 20px;
-  flex-wrap: row;
-  letter-spacing: 1px; }
-
-#acerca .tipo__acerca--left-link {
-  color: #c4373c;
-  font-size: 1rem;
-  font-weight: 600; }
-  #acerca .tipo__acerca--left-link:hover {
-    color: #7e1e1b; }
-
-#alberti .cezanne {
-  height: 320px;
-  width: 320px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: #ac8fac;
-  z-index: 1;
-  margin-left: 1rem; }
-
-/*FOOTER*/
-.lamedia {
-  color: #31383f;
+.tipo__index--bvnd {
   padding-bottom: 1rem;
-  text-align: center; }
-  .lamedia:hover {
-    color: #cecece; }
+  margin-top: 0rem;
+  font-size: 1.5rem; }
+
+.tipo__index--bvnd-2 {
+  font-size: 1.3rem;
+  padding-top: 0rem;
+  margin-top: 0.8rem;
+  font-style: normal; }
+
+.tipo__acerca--link-hero {
+  font-size: 1.2rem; }
+  .tipo__acerca--link-hero:hover {
+    color: #fd9d25; }
+
+.tipo__hero--scroll {
+  font-size: 1.2rem; }
+
+/*extend*/
+/* ----------------------------------------
+ * animation fade-in Animista
+ * ----------------------------------------*/
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*animación cezanne*/
+#alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+  font-kerning: none;
+  line-height: 1.4rem;
+  z-index: 3; }
+
+.tipo__copyright--alberti {
+  font-weight: 700;
+  padding-bottom: 20px; }
+
+.tipo__letra--capital-alberti {
+  font-family: "Playfair Display", serif;
+  color: #31383f;
+  font-size: 7rem;
+  font-weight: 800; }
+
+.tipo__hero--scroll {
+  font-family: "Playfair Display", serif;
+  color: #f6f5f3;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  font-kerning: auto; }
+
+#acerca .tipo__acerca--right-tit {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 6rem;
+  font-weight: 800;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  flex-wrap: row;
+  letter-spacing: 1px; }
+
+#alberti .cezanne {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ac8fac;
+  z-index: 1;
+  margin-left: 1rem; }
+
+.tipo__obra--titulo {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: 2px;
+  line-height: 0.5rem;
+  position: relative;
+  padding-bottom: 1rem;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  line-height: 1;
+  font-style: italic; }
+
+.link a {
+  text-decoration: none; }
+
+.tipo__link--right {
+  font-family: "Playfair Display", serif;
+  color: #052c48;
+  font-style: italic;
+  text-align: left;
+  letter-spacing: 20px;
+  flex-wrap: row;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 600; }
+
+.tipo__link--right:hover {
+  color: #084977; }
+
+:root {
+  --text-color: #111;
+  --bg-color: #b9b3a9; }
+
+.colorbg__muestra--celeston {
+  transition: 0.3s ease-out;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+  max-width: 100%; }
+
+.section__scroll:not(#sectionPin) {
+  min-height: 80vh;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  padding: 50px 10vw;
+  margin: auto;
+  place-items: center; }
+
+.imgscroll {
+  height: 80vh;
+  width: auto;
+  object-fit: cover; }
+
+* {
+  box-sizing: border-box; }
+
+#sectionPin {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  left: 0;
+  background: #31383f; }
+
+.pin-wrap {
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw; }
+  .pin-wrap > * {
+    min-width: 60vw;
+    padding: 0 5vw; }
+
+.pscroll {
+  position: absolute;
+  bottom: 10vw;
+  right: 10vw;
+  width: 200px;
+  line-height: 1.5; }
+
+.container__contacto--titulo {
+  padding-top: 13rem; }
+
+.contacto__txt--remember {
+  font: "Jost", sans-serif;
+  font-size: 0.9rem;
+  padding-left: 3.3rem; }
