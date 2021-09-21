@@ -2201,7 +2201,7 @@ ul{
 }
 /*abre imágenes cv FLEXBOX*/
 .galeria__cv--individuales{
-    height: 120px;
+    height: 130px;
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -2210,6 +2210,21 @@ ul{
     justify-content:flex-start;
     gap:14px;
 }
+.catalogo__img{
+  width: 21vh;
+  height: 21vh;
+}
+
+.catalogo__img
+.galeria__item ul{
+list-style: none;
+text-decoration: none;
+}
+.galeria__item ul li{
+  list-style: none;
+  text-decoration: none;
+}
+
 /* Underline From Left en hover.css footer9*/
 .hvr__underline--from-left-fot {
     vertical-align: middle;
@@ -2244,29 +2259,6 @@ ul{
 }
 
 
-.galeria__cv--individuales-right{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-flow: row nowrap;
-    align-items: baseline; 
-    justify-content: flex-end;
-
-}
-.catalogo__img{
-    width: 21vh;
-    height: 21vh;
-    
-}
-
-.galeria__item ul{
-list-style: none;
-text-decoration: none;
-}
-.galeria__item ul li{
-    list-style: none;
-    text-decoration: none;
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                   
@@ -2301,7 +2293,7 @@ text-decoration: none;
 }
 .qa label {
     font-family: 'Nunito', sans-serif;
-    color:#fff;
+    color: #f6f5f3;
     font-weight: 600;
     font-size: 0.8rem;
     font-kerning: none;
@@ -2316,7 +2308,7 @@ text-decoration: none;
 
   .tipo__w--white {
     font-family: 'Nunito', sans-serif;
-    color:#fff;
+    color: #f6f5f3;
     font-weight: 600;
     font-size: 0.8rem;
     font-kerning: none;
