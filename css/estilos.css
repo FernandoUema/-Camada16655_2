@@ -2228,7 +2228,7 @@ ul{
     right: 100%;
     bottom: -2px;
     background:#e5e5e5;
-    height: 4px;
+    height: 3px;
     -webkit-transition-property: right;
     transition-property: right;
     -webkit-transition-duration: 0.3s;

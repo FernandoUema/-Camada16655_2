@@ -27,10 +27,10 @@
 <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
 <!-- Abre Css estilos -->
+<link rel="stylesheet" href="css/media.css"/>
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="stylesheet" href="css/styles.css"/>
      <link rel="stylesheet" href="scss/styles.css"/>
-     <link rel="stylesheet" href="css/media.css"/>
 
 <!-- Cierra Css estilos -->
 
@@ -83,7 +83,6 @@
   </script>
 
 <!-- Cierra Animaciones-->
-<!--https://gist.github.com/stephenscaff/8266351-->
 </head>
 <!-- Cierra HTML General head-->
 
@@ -253,7 +252,7 @@ y hacerme el alma navegable.
                     en París. En el 2003 obtuvo el Gran Premio de Honor del Salón Nacional de Dibujo, en el 2002 el Primer Premio del Salón de Santa Fe, Dibujo, en el 2001 el Primer Premio del Salón Manuel Belgrano, Dibujo, en el 2004 el Primer Premio Bienal de Arte Sacro, en 1999 el Premio de Escultura del Salón Fundación Fortabat, Museo Nacional de Bellas Artes, en 1994 el Premio del Jurado <span class="italic">Prix Foundation Fortabat, Maison de L`Amerique Latine, </span>Paris.
                     Realizó exposiciones individuales en la Galería Isabel Anchorena, en <span class="italic">Aldo Castillo Gallery,</span> Chicago, Estados Unidos, en <span class="italic">Galerie Strouk,</span> Paris, en <span class="italic">Galerie Félix Valk,</span> Arnhem, Holanda, en el Fondo Nacional de las Artes. Poseen obra suya el Museo Nacional de Bellas Artes, donación Fundación Antorchas, Museo Municipal de Arte Eduardo Sivori. <span class="italic">Maison de L`Amerique Latine, </span>Paris, Francia.
                     Colecciones privadas de España, Estados Unidos, Holanda, Francia, Argentina y Alemania.❑</p>
-                    <a href="secciones/cronologias.html"><p class="tipo__link--right pl-4">_Conocé más</p></a>
+                    <a href="secciones/cronologias.html"><p class="tipo__link--right pb-lg-5">_Conocé más</p></a>
                 </div>
             </div>    
         </div>
@@ -269,11 +268,11 @@ y hacerme el alma navegable.
     <div class="footer__1__navigation__zocalocolor--100 text-center">
             <ul class="footer__nav container-fluid">
                 <div class="row d-flex justify-content-center pb-3 pt-4">
-                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="index.html">Home</a></h6></li>
-                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/obra.html">Obra</a></h6></li>
-                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/muestra.html">Muestra Virtual</a></h6></li>
-                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/cronologias.html">Cronologías</a></h6></li>
-                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a href="secciones/contacto.html">Contacto</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot active" href="index.html" >Home</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot" href="secciones/obra.html">Obra</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot" href="secciones/muestra.html">Muestra Virtual</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot" href="secciones/cronologias.html">Cronologías</a></h6></li>
+                <li class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot" href="secciones/contacto.html">Contacto</a></h6></li>
                 </div>                    
                 <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" target="_blank" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
                 <a href="https://www.instagram.com/vivainesita/?hl=es-la" target="_blank" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" target="_blank" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a>
@@ -309,25 +308,7 @@ y hacerme el alma navegable.
 
 <!-- cierra JSr-->
 
-<!-- Abre Enlace y activar wow.js -->
-<script src="js/wow.js"></script>
-<script>
-  wow = new WOW(
-    {
-      animateClass: 'animated',
-      offset:       100,
-      callback:     function(box) {
-        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-      }
-    }
-  );
-  wow.init();
-  document.getElementById('moar').onclick = function() {
-    var section = document.createElement('section');
-    section.className = 'section--purple wow fadeInDown';
-    this.parentNode.insertBefore(section, this);
-  };
-</script>
+
 <!-- Cierra Enlace y activar wow.js -->
 <!-- abre Enlace y activar aos  -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
