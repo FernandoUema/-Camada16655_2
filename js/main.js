@@ -186,12 +186,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
+      $('.simplescrollup__button').fadeIn('slow');
     } else {
-      $('.back-to-top').fadeOut('slow');
+      $('.simplescrollup__button').fadeOut('slow');
     }
   });
-  $('.back-to-top').click(function(){
+  $('.simplescrollup__button').click(function(){
     $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
     return false;
   });
