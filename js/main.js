@@ -765,3 +765,4 @@ function randomHero() {
 
 // Show Random Image on Page Load
 randomHero();
+

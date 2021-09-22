@@ -61,7 +61,11 @@
 <link href="../css/hover.css" rel="stylesheet" media="all">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<!-- abre Vendor CSS Files de my portfolio-->
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+<!-- Cierra CSS Files de my portfolio-->
+
+<!-- Abre Lazy-->
 <script>
 if ("loading" in HTMLImageElement.prototype) {
   console.log("El navegador soporta `lazy-loading`...");
@@ -124,11 +128,10 @@ if ("loading" in HTMLImageElement.prototype) {
                     </div>
                 </div>
             </div>
+        </div>
     </div>
-    </header>
+</header>
     <!-- Cierra HTML General Menú--> 
-
-<!-- Abre crono FOTOS +WEB MARINA https://constelacionfemenina.wordpress.com/#jp-carousel-195-->
 
 <main> 
 <section id="crono">
@@ -163,7 +166,7 @@ if ("loading" in HTMLImageElement.prototype) {
         <p class="tipo__crono--anio">1991<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Galerie Laurent Strouk,</span> París, Francia.</span></p> 
         <p class="tipo__crono--anio">1989<span class="none"></span><span class="tipo__crono--descripcion"><span class="italic">Moss Gallery,</span> San Francisco, Estados Unidos.</span></p> 
        
-        <div class="caja__vermas--start"><!--opción con bootstrap https://getbootstrap.com/docs/3.4/javascript/-->
+        <div class="caja__vermas--start">
             <div class="qa">
                 <input type="checkbox" id="qa0"/>
                 <label for="qa0"><p class="tipo__w--white">Ver más</p></label>
@@ -180,24 +183,26 @@ if ("loading" in HTMLImageElement.prototype) {
             </div>
             </div> 
             </div>
-            <div id="carousel">
-                <div class="slider caja__slider pe-4 ps-3 mt-4">
+                      
+            <div id="main" role="main">
+                <section class="slider">
+                    <!--<div id="carousel">-->
+                <div class="caja__slider pe-4 ps-3 mt-4">
                     <div class="flexslider carousel">
                     <ul class="slides">
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo5.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo1.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo5.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/catalogo2.png" alt="Catálogos"/></li>
-                    
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
                         </ul>
                     </div>
                 </div>
-
+            </section>
                 <div class="ancla" id="muestras__colectivas"></div>
             </div>
 
@@ -205,7 +210,7 @@ if ("loading" in HTMLImageElement.prototype) {
 
 <!-- abre contenido curriculum vitae__colectivas -->
 <div class="colectivas">   
-<div class="caja__crono--medium">
+    <div class="caja__crono--medium" data-aos="fade-up" data-aos-delay="100">
     <div class="ps-3 pe-5 mt-5">
     <p class="tipo__crono--next">Muestras Colectivas <span class="subtitulo__crono">[SELECCIÓN]</span></p>  
     <p class="tipo__crono--anio">2020<span class="none"></span><span class="tipo__crono--descripcion-articulo">«Mujer, energía creadora», Centro Cultural Eva Perón, Ministerio de Economía, Buenos Aires, Argentina.</span></p>
@@ -311,8 +316,8 @@ if ("loading" in HTMLImageElement.prototype) {
 </div>
 </div> 
 </div>
-<div id="carousel">
-    <div class="slider caja__slider pe-4 ps-3 mt-4">
+    <section class="slider">
+    <div class="caja__slider pe-4 ps-3 mt-4">
         <div class="flexslider carousel">
         <ul class="slides">
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/1_mc.png" alt="Catálogos"/></li>
@@ -323,18 +328,17 @@ if ("loading" in HTMLImageElement.prototype) {
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/6_mc.jpg" alt="Catálogos"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/5_mc.jpg" alt="Catálogos"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/9_mc.png" alt="Catálogos"/></li>
-
             </ul>
         </div>
     </div>
-</div>
+    </section>
 </div>
 <div class="ancla" id="los__premios"></div>
 
 </div>
 
 <div class="premios">
-<div class="caja__crono--medium">
+    <div class="caja__crono--medium" data-aos="fade-up" data-aos-delay="200">
     <div class="ps-3 pe-5 mt-5">
     <p class="tipo__crono--next">Premios<span class="subtitulo__crono">[SELECCIÓN]</span></p>
     <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">1º Premio «IX Bienal de Arte Sacro», Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
@@ -386,8 +390,8 @@ if ("loading" in HTMLImageElement.prototype) {
 </div>
 
 <div class="los__salones">
-<div class="caja__crono--medium">
-    <div class="ps-3 pe-5 mt-5">
+<div class="caja__crono--medium" data-aos="fade-up" data-aos-delay="100">
+        <div class="ps-3 pe-5 mt-5">
     <p class="tipo__crono--next">Salones<span class="subtitulo__crono">[SELECCIÓN]</span></p>
     <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">1º Premio «IX Bienal de Arte Sacro», Centro Cultural Borges, Buenos Aires, Argentina.</span></p>
     <p class="tipo__crono--anio">2004<span class="none"></span><span class="tipo__crono--descripcion">2º Premio, «Premio Rioplatense de Artes Visuales Fundación OSDE», Sección Metropolitana, «Imago», Buenos Aires, Argentina.</span></p>
@@ -442,7 +446,7 @@ if ("loading" in HTMLImageElement.prototype) {
 
 
 <div class="catalogo">
-    <div class="caja__crono--medium-catalogo ">
+    <div class="caja__crono--medium-catalogo" data-aos="fade-up" data-aos-delay="100">
         <div class="ps-3 pe-5 mt-5 mb-5">
             <p class="tipo__crono--next">Catálogos 2011 | 2013 ~ Libro 2014 <span class="subtitulo__crono">[HAGA CLICK PARA DESCARGAR PDF]</span></p>
             <div class="galeria__cv--individuales"> 
@@ -507,7 +511,7 @@ if ("loading" in HTMLImageElement.prototype) {
 <!-- Cierra General Footer-->
 </main>
 <!--bootstrap-->
-<script src="../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -522,12 +526,62 @@ if ("loading" in HTMLImageElement.prototype) {
 <script src="../js/jquery.mixitup.min.js"></script>
 <script src="../js/main.js"></script> <!-- Resource jQuery -->
 <!-- Cierra JSr-->
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/jquery.min.js">\x3C/script>')</script>
 
+<!--abre script del flexslider-->
+
+<script type="text/javascript">
+
+    (function() {
+
+      // store the slider in a local variable
+      var $window = $(window),
+          flexslider = { vars:{} };
+
+      // tiny helper function to add breakpoints
+      function getGridSize() {
+        return (window.innerWidth < 600) ? 2 :
+               (window.innerWidth < 900) ? 3 : 4;
+      }
+
+      $(function() {
+        SyntaxHighlighter.all();
+      });
+
+      $window.load(function() {
+        $('.flexslider').flexslider({
+          animation: "slide",
+          animationSpeed: 400,
+          animationLoop: true,
+          itemWidth: 210,
+          itemMargin: 19,
+          minItems: getGridSize(1), // use function to pull in initial value
+          maxItems: getGridSize(4), // use function to pull in initial value
+          start: function(slider){
+            $('body').removeClass('loading');
+            flexslider = slider;
+          }
+        });
+      });
+
+      // check grid size on resize event
+      $window.resize(function() {
+        var gridSize = getGridSize();
+
+        flexslider.vars.minItems = gridSize;
+        flexslider.vars.maxItems = gridSize;
+      });
+    }());
+
+  </script>
+  <!--cierra script del flexslider-->
+  
 <!-- Syntax Highlighter -->
 <script type="text/javascript" src="../js/shCore.js"></script>
 <script type="text/javascript" src="../js/shBrushXml.js"></script>
 <script type="text/javascript" src="../js/shBrushJScript.js"></script>
-<!--cambiar tamaño de img en itemwidth https://www.it-swarm-es.com/es/javascript/tamano-fijo-de-flexslider/1068905659/-->
 
 
   <script src="../js/jquery.easing.js"></script>
@@ -538,40 +592,7 @@ if ("loading" in HTMLImageElement.prototype) {
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script src="../js/jquery.flexslider.js"></script>
   
-  <!-- Optional FlexSlider Additions --><!-- FlexSlider file:///Users/macbookpro/Downloads/woocommerce-FlexSlider-690832b/demo/basic-carousel.html-->
-  <script type="text/javascript">
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        itemWidth: 210,
-        itemMargin: 19,
-        pausePlay: true,
-        start: function(slider){
-        $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
-  <script type="text/javascript" charset="utf-8">
-  (function() {
- // store the slider in a local variable
- var $window = $(window),
-     flexslider = { vars:{} };
-
- // tiny helper function to add breakpoints
- function getGridSize() {
-   return (window.innerWidth < 600) ? 2 :
-          (window.innerWidth < 900) ? 3 : 4;
- }
-
- $(function() {
-   SyntaxHighlighter.all();
- });
-
  
-}());
-  </script>
  <!-- Vendor JS Files -->
  <script src="../assets/vendor/aos/aos.js"></script>
  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
