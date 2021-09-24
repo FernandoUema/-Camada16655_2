@@ -1377,7 +1377,25 @@ li.dropdown {
     color: #fd9d25;
 
 }
-  
+
+/*zócalo opaco*/
+.hero__zocalo{
+  position: relative;
+}
+
+.hero__zocalo:after {
+  height: 103%;
+  width: 105%;
+  left: -2%;
+  bottom: -2%;
+  background:#48881d;
+  opacity: 0.7;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
 @-webkit-keyframes pulse {
 0% {
   -webkit-transform: translate(0, 0);
@@ -2048,6 +2066,99 @@ a{
 }
 
 /**/
+/* hover sobre catálogo*/
+.item {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.item .item-wrap-cata {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .item-wrap-cata:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(135, 134, 134, 0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s all ease-in-out;
+}
+
+.item .item-wrap-cata img {
+  transition: .2s transform ease;
+  transform: scale(1);
+}
+
+.item .item-wrap-cata > .work-info {
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #f6f5f3;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 60px;
+  transition: .3s all ease;
+  background-color: #a28570;
+  height: auto;
+}
+
+.item .item-wrap-cata > .work-info .tipo__obra--descripcion-anio {
+  font-family: 'Jost', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-align: center;
+  font-kerning: none;
+  color: #f6f5f3;
+  line-height: 0.5;
+  margin-bottom:20px; /*margenes del epígrafe en obra*/
+  font-style: normal;
+}
+
+.item .item-wrap-cata > .work-info h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-kerning: none;
+  font-style: italic;
+  color: #f6f5f3;
+  text-align: center;
+  margin-top:18px; /*margenes del epígrafe en obra*/
+  margin-bottom: 15px;
+}
+
+
+.item .item-wrap-cata:hover {
+  text-decoration: none;
+}
+
+.item .item-wrap-cata:hover img {
+  transform: scale(1.05);
+}
+
+.item .item-wrap-cata:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap-cata:hover .work-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*cierra hover sobre catálogo*/
+
 .col__sticky--zi-4, .caja__crono--img{
     padding: 0;
     margin-left: 0;
