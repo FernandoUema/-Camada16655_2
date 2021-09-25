@@ -110,16 +110,3 @@
 
 })()
 
-/*IMG ON SRCOLL*/
-$(document).ready(function() {
-  $(window).on("scroll", function() {
-    console.log($(this).scrollTop())
-    if($(this).scrollTop() >= 30){
-      // set to new image
-      $(".img__crono-individuales img").attr("src","../img/crono/flyer.png");
-    } else {
-      //back to default
-      $(".img__crono-individuales img").attr("src","../img/crono/ineseneltaller.jpg");
-    }
-  })
-})

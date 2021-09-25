@@ -218,8 +218,13 @@ if ("loading" in HTMLImageElement.prototype) {
     </div>
 </section>
 <!--Cierra obra detalle-->
-<!--Boton de ir hacia arriba-->
- 
+  <!--BOTON IR ARRIBA-->
+<div class="button-arriba">
+  <a class="item" id="buttonTop">
+  <em class="fas fa-chevron-up chevronup"></em>
+  </a>
+</div>
+<!--cierra backtotop-->
 <!-- Abre Footer  -->
 <footer id="footer__1--navigation">
     <div class="footer__1__navigation__zocalocolor--100 container-fluid text-center">
@@ -282,10 +287,12 @@ if ("loading" in HTMLImageElement.prototype) {
 
 <!-- Template Main JS File -->
 <script src="../../assets/js/main.js"></script>
-<!-- Abre Enlace y activar aos https://michalsnik.github.io/aos/ -->
+<!-- Abre Enlace y activar -->
 
-<!---MOBILE-->
-<script src=""></script>
+<!-- button up-->
+<script src="../../js/buttonup/script.js"></script>
+<script src="../../js/simplescrollup.js"></script> 
+<!-- cierra button up-->
 
 
 <script src="../../dist/aos.js"></script>
@@ -294,7 +301,7 @@ AOS.init({
   easing: 'ease-in-out-sine'
 });
 </script>
-<!-- Cierra Enlace y activar aos https://michalsnik.github.io/aos/ -->
+<!-- Cierra Enlace y activar  -->
 
 </body>
 </html>

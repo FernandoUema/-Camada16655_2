@@ -193,6 +193,8 @@ if ("loading" in HTMLImageElement.prototype) {
                     <ul class="slides">
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/2_mi.jpg" alt="obra"/></li>
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/3_mi.jpg" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/12_mi.png" alt="obra"/></li>
+
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/6_mi.png" alt="obra"/></li>
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/1_mi.jpg" alt="obra"/></li>
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/5_mi.png" alt="obra"/></li>
@@ -202,7 +204,8 @@ if ("loading" in HTMLImageElement.prototype) {
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/9_mi.png" alt="obra"/></li>
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/13_mi.png" alt="obra"/></li>
                         <li><img loading="lazy" class="img-fluid" src="../img/crono/10_mi.png" alt="obra"/></li>
-                        <li><img loading="lazy" class="img-fluid" src="../img/crono/12_mi.png" alt="obra"/></li>
+                        <li><img loading="lazy" class="img-fluid" src="../img/crono/15_mi.jpg" alt="obra"/></li>
+
 
                         </ul>
                     </div>
@@ -337,17 +340,18 @@ if ("loading" in HTMLImageElement.prototype) {
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/11_mc.jpg" alt="Catálogos"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/12_mc.jpeg" alt="Catálogos"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/13_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
-            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/8_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
-            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/14_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
-            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/15_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/16_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/8_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/15_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/14_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/17_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/18_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/19_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
-            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/20_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/21_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
-            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/22_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/20_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
             <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/23_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/22_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
+            <li><img loading="lazy" class="img-fluid" src="../img/crono/Colectivas/24_mc.jpg" alt="Dogliotti, Sor, Vega, Esculturas"/></li>
 
             </ul>
         </div>
@@ -467,7 +471,13 @@ if ("loading" in HTMLImageElement.prototype) {
 </section>
 
 <!-- Cierra crono--> 
-
+    <!--BOTON IR ARRIBA-->
+    <div class="button-arriba">
+        <a class="item" id="buttonTop">
+            <em class="fas fa-chevron-up chevronup"></em>
+        </a>
+    </div>
+  <!--cierra backtotop-->
 <!-- Abre Footer  -->
 <footer id="footer__1--navigation">
     <div class="footer__1__navigation__zocalocolor--100 container-fluid text-center">
@@ -586,7 +596,10 @@ if ("loading" in HTMLImageElement.prototype) {
  <script src="../assets/vendor/php-email-form/validate.js"></script>
  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
 
- 
+ <!-- button up-->
+<script src="../js/simplescrollup.js"></script>
+<script src="../js/buttonup/script.js"></script> <!-- backtotop -->
+
 <!-- Abre Enlace y activar aos https://michalsnik.github.io/aos/ -->
 
 <script src="../dist/aos.js"></script>
