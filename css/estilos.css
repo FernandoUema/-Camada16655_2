@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 body::-webkit-scrollbar {
 	width: 10px;
-	background: #0d1b2b;
+	background: #b9635d;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -85,12 +85,6 @@ body::-webkit-scrollbar-thumb {
     background: #ae952e;
     text-shadow: none;
 }
-
-
-
-
-/*otro botón ir arriba de indez*/
-
 
 /**BTN IR ARRIBA**/
 .button-arriba {
@@ -127,8 +121,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button-arriba .item:hover {
-  background: #052c48;
-  color:#9d2929;
+  background-image: linear-gradient(#c4373c, #052c48);
+  color:#7f8d92;
 
 }
 .shows {
@@ -184,7 +178,7 @@ body::-webkit-scrollbar-thumb {
 
 /*nav toggle*/
 .bg-light {
-	background-color: #fff !important;
+	background-color: #f6f5f3 !important;
     background-color:#f6f5f3;
     transition: all 200ms linear;
 }
@@ -324,39 +318,6 @@ body::-webkit-scrollbar-thumb {
   position: -webkit-sticky;
   top: 0;
 }
-/**
- * ----------------------------------------
- * animation kenburns-top
- * ----------------------------------------
- */
- @-webkit-keyframes kenburns-top {
-    0% {
-      -webkit-transform: scale(1) translateY(0);
-              transform: scale(1) translateY(0);
-      -webkit-transform-origin: 50% 16%;
-              transform-origin: 50% 16%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translateY(-15px);
-              transform: scale(1.25) translateY(-15px);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
-  }
-  @keyframes kenburns-top {
-    0% {
-      -webkit-transform: scale(1) translateY(0);
-              transform: scale(1) translateY(0);
-      -webkit-transform-origin: 50% 16%;
-              transform-origin: 50% 16%;
-    }
-    100% {
-      -webkit-transform: scale(1.25) translateY(-15px);
-              transform: scale(1.25) translateY(-15px);
-      -webkit-transform-origin: top;
-              transform-origin: top;
-    }
-  }
   
 /*-----------------------------------------------------------------------
 # CIERRA ESTILOS GENERALES
@@ -500,9 +461,6 @@ body::-webkit-scrollbar-thumb {
     width: auto;
 }
 
-
-
-
 #scrollUp{
   background: #c4373c;
     color:#f6f5f3;
@@ -535,6 +493,15 @@ body::-webkit-scrollbar-thumb {
     padding-top: 0rem;/*cambia padding de las tipos del nav*/
 }
 
+@media (min-width: 768px) {
+  #header a {
+    font-family: 'Nunito', sans-serif;
+    color:#263340;
+    font-size: 0.9rem; /*cambia el tamaño de las tipos del nav*/
+    font-weight: 800;
+  }
+  
+  }
 
 /*--------------------------------------------------------------
 # ABRE dropdown cronologías
@@ -612,10 +579,10 @@ li.dropdown {
 }
 
 /*--------------------------------------------------------------
-# CIERRE DROPDOWN __ https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_navbar
+# CIERRE DROPDOWN 
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# ABRE NUEVO NAV https://codepen.io/ig_design/pen/omQXoQ
+# ABRE NUEVO NAV 
 --------------------------------------------------------------*/
 
 .start-header {
@@ -710,6 +677,7 @@ li.dropdown {
           padding-right: 0rem;
       }
 
+
 /*propio*/
     .navbar-expand-sm {
       flex-wrap: nowrap;
@@ -771,7 +739,7 @@ li.dropdown {
 .pr-con{
   padding-right: 0rem;
   }
-
+  
 /*propio*/
     .navbar-expand-md {
       flex-wrap: nowrap;
@@ -784,8 +752,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
+      padding-right: 0rem; /*el padding del nav se aplicó en otra clase*/
+      padding-left: 0rem;/*el padding del nav se aplicó en otra clase*/
     }
     .navbar-expand-md .navbar-nav-scroll {
       overflow: visible;
@@ -1146,7 +1114,7 @@ li.dropdown {
 }
 .nav-link {
 	position: relative;
-	padding: 5px 0 !important;
+	padding: 5px 0 !important; /*esto activa o no el padding del nav en mediaqueries*/
 }
 .nav-item:after{
 	position: absolute;
@@ -1179,6 +1147,8 @@ li.dropdown {
     padding-bottom: 0px;
     margin-bottom: 0px;
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 .dropdown-content .dropdown-item {
   display: none;
@@ -1196,9 +1166,14 @@ li.dropdown {
   font-size: 0;
   text-align: center;
   list-style-type: none;
-}
+}}
 
-}
+@media (min-width: 768px) {
+.nav-link {
+	position: relative;
+	padding: 5px;
+}}
+
 /*--------------------------------------------------------------
 # CIERRA MENU N AV https://codepen.io/ig_design/pen/omQXoQ
 --------------------------------------------------------------*/
@@ -1416,45 +1391,8 @@ li.dropdown {
 
 }
 
-/*zócalo opaco*/
-.hero__zocalo{
-  position: relative;
-}
 
-.hero__zocalo:after {
-  height: 103%;
-  width: 105%;
-  left: -2%;
-  bottom: -2%;
-  background:#48881d;
-  opacity: 0.7;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-}
 
-@-webkit-keyframes pulse {
-0% {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
-50% {
-  -webkit-transform: translate(0, 10px);
-  transform: translate(0, 10px); }
-100% {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); } }
-  
-@keyframes pulse {
-0% {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); }
-50% {
-  -webkit-transform: translate(0, 10px);
-  transform: translate(0, 10px); }
-100% {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0); } }
   
 .chevron::before {
     border-style: solid;
@@ -1632,6 +1570,7 @@ li.dropdown {
     font-family: 'Jost', sans-serif;
     font-weight: 500;
 }
+
 .item {
     border: none;
     margin-bottom: 30px;
@@ -1723,32 +1662,6 @@ li.dropdown {
   }
 
 
- /* .zoom__img {
- 
-    overflow: hidden;
-    margin: 0 auto;
-}
-   
-.zoom__img img {
-    width: 100%;
-    transition: 0.3s all ease-in-out;
-}
-   
-.zoom__img:hover img {
-    transform: scale(1.4);
-}*/
-
-
-/*
-.zoom__img img {
-    transition: .2s transform ease;
-    transform: scale(1);
-  }
-
-  .zoom__img:hover img {
-    transform: scale(1.05);
-  }*/
-/*/
 
 /*pisar boot*/
 .pagination {
@@ -1911,186 +1824,15 @@ a{
 }
 /*breadcrumb boot pisado*/
 /*fin pisar boot*/
-/*
-  .filters a:hover, .filters a:focus, .filters a:active {
-    text-decoration: none;
-  }
-  
-  .filters a:hover:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 0;
-  
-  }
-  
-  .filters a.active {
-    color: #212529;
-  }
-  
-  .filters a.active:before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    right: 10px;
-    bottom: 0;
-    height: 1px;
-    background-color: #212529;
-  }*/
-/* vino de style.css de my portfolio*/ 
 
 
-
-
-
-  /* ZOOM HOVER */
-  /*zoom hover de acá https://github.com/hasinhayder/ImageCaptionHoverAnimation
-.caption-style-2{
-    margin: 0px;
-    padding: 0px;
-}
-
-.caption-style-2 {
-    float: left;
-    padding: 0px;
-    position: relative;
-    overflow: hidden;
-}
-
-.caption-style-2:hover .caption{
-    opacity: 1;
-    transform: translateY(-100px);
-    -webkit-transform:translateY(-100px);
-    -moz-transform:translateY(-100px);
-    -ms-transform:translateY(-100px);
-    -o-transform:translateY(-100px);
-}
-
-
-.caption-style-2 img{
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    z-index: 4;
-}
-
-
-.caption-style-2 .caption{
-    cursor: pointer;
-    position: absolute;
-    opacity: 0;
-    top:300px;
-    -webkit-transition:all 0.15s ease-in-out;
-    -moz-transition:all 0.15s ease-in-out;
-    -o-transition:all 0.15s ease-in-out;
-    -ms-transition:all 0.15s ease-in-out;
-    transition:all 0.15s ease-in-out;
-
-}
-.caption-style-2 .blur{
-    background-color: rgba(0,0,0,0.7);
-    height: 300px;
-    width: 400px;
-    z-index: 5;
-    position: absolute;
-}
-
-.caption-style-2 .caption-text{
-    z-index: 10;
-    color: #fff;
-    position: absolute;
-    width: 400px;
-    height: 300px;
-    text-align: center;
-    top:20px;
-}
-*/
-
-/*termina zoom hover */
-/*lazy placeholder*/
-/*cierra lazy*/
-
-
-.container__grid-mosaico{
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 4rem;
-}
-
-
-.grid__mosaico--obra-full > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(1,1);
-
-  }
-  .grid__mosaico--obra-full > div:hover {
-    transform: scale(1.01,1.01);
-
-  }
-.grid__mosaico--obra-full > div > img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-.grid__mosaico--obra-full {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-rows: 3fr 3fr 3fr 3fr;
- 
-}
-.example-item {
-    opacity: 0.0;
-
-}
-.pulsate-css {
-    animation: pulsate 2s ease-out;
-    animation-iteration-count: infinite; 
-    opacity: 0.0;
-
-    /* you dont need the stuff below, but its what I used to create the loading circle */
-    border: 3px solid #a28570;
-    border-radius: 20px;
-    height: 14px;
-    width: 14px;
-    position: relative;
-    display: inline-block;
-    margin-top: 40px;
-    align-items: center;
-    margin-bottom: 3rem;
-}
 
 /*--------------------------------------------------------------
 # ABRE CURRICULUM VITAE
 --------------------------------------------------------------*/
-/*sticky de codepen https://codepen.io/annesophiegdn/pen/VwbBxmp
 
-  text-transform: uppercase;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5px;
-  margin-left: 20px;
-  color: black;
-  min-height: 100vh;
-  display: block;
-  
-  align-items: center;
-  justify-content: center;
-  */
 
-/*https://bootsnipp.com/snippets/6Ayd7*/
 
-.sidebar
-{
-    background-color:#28a745;
-    min-height:200px;
-    padding:15px;
-    color:#fff;
-    margin:25px 0px;
-}
 .stick {
     position: fixed;
     width: 26.7%;
@@ -2199,7 +1941,7 @@ a{
 /*testimonios*/
 .testimonial-wrap {
   padding: 50px 40px 80px 40px;
-  background: #a2857050;
+  background:#ced4da;
 }
 
 .testimonial-wrap .testimonial {
@@ -2220,6 +1962,13 @@ a{
   font-style: italic;
   font-weight: 500;
 }
+.obra__testimonios--nombre{
+  font-size: 0.9rem;
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+}
+
 .testimonials-slider .swiper-pagination {
   margin-top: -40px;
   position: relative;
@@ -2233,7 +1982,7 @@ a{
 }
 
 .testimonials-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color:#084977;
+  background-color:#937a68;
 }
 
 /*cierra testimonios obra*/
@@ -2433,6 +2182,24 @@ text-decoration: none;
   text-decoration: none;
 }
 
+
+@media (max-width: 768px) {
+  .galeria__cv--individuales{
+    flex-flow: row wrap;  
+    margin-bottom: 3rem;
+    align-items: center;
+    
+}
+.caja__ph--copyright-izq{
+  display:none;
+}
+.caja__img--sticky-left .img__crono-individuales{
+  width: 768px;
+}
+}
+
+
+
 /* Underline From Left en hover.css footer9*/
 .hvr__underline--from-left-fot {
     vertical-align: middle;
@@ -2451,7 +2218,7 @@ text-decoration: none;
     right: 100%;
     bottom: -2px;
     background:#e5e5e5;
-    height: 3px;
+    height: 2px;
     -webkit-transition-property: right;
     transition-property: right;
     -webkit-transition-duration: 0.3s;
@@ -2533,7 +2300,7 @@ text-decoration: none;
     height:24px;
     width:25px;
     background:#c4373c;
-    color:#fff;
+    color:#f6f5f3;
     text-align:center;
     margin-right: 15px;
     padding-top: 4px;
@@ -2623,6 +2390,28 @@ text-decoration: none;
     line-height: 2rem;
     font-style: normal;
 }
+.tipo__crono--descripcion-txt{
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.85rem;
+  font-kerning: none;
+  color:#2d2e2f;
+  line-height: 1.5rem;
+  padding-top:1rem;
+
+}
+.tipo__crono--descripcion-cred{
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.85rem;
+  font-kerning: none;
+  color:#2d2e2f;
+  line-height: 1.2rem;
+  padding-bottom:0.7rem;
+}
+
 .tipo__crono--descripcion-articulo{
     font-family: 'Jost', sans-serif;
     font-weight: 400;
@@ -2925,5 +2714,6 @@ input[type=checkbox]:checked + label {
     font-kerning: none;
     color: #212529;
     z-index: 1;
+    margin-bottom: 3rem;
 }
 

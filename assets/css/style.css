@@ -1,9 +1,3 @@
-/**
-* Template Name: MyPortfolio - v4.3.0
-* Template URL: https://bootstrapmade.com/myportfolio-bootstrap-portfolio-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -11,6 +5,44 @@
 
 .section {
   padding: 7rem 0;
+}
+
+.filters a {
+  text-decoration: none;
+  color:#28292a;
+  display: inline-block;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
+
+.filters a:hover, .filters a:focus, .filters a:active {
+  text-decoration: none;
+}
+
+.filters a:hover:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  height: 3px;
+  background-color:#937a68;
+
+}
+
+.filters a.active {
+  color:#937a68;
+}
+
+.filters a.active:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  height: 3px;
+  background-color:#937a68;
 }
 
 

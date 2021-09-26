@@ -109,10 +109,10 @@ if ("loading" in HTMLImageElement.prototype) {
                           <div class="collapse navbar-collapse menu_float_right header__navigation col-xs-6" id="navbarSupportedContent">
                               <ul class="navbar-nav ml-auto py-4 py-md-0">
                                   <li class="nav-item lasagna pl-ac pl-md-0 ml-0 ml-md-4">
-                                  <a href="../index.html" class="nav-link active hvr__underline--from-left-nav">Home</a>
+                                  <a href="../index.html" class="nav-link  hvr__underline--from-left-nav">Home</a>
                                   </li>
                                   <li class="nav-item lasagna pl2 pl-md-0 ml-0 ml-md-4">
-                                  <a href="obra.html" class="nav-link hvr__underline--from-left-nav">Obra</a></li>
+                                  <a href="obra.html" class="active nav-link hvr__underline--from-left-nav">Obra</a></li>
                                   </li>
                                   <li class="nav-item lasagna pl2-1 pl-md-0 ml-0 ml-md-4">
                                   <a href="muestra.html" class="nav-link hvr__underline--from-left-nav">Muestra Virtual</a></li>
@@ -155,12 +155,13 @@ if ("loading" in HTMLImageElement.prototype) {
     <div class="container">
       <div class="row mb-3 align-items-center">
         <div class="col-md-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-up">
-            <h1 class="tipo__titulo tipo__titulo--obra">~Obra</h1>
+            <h1 class="tipo__titulo tipo__titulo--obra ">~Obra</h1>
         </div>
-        <span></span>
+        <span>
+        </span>
         <div class="col-md-12 col-lg-6 text-start" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="caja__obra--filter filters"> 
-                <a href="#" data-filter="*" class="tipo__obra--filter active hvr__underline--from-left-brown">Todas</a>
+                <a href="#" data-filter="*" class="active tipo__obra--filter active hvr__underline--from-left-brown">Todas</a>
                 <a href="#" data-filter=".esculturas" class="tipo__obra--filter hvr__underline--from-left-brown">Esculturas</a>
                 <a href="#" data-filter=".dibujos" class="tipo__obra--filter hvr__underline--from-left-brown">Dibujos</a>
                 <a href="#" data-filter=".pinturas" class="tipo__obra--filter hvr__underline--from-left-brown">Pinturas</a>
@@ -512,8 +513,8 @@ if ("loading" in HTMLImageElement.prototype) {
 
 <!-- abre testimonios-->
 
-<section class="section pt-3 pb-5">
-  <div class="container">
+<section class="section pt-2 pb-5">
+  <div class="container-fluid px-0 mb-0">
     <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -524,7 +525,7 @@ if ("loading" in HTMLImageElement.prototype) {
               <p>«Inés, en tus obras veo un reflejo de lo antiguo, lo arcaico, en esta periodización de lo habitual. Como lo relativo en la forma, el volumen engañoso, somos de trapo, de tela, una tela inflada y nada más. <br>
                 ¡¡Gracias, gracias totales!!»</p>
               </blockquote>
-              <p class="obra__tertimonios--nombre"> <strong>~Gustavo Cerati</strong> [Julio 1999. C.C. Recoleta]</p>
+              <p class="obra__testimonios--nombre">~Gustavo Cerati [Julio 1999. C.C. Recoleta]</p>
             </div>
           </div>
         </div> 
@@ -539,7 +540,7 @@ if ("loading" in HTMLImageElement.prototype) {
             Adolescentes, hombres y mujeres de rasgos que escapan al ideal clásico, atemporal, para acercarse 
             a prototipos del mestizaje en la Argentina.»</p>
             </blockquote>
-            <p class="obra__tertimonios--nombre"> <strong>~Elena Olivares</strong> [C.C. Recoleta]</p>
+            <p class="obra__testimonios--nombre">~Elena Olivares [C.C. Recoleta]</p>
             </div>
           </div>
         </div> 
@@ -552,7 +553,7 @@ if ("loading" in HTMLImageElement.prototype) {
               magia, milagrería? ¿Imágenes oníricas, eidéticas, surreales? 
               Tanto dá cuando la pupila es interpelada y obra la epifanía.»</p>
             </blockquote>
-            <p class="obra__tertimonios--nombre"> <strong>~Elba Pérez </strong>[Abril 2011]</p>
+            <p class="obra__testimonios--nombre">~Elba Pérez [Abril 2011]</p>
             </div>
           </div>
         </div> 
@@ -564,7 +565,7 @@ if ("loading" in HTMLImageElement.prototype) {
             <p class="obra__tertimonios--txt">«Inés nos muestra que las mujeres crean para comprender, para despertarse de los problemas del mundo, para tomar
               conciencia de sí mismas y de sus complejidades integradoras y no contradictorias. Todas sus esculturas nos revelan un mundo mostrado.»</p>
             </blockquote>
-            <p class="obra__tertimonios--nombre"> <strong>~María Cristina Deprati </strong>[en <italic>Más allá de la piel</italic>]</p>
+            <p class="obra__testimonios--nombre">~María Cristina Deprati [en <italic>Más allá de la piel</italic>]</p>
             </div>
           </div>
         </div> 
@@ -578,7 +579,7 @@ if ("loading" in HTMLImageElement.prototype) {
             Adolescentes, hombres y mujeres de rasgos que escapan al ideal clásico, atemporal, para acercarse 
             a prototipos del mestizaje en la Argentina.»</p>
             </blockquote>
-            <p class="obra__tertimonios--nombre"> <strong>~Elena Olivares </strong>[C.C. Recoleta]</p>
+            <p class="obra__testimonios--nombre">~Elena Olivares [C.C. Recoleta]</p>
             </div>
           </div>
         </div> 
@@ -603,14 +604,14 @@ if ("loading" in HTMLImageElement.prototype) {
   <div class="footer__1__navigation__zocalocolor--100 container-fluid text-center">
       <div class="container">
           <div class="row d-flex justify-content-center pb-3 pt-4">
-            <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="../index.html">Home</a></h6></div>
-            <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="obra.html">Obra</a></h6></div>
-            <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="muestra.html">Muestra Virtual</a></h6></div>
-            <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="cronologias.html">Cronologías</a></h6></div>
-            <div class="col-md-auto px-4 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="contacto.html">Contacto</a></h6></div>
+            <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="../index.html">Home</a></h6></div>
+            <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="obra.html">Obra</a></h6></div>
+            <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="muestra.html">Muestra Virtual</a></h6></div>
+            <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="cronologias.html">Cronologías</a></h6></div>
+            <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="contacto.html">Contacto</a></h6></div>
           </div>
           <div class="row d-flex justify-content-center pb-2">
-            <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" target="_blank" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
+            <div class="col-lg-12 px-1 pb-2"><a href="https://www.facebook.com/ines.vega.37" target="_blank" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
               <a href="https://www.instagram.com/vivainesita/?hl=es-la" target="_blank" class="lamedia"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" target="_blank" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a>
               </div>
       </div>
