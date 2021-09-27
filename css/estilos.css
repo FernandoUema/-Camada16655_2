@@ -63,9 +63,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-	background: #f6f5f3;
+	background: #cecece;
 	border-radius: 10px;
-	border-right: 2px solid #7c8e95;
+	border-right: 2px solid #b9635d;
 }
 .salto__linea{
     display: block;
@@ -119,11 +119,12 @@ body::-webkit-scrollbar-thumb {
   box-shadow: var(--box-shadow);
   transition: all .5s ease;
 }
+/*  background-image: linear-gradient(#c4373c, #052c48);*/
+
 
 .button-arriba .item:hover {
-  background-image: linear-gradient(#c4373c, #052c48);
-  color:#7f8d92;
-
+  color:#cecece;
+  background: #052c48;
 }
 .shows {
   animation: popup .5s ease-in-out !important;
@@ -301,7 +302,10 @@ body::-webkit-scrollbar-thumb {
   background:#212529;
 
 }
-
+.firma{
+  width: 150px;
+  height: auto;
+}
 .readmore:active, .readmore:focus, .readmore:hover {
   outline: none;
 }
@@ -405,7 +409,7 @@ body::-webkit-scrollbar-thumb {
 }
 /*padding del nav*/
 .pl2{
-    padding-left: 1.4rem;/*cambia padding de las tipos del nav x crono*/
+    padding-left: 1.3rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pl2-1{
   padding-left: 1.3rem;/*cambia padding de las tipos del nav x crono*/
@@ -414,7 +418,7 @@ body::-webkit-scrollbar-thumb {
     padding-left: 0.7rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pl-ac{
-    padding-left: 4rem;/*cambia padding de las tipos del nav x crono*/
+    padding-left: 2rem;/*cambia padding de las tipos del nav x crono*/
 }
 .pr-con{
     padding-right: 4rem;/*cambia padding de las tipos del nav x crono*/
@@ -1453,7 +1457,7 @@ li.dropdown {
 
 #alberti .caja__destacado--alberti{
     position: absolute;
-    margin: 4.5rem 0rem 0rem 8rem;
+    margin: 4rem 0rem 0rem 7.8rem;
     z-index: 3;
 }
 #acerca .caja__acerca--left-txt, 
@@ -2091,7 +2095,7 @@ ul{
     /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
     position: relative;
     overflow: hidden;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
 .hvr__underline--from-left-nav:before {
     content: "";
@@ -2108,11 +2112,14 @@ ul{
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+ 
+
 }
 .hvr__underline--from-left-nav:hover:before, 
 .hvr__underline--from-left-nav:focus:before, 
 .hvr__underline--from-left-nav:active:before {
     right: 0;
+
 }
 /*-------------------------CIERRA LINEA HOVER LINK------------------------*/
 /* Underline From Left en hover.css en obra línea 89*/ 
@@ -2125,6 +2132,7 @@ ul{
     position: relative;
     overflow: hidden;
     padding-bottom: 3px;
+
   }
 .hvr__underline--from-left-brown:before {
     content: "";

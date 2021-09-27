@@ -252,7 +252,7 @@ a {
 #alberti .tipo__destacado--alberti, #alberti .tipo__copyright--alberti {
   font-family: "Playfair Display", serif;
   color: #31383f;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   font-style: italic;
   -webkit-font-kerning: none;
@@ -262,7 +262,7 @@ a {
 }
 
 .tipo__copyright--alberti {
-  font-weight: 700;
+  font-weight: 800;
   padding-bottom: 20px;
 }
 
@@ -290,7 +290,6 @@ a {
   font-weight: 800;
   font-style: italic;
   text-align: left;
-  letter-spacing: 20px;
   -ms-flex-wrap: row;
       flex-wrap: row;
   letter-spacing: 1px;
@@ -302,6 +301,16 @@ a {
   border-radius: 50%;
   position: absolute;
   background-color: #ac8fac;
+  z-index: 1;
+  margin-left: 1rem;
+}
+
+#alberti .cezanne:hover {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #b9a659;
   z-index: 1;
   margin-left: 1rem;
 }

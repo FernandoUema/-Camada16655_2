@@ -154,18 +154,29 @@ if ("loading" in HTMLImageElement.prototype) {
 <section id="obra" class="caja__obra--titulo-filter"> 
     <div class="container">
       <div class="row mb-3 align-items-center">
-        <div class="col-md-12 col-lg-6 mb-3 mb-lg-0" data-aos="fade-up">
+        <div class="col-md-6 col-lg-6 mb-3 mb-lg-0 d-flex" data-aos="fade-up">
             <h1 class="tipo__titulo tipo__titulo--obra ">~Obra</h1>
         </div>
-        <span>
-        </span>
-        <div class="col-md-12 col-lg-6 text-start" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-md-3 col-lg-3 mb-3 mb-lg-0 d-flex" data-aos="fade-up">
+          <span></span>
+      </div>
+        <div class="col-md-3 col-lg-3 mb-3 mb-lg-0 d-flex" data-aos="fade-up">
+          <span></span>
+        </div>
+        
+        <div class="col-md-6 col-lg-6 text-start" data-aos="fade-up" data-aos-delay="100">
             <div id="filters" class="caja__obra--filter filters"> 
                 <a href="#" data-filter="*" class="active tipo__obra--filter active hvr__underline--from-left-brown">Todas</a>
                 <a href="#" data-filter=".esculturas" class="tipo__obra--filter hvr__underline--from-left-brown">Esculturas</a>
                 <a href="#" data-filter=".dibujos" class="tipo__obra--filter hvr__underline--from-left-brown">Dibujos</a>
                 <a href="#" data-filter=".pinturas" class="tipo__obra--filter hvr__underline--from-left-brown">Pinturas</a>
           </div>
+        </div>
+        <div class="col-md-5 col-lg-5 mt-5 d-flex" data-aos="fade-up">
+          <span></span>
+      </div>
+        <div class="col-md-1 col-lg-1 mt-5 d-flex align-items-right" data-aos="fade-up">
+          <img loading="lazy" class="img-fluid firma" alt="firma" src="../img/firma.svg">
         </div>
       </div>
       <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
@@ -515,6 +526,7 @@ if ("loading" in HTMLImageElement.prototype) {
 
 <section class="section pt-2 pb-5">
   <div class="container-fluid px-0 mb-0">
+  
     <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
