@@ -690,8 +690,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-sm .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 0.2rem; /*era 0.5*/
+      padding-left: 0.2rem; /*era 0.5*/
     }
     .navbar-expand-sm .navbar-nav-scroll {
       overflow: visible;
@@ -752,8 +752,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-md .navbar-nav .nav-link {
-      padding-right: 0rem; /*el padding del nav se aplicó en otra clase*/
-      padding-left: 0rem;/*el padding del nav se aplicó en otra clase*/
+      padding-right: 0.2rem; /*era 0.5 y se aplica en otra clase*/
+      padding-left: 0.2rem; /*era 0.5*/
     }
     .navbar-expand-md .navbar-nav-scroll {
       overflow: visible;
@@ -806,8 +806,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 0.2rem; /*era 0.5 y se aplica en otra clase*/
+      padding-left: 0.2rem; /*era 0.5*/
     }
     .navbar-expand-lg .navbar-nav-scroll {
       overflow: visible;
@@ -859,8 +859,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-xl .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 0.2rem; /*era 0.5 y se aplica en otra clase*/
+      padding-left: 0.2rem; /*era 0.5*/
     }
     .navbar-expand-xl .navbar-nav-scroll {
       overflow: visible;
@@ -912,8 +912,8 @@ li.dropdown {
       position: absolute;
     }
     .navbar-expand-xxl .navbar-nav .nav-link {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
+      padding-right: 0.2rem; /*era 0.5 y se aplica en otra clase*/
+      padding-left: 0.2rem; /*era 0.5*/
     }
     .navbar-expand-xxl .navbar-nav-scroll {
       overflow: visible;
@@ -964,8 +964,8 @@ li.dropdown {
     position: absolute;
   }
   .navbar-expand .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.2rem; /*era 0.5 y se aplica en otra clase*/
+      padding-left: 0.2rem; /*era 0.5*/
   }
   .navbar-expand .navbar-nav-scroll {
     overflow: visible;
@@ -1114,7 +1114,7 @@ li.dropdown {
 }
 .nav-link {
 	position: relative;
-	padding: 5px 0 !important; /*esto activa o no el padding del nav en mediaqueries*/
+	padding: 5px 0 ; /*el important acpa activa o no el padding del nav en mediaqueries*/
 }
 .nav-item:after{
 	position: absolute;
@@ -1339,14 +1339,13 @@ li.dropdown {
     justify-content: space-between;
     box-sizing: border-box; 
 }
+
   }
   #footer__1--navigation .footer__1__navigation__zocalocolor--100 {
     padding: 30px 0 20px 0;
     background-color:#7c8e95;
     height: auto;
 }
-
-
 
 /* --------------------------------------------------------------
 #CIERRA FOOTER 2 COPYRIGHT     color:#b9635d;
@@ -1391,9 +1390,6 @@ li.dropdown {
 
 }
 
-
-
-  
 .chevron::before {
     border-style: solid;
     border-width: 0.25em 0.25em 0 0;
@@ -1586,7 +1582,7 @@ li.dropdown {
     z-index: 2;
     position: absolute;
     content: "";
-    top: 4px;
+    top: 2.95px;
     left: 0;
     right: 0;
     bottom: 0;
