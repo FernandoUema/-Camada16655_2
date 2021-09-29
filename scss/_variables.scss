@@ -1,13 +1,27 @@
 /*PALETA*/
 /*background color*/
 $blanco__principal: #f6f5f3;
+$blanco__principal2:#e5e5e5;
+
 $blanco__secundario:#cecece;
+$blanco__terciario:#ced4da;
+
+
+/*zocalos*/
+$gris__zocalo: #7c8e95;
+$rojo__zocalo: linear-gradient(#c4373c, #9d2929);
+
+
+$gris__nav:#2d2e2f;
+
+
 $lila__principal:#ac8fac;
 $lila__secundario: #b09ab0;
 $lila__amarillo: #b9a659;
 
 $brown__principal: #a28570;
 $brown__secundario: #937a68;
+
 $mostaza__principal: #ae952e;
 $amarillo__naranja: #f09f3d;
 
@@ -15,15 +29,22 @@ $amarillo__naranja: #f09f3d;
 $azul__principal:#052c48;
 $azul__secundario:#084977;
 
+$azul__terciario-nav:#263340;
+$azul__primario-nav:#212529;
+$azul__secundario-nav:#2d2e2f;
+$azul__nav: #0d1b2b;
+
+
 /*color texto*/
 $negro:#31383f!default;
-
 /*placeholder*/
 $bordo__principal: #7e1e1b;
 $rojo__btn: #9d2021;
 $rojo__secundario: #aa3232;
 
+
 $rojo__principal: #c4373c;
+
 $rojo__terracota:#b9635d;
 $rojo__terra:#7a3116;
 $mostaza__principal2: #ae6638;
@@ -34,9 +55,6 @@ $rosa__dior:#e0aab6;
 
 
 
-/*zocalos*/
-$gris__zocalo: #7c8e95;
-$rojo__zocalo: linear-gradient(#c4373c, #9d2929);
 
 /*botones*/
 $whats_click:#0ab39c;

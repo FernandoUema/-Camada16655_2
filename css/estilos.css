@@ -176,6 +176,9 @@ body::-webkit-scrollbar-thumb {
 .colorbg__muestra--celeston{
   background-color:#929f9b;
 }
+.colorbg__404--terra{
+  background:#b9635d;
+}
 
 /*nav toggle*/
 .bg-light {
@@ -185,6 +188,72 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------CIERRA COLORBACKGROUND--------------------*/
+/*---------------------abre error 404--------------------*/
+
+
+#error__404 {
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+#error__404, .links_404{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: medium;
+  color:#052c48;
+  text-align: center;
+}
+
+#error__404 .nav {
+  box-sizing: border-box;
+}
+
+#error__404 nav ul {
+  display: flex; 
+  flex-direction:column;
+  font-size: 0;
+  text-align: center;
+}
+
+#error__404 nav ul li {
+  list-style-type: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#error__404 nav ul li{
+  text-decoration: none;
+    color:#052c48;
+    text-align: center;
+  }
+
+
+#error__404 nav ul li a {
+  text-decoration: none;
+  color:#052c48;
+  text-align: center;
+}
+#error__404 nav ul li a:hover {
+  text-decoration: none;
+  color:#f6f5f3;
+  text-align: center;
+}
+
+
+
+.bajada_404{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+
+}
+
+
 /*-------------------------ABRE EPIGRAFES------------------------*/
 
 #epigrafe__obra--bg .caja__epigrafe--img {
@@ -199,6 +268,24 @@ body::-webkit-scrollbar-thumb {
   text-align: end;
   line-height: 0.1rem;
 }
+.caja__epigrafe--video{
+text-align: start;
+  line-height: 0.1rem;
+}
+.caja__epigrafe--video-end{
+  text-align: start;
+  line-height: 0.1rem;
+  margin-bottom: 4rem;
+  }
+
+  .tipo__obra--video{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-align: right;
+    font-kerning: none;
+    color:#2d2e2f;
+    }
 #epigrafe__obra--bg .tipo__obra--nombre, 
 .tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
@@ -218,6 +305,17 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 0.8px;
     word-spacing: 1px;
 }
+.tipo__obra--nombre-video{
+  font-family: 'Playfair Display', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-kerning: none;
+  font-style: italic;
+  color:#2d2e2f;
+  letter-spacing: 0.8px;
+  word-spacing: 1px;
+}
+
 .tipo__muestra--elena{
   font-family: 'Jost';
   font-size: 0.8rem;
@@ -244,6 +342,7 @@ body::-webkit-scrollbar-thumb {
     font-kerning: none;
     color:#2d2e2f;
 }
+
 .tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
     font-size: 0.7rem;
@@ -306,6 +405,11 @@ body::-webkit-scrollbar-thumb {
   width: 150px;
   height: auto;
 }
+@media (-width: 768px) {
+  .firma{
+  display:none;
+}}
+
 .readmore:active, .readmore:focus, .readmore:hover {
   outline: none;
 }
@@ -390,7 +494,7 @@ body::-webkit-scrollbar-thumb {
 /*#0d1b2b*/
 #header nav ul li {
     font-family: 'Nunito', sans-serif;
-    color:#263340;
+    color:#212529;
     text-transform: none;
     list-style-type: none;
     letter-spacing: 1px;
@@ -403,7 +507,7 @@ body::-webkit-scrollbar-thumb {
 }
 #header a {
   font-family: 'Nunito', sans-serif;
-  color:#263340;
+  color:#212529;
   font-size: 0.95rem; /*cambia el tamaño de las tipos del nav*/
   font-weight: 800;
 }
@@ -439,15 +543,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header .header__navigation ul li a {
-    color:#2d2e2f;
+    color:#212529;
 }
 
 #header ul li:hover ul {
     display: block;
 }
 
+
 #header .header__navigation ul li a:hover { 
   color: #c4373c;
+
   display:inline-block;
   font-weight: 800;
   width: auto;
@@ -500,13 +606,49 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 768px) {
   #header a {
     font-family: 'Nunito', sans-serif;
-    color:#263340;
+    color:#212529;
     font-size: 0.9rem; /*cambia el tamaño de las tipos del nav*/
     font-weight: 800;
   }
   
   }
+/*-------------------------ABRE LINEA HOVER LINK------------------------*/
 
+/* Underline From Left en hover.css en obra línea 89*/
+.hvr__underline--from-left-nav {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(3px) translateZ(0);
+  transform: perspective(3px) translateZ(0);
+  /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3px;
+}
+.hvr__underline--from-left-nav:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: -2px;
+  background: #c4373c;
+  height: 5px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+
+
+}
+.hvr__underline--from-left-nav:hover:before, 
+.hvr__underline--from-left-nav:focus:before, 
+.hvr__underline--from-left-nav:active:before {
+  right: 0;
+
+}
 /*--------------------------------------------------------------
 # ABRE dropdown cronologías
 --------------------------------------------------------------*/
@@ -1102,7 +1244,7 @@ li.dropdown {
 .nav-link{
     transition: all 200ms linear;
     font-family: 'Nunito', sans-serif;
-    color:#0d1b2b;
+    color:#263340;
     text-transform: none;
     list-style-type: none;
     letter-spacing: 1px;
@@ -1235,7 +1377,7 @@ li.dropdown {
 }
 
 .tipo__footer--links a {
-  color: #31383f;
+  color: #212529;
   text-decoration: none;
   font-family: 'Nunito', sans-serif;
   font-size: 1rem;
@@ -1350,6 +1492,13 @@ li.dropdown {
     background-color:#7c8e95;
     height: auto;
 }
+@media (max-width: 768px) {
+  #footer__1--navigation .footer__1__navigation__zocalocolor--100 {
+    margin-top:15rem;
+    padding: 30px 0 20px 0;
+    background-color:#7c8e95;
+    height: auto;
+}}
 
 /* --------------------------------------------------------------
 #CIERRA FOOTER 2 COPYRIGHT     color:#b9635d;
@@ -1361,12 +1510,13 @@ li.dropdown {
 # ABRE ACERCA
 --------------------------------------------------------------*/
 #hero {
-    background: url("../img/hero/hero_01.jpg");
-    background-attachment: fixed;
+
+  background: url("../img/hero/hero_01.jpg");
+  background-attachment: fixed;
     background-position: center;
     background-size: cover;
     width: 100%;
-    min-height: 85vh;
+    min-height: 100vh;
     position: relative;
     margin-bottom: 20px;
     margin-top: 0;
@@ -2084,43 +2234,7 @@ ul{
 }
 
 /*cierra subnav*/
-/*-------------------------ABRE LINEA HOVER LINK------------------------*/
 
-/* Underline From Left en hover.css en obra línea 89*/
-.hvr__underline--from-left-nav {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(3px) translateZ(0);
-    transform: perspective(3px) translateZ(0);
-    /*box-shadow: 0 0 1px rgba(0, 0, 0, 0);*/
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 3px;
-}
-.hvr__underline--from-left-nav:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    right: 100%;
-    bottom: -2px;
-    background: #7e1e1b;
-    height: 5px;
-    -webkit-transition-property: right;
-    transition-property: right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
- 
-
-}
-.hvr__underline--from-left-nav:hover:before, 
-.hvr__underline--from-left-nav:focus:before, 
-.hvr__underline--from-left-nav:active:before {
-    right: 0;
-
-}
 /*-------------------------CIERRA LINEA HOVER LINK------------------------*/
 /* Underline From Left en hover.css en obra línea 89*/ 
 .hvr__underline--from-left-brown {
@@ -2172,8 +2286,8 @@ ul{
 
 
 .catalogo__img{
-  width: 21vh;
-  height: 21vh;
+  width: 156px;
+  height: auto;
 }
 
 .catalogo__img
@@ -2200,9 +2314,18 @@ text-decoration: none;
 .caja__img--sticky-left .img__crono-individuales{
   width: 768px;
 }
+.galeria__item{
+  display: inline-flex;
+}
 }
 
-
+@media (min-width: 768px) {
+  .galeria__cv--individuales{
+    flex-flow: row wrap;  
+  }
+  .catalogo__img{
+    align-items: center;
+  }
 
 /* Underline From Left en hover.css footer9*/
 .hvr__underline--from-left-fot {
@@ -2543,7 +2666,7 @@ text-decoration: none;
   background-color: #ecedef;
 
   outline: 0;
-  box-shadow: 0 0 0 0.25rem #26334020;
+  box-shadow: 0 0 0 0.25rem #21252920;
 }
 .form-control::-webkit-date-and-time-value {
   height: 1.5em;

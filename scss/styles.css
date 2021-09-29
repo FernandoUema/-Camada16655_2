@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*PALETA*/
 /*background color*/
+/*zocalos*/
 /*color texto*/
 /*placeholder*/
-/*zocalos*/
 /*botones*/
 /*TIPOGRAFÍAS*/
 /*margenes*/
@@ -89,7 +89,7 @@ a {
   color: #cecece;
 }
 
-.tipo__titulo, .tipo__titulo--acerca, .tipo__titulo--obra, .tipo__titulo--crono, .tipo__titulo--muestra, .tipo__titulo--contacto {
+.tipo__titulo, .tipo__titulo--acerca, .tipo__titulo--obra, .tipo__titulo--crono, .tipo__titulo--muestra, .tipo__titulo--contacto, .tipo__titulo--404 {
   font-family: "Playfair Display", serif;
   font-size: 6rem;
   font-weight: 800;
@@ -139,6 +139,15 @@ a {
 
 .tipo__titulo--contacto {
   color: #084977;
+}
+
+.tipo__titulo--404 {
+  color: #7e1e1b;
+  text-align: center;
+  font-size: 10rem;
+  margin-left: -1rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 
 /*768px*/

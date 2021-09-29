@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="colorbg__muestra--celeston">
 <!-- Abre Head General head-->
 <head>
 <meta charset="UTF-8">
@@ -14,44 +14,43 @@
 
 <!-- Abre Bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <!-- Cierra Bootstrap-->
 
-<!-- Abre Css estilos -->
+<!-- Abre Css estilos y Css styles_sass-->
+<link rel="stylesheet" href="../css/media.css"/>
     <link rel="stylesheet" href="../css/estilos.css"/>
     <link rel="stylesheet" href="../css/styles.css"/>
     <link rel="stylesheet" href="../scss/styles.css"/>
-
-
 <!-- Cierra Css estilos -->
 
-<!--abre JS-->
+<!--abre Modernizr-->
 <script src="../js/modernizr.js"></script> <!-- Modernizr -->
-<!--cierra JS-->
-
+<!--cierra Modernizr-->
+<!-- abre animación sobre link de obra-->
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
 
 <!-- Abre Fuentes Tipográficas -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <!-- Cierra Fuentes Tipográficas -->
-
 <!-- Abre Íconos -->
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/ionicons.min.css">
+<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/ionicons.min.css">
 <!-- Cierra Íconos -->
-
 <!-- abre Vendor CSS Files de my portfolio-->
-    <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <!-- Vendor CSS Files de my portfolio-->
 
 <!-- Abre Animaciones-->
@@ -65,148 +64,96 @@
 <!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
 <script>
 if ("loading" in HTMLImageElement.prototype) {
-  console.log("El navegador soporta `lazy-loading`...");
+console.log("El navegador soporta `lazy-loading`...");
 } else {
-  console.log("`lazy-loading` no soportado...");
+console.log("`lazy-loading` no soportado...");
 }
 </script>
-<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
-
-<!-- Cierra Animaciones-->
-</head>
-<!-- Cierra HTML General head-->
-
-<!--PENDIENTE CURSOR https://codepen.io/animaticss/pen/oNBoVbJ-->
-
-<!-- Abre HTML BODY--> 
-<body class="colorbg__obra--gris">
-
-<!-- Abre HTML General Menú--> 
-<header id="header" class="fixed-top container-fluid">
-    <div class="menu_nav_ancho">
-        <div class="navigation-wrap bg-light start-header start-style">
-            <div class="row">
-                <div class="container">
-                    <div class="menu_float_right">   
-                        <nav class="navbar navbar-expand-md navbar-light px-5">
-                            <a href="../index.html" class="header__logo logo float-left col-xs-6" target="_blank"><img src="../img/logo.svg" onerror="this.onerror=null; this.src='../img/logo.png'"></a> 
-                            <button class="navbar-toggler-iv" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--modificacion clase toggler bootstrap-->
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse menu_float_right header__navigation col-xs-6" id="navbarSupportedContent">
-                                <ul class="navbar-nav ml-auto py-4 py-md-0">
-                                    <li class="nav-item lasagna pl-ac pl-md-0 ml-0 ml-md-4">
-                                    <a href="../index.html" class="nav-link hvr__underline--from-left-nav">Acerca</a>
-                                    </li>
-                                    <li class="nav-item lasagna pl2 pl-md-0 ml-0 ml-md-4">
-                                    <a href="obra.html" class="nav-link hvr__underline--from-left-nav">Obra</a></li>
-                                    </li>
-                                    <li class="nav-item lasagna pl2-1 pl-md-0 ml-0 ml-md-4">
-                                    <a href="muestra.html" class="nav-link hvr__underline--from-left-nav">Muestra Virtual</a></li>
-                                    </li>
-                                    <li class="nav-item lasagna dropiconnone pl1 pl-md-0 ml-0 ml-md-4">
-                                        <li class="dropdown">
-                                        <a href="crono.html" class="nav-link dropbtn hvr__underline--from-left-nav" data-toggle="#" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <span>Cronologías</span><i id="dropicon" class="fas fa-chevron-down pr-2 "></i></a>
-                                        <div class="dropdown-content">
-                                            <a class="dropdown-item" href="crono.html">Muestras Individuales</a>
-                                            <a class="dropdown-item" href="crono.html#muestras__colectivas">Muestras Colectivas</a>
-                                            <a class="dropdown-item" href="crono.html#los__premios">Premios</a>
-                                            <a class="dropdown-item" href="crono.html#los__salones">Salones</a>
-                                            <a class="dropdown-item" href="crono.html#catalogo">Catálogos</a>
-                                            <a class="dropdown-item" href="cv.pdf">Curriculum Vitae [Pdf]</a>                                
-                                        </div>
-                                        </li>
-                                        <li class="nav-item lasagna pl2 pl-md-0 ml-0 ml-md-4">
-                                        <a href="contacto.html" class="nav-link  hvr__underline--from-left-nav">Contacto</a>
-                                        </li>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>		
-                    </div>
-                </div>
-            </div>
-    </div>
-    </header>
-    <!-- Cierra HTML General Menú-->  
-<!--Abre margen scroll -->
-<main class="contenido__pag">
-  <!--Cierra margen scroll -->
-  <div>
-      <h1>ERROR 404C</h1>
-  </div>
-<!-- Abre Footer  -->
-<footer id="footer__1--navigation">
-    <div class="footer__1__navigation__zocalocolor--100 container-fluid text-center">
-        <div class="container">
-            <div class="row d-flex justify-content-center pb-3 pt-4">
-                <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="../index.html">Home</a></h6></div>
-                <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="obra.html">Obra</a></h6></div>
-                <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="muestra.html">Muestra Virtual</a></h6></div>
-                <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="cronologias.html">Cronologías</a></h6></div>
-                <div class="col-md-auto px-2 pb-2"><h6 class="tipo__footer--links"><a class="hvr__underline--from-left-fot"  href="contacto.html">Contacto</a></h6></div>
-            </div>
-            <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-12 px-4 pb-2"><a href="https://www.facebook.com/ines.vega.37" target="_blank" class="lamedia"><em class="fa-lg fab fa-facebook px-2"></em></a>
-                <a href="https://www.instagram.com/vivainesita/?hl=es-la" class="lamedia" target="_blank"> <em class="fa-lg fab fa-instagram px-2"></em></a><a class="mailto lamedia" target="_blank" href="mailto:vegainesemilia@gmail.com"> <em class="fa-lg fas fa-envelope px-2"></em></a></div>                    
-            </div>
-        </div>
-    </div>
-</footer>
-<footer id="footer__2--copyright">
-    <div class="footer__2 container-fluid">
-        <div class="footer__2__copyright__areatext--90">
-            <div class="footer__2__copyright__text__container--left pt-1">
-                <p class="footer__2__copyright--text">Hecho con <span class="change__color"> ❤ </span></p>
-            </div>
-             <div class="footer__2__copyright__text__container--right pt-1">
-                 <p class="footer__2__copyright--text">Inés Vega <span class="footer__2__copyright--text"> | ©2021 </span></p> 
-             </div>
-        </div>
-    </div>
-</footer>
-<!-- Cierra General Footer-->
-</main>
-<!--bootstrap-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<!-- cierra bootstrap-->
-
-<!-- Abre JSr para el filtro MitItUp filter settings-->
-<script src="../js/jquery-2.1.1.js"></script>
-<script src="../js/jquery.mixitup.min.js"></script>
-<!-- Abre JSr para el filtro my portfolio-->
-
-<script src="../js/main.js"></script> <!-- Resource jQuery _ agregue el lazy placeholder-->
-<!-- Cierra JSr-->
-
-<!-- Abre Enlace y activar wow.js -->
-<script src="js/wow.min.js"></script>
-<script>
- new WOW().init();
-</script>
-<!-- Cierra Enlace y activar wow.js -->
-<!--abre my portfolio js-->
-<!-- Vendor JS Files -->
-<script src="../assets/vendor/aos/aos.js"></script>
-<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="../assets/vendor/php-email-form/validate.js"></script>
-<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-<!-- Template Main JS File -->
-<script src="../assets/js/main.js"></script>
-<!-- Abre Enlace y activar aos https://michalsnik.github.io/aos/ -->
-
-<script src="../dist/aos.js"></script>
-<script>
-AOS.init({
-  easing: 'ease-in-out-sine'
+<!--back to top https://www.codexworld.com/back-to-top-button-using-jquery-css/-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $('#scroll').fadeIn();
+        }else{
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
 });
 </script>
-<!-- Cierra Enlace y activar aos https://michalsnik.github.io/aos/ -->
+<style type="text/css"></style>
+</head>
+<!-- Cierra Head--> 
 
+<!-- Abre HTML BODY--> 
+<body class="colorbg__404--terra">
+
+<!-- Abre HTML General Menú--> 
+
+    
+<header>
+ </header>
+<main>
+
+<section id="error__404">
+    <div class="container">
+        <div class="row content">
+            <div class="col-md-12 aling-items-center">
+                <div class="mt-5 mb-3"  data-fx="5">
+                    <a class=" tipo__titulo--404" data-img="../img/404/boceto_3.jpg">
+                        <span class="tipo__titulo--404">~404</span></a>
+                        </div>
+                        <div>
+                <p class="bajada_404 ">La página que intentás solicitar no está en el servidor [Error 404]</p>
+                <p class="links_404">Probá con estos links</p>
+            </div>
+                     <nav>
+                        <ul>
+                            <li class="404"><a href="../index.html">Home</a></li>
+                            <li class="404"><a href="obra.html">Obra</a></li>
+                            <li class="404"><a href="muestra.html">Muestra Virtual</a></li>
+                            <li class="404"><a href="cronologias.html">Cronologías</a></li>  
+                            <li class="404"><a href="contacto.html">Contacto</a></li>
+                            <li><p class="dash"></p></li>
+                            <li></li>
+                            <li class="404 align-items-center mb-5">O en nuestra Homepage <a href="https://fernandouemacoderhousecamada16655.netlify.app/" class="404">www.inesvega.com.ar</a></li>                  
+                        </ul>
+                    </nav>
+                    <div>
+                </div>
+                </div>
+                </div>
+            </section>
+</main>
+<!-- Cierra Main-->
+
+<!--bootstrap-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- cierra bootstrap-->
+  
+
+<!-- Abre JSr-->
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/jquery.mixitup.min.js"></script>
+<script src="../js/main.js"></script>  
+<!-- Cierra JSr-->
+<!--js scroll-->
+<script src="../js/scrollhorizontal.js"></script>
+<!-- button up-->
+<script src="../js/simplescrollup.js"></script>
+<script src="../js/buttonup/script.js"></script> <!-- backtotop -->
+<!-- Abre js de animación de img de obra titulada -->
+<script src="../js/js/charming.min.js"></script>
+<script src="../js/js/imagesloaded.pkgd.min.js"></script>
+<script src="../js/js/TweenMax.min.js"></script>
+<script src="../js/js/demo.js"></script>
+<!-- Cierra js de animación de img de obra titulada -->
 </body>
 </html>
