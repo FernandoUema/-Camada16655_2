@@ -1617,10 +1617,10 @@ li.dropdown {
 }
 
 .tipo__bajada--video{
-  font-family: 'Jost', serif;
+  font-family: 'Jost', sans-serif;
   color:#0d1b2b;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
   text-align:left;
   letter-spacing: 2px;
   line-height: 2rem;
@@ -2171,7 +2171,7 @@ a{
 .caja__video--bg{
   background:#b09ab0;
   padding: 50px 20px 0px 50px;
-
+  margin-bottom: 0px;
 }
 /*testimonios*/
 .testimonial-wrap {
@@ -2927,4 +2927,4 @@ input[type=checkbox]:checked + label {
     color: #212529;
     z-index: 1;
     margin-bottom: 3rem;
-}
+}}
