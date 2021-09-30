@@ -137,6 +137,10 @@
     background-color: $lila__principal;
     z-index: 1; 
     margin-left: 1rem;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
  }
 
  #alberti .cezanne:hover  {
