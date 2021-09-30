@@ -7,6 +7,8 @@
 /*botones*/
 /*TIPOGRAFÍAS*/
 /*margenes*/
+/*interlinea-interletra*/
+/*color filtro*/
 * {
   margin: 0;
   padding: 0;
@@ -107,7 +109,7 @@ a {
 }
 
 .tipo__titulo--acerca {
-  color: #aa3232;
+  color: #ac8fac;
   overflow-wrap: break-word;
 }
 
@@ -138,7 +140,8 @@ a {
 }
 
 .tipo__titulo--contacto {
-  color: #084977;
+  color: #052c48;
+  margin-bottom: 0rem;
 }
 
 .tipo__titulo--404 {
