@@ -119,7 +119,6 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   box-shadow: var(--box-shadow);
   transition: all .5s ease;
-  
 }
 /*  background-image: linear-gradient(#c4373c, #052c48);*/
 
@@ -320,7 +319,7 @@ text-align: start;
     font-weight: 600;
     font-kerning: none;
     font-style: italic;
-    color:#f6f5f3;
+    color:#2d2e2f;
     letter-spacing: 0.8px;
     word-spacing: 1px;
 }
@@ -362,6 +361,18 @@ text-align: start;
     color:#2d2e2f;
 }
 
+.tipo__obra--material, 
+.tipo__obra--medida, 
+.tipo__obra--descripcion, 
+.tipo__obra--anio, 
+.tipo__epigrafe--sub-crono{
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 400;
+    text-align: right;
+    font-kerning: none;
+    color:#2d2e2f;
+}
 .tipo__epigrafe--titulo-crono{
     font-family: 'Playfair Display', serif;
     font-size: 0.7rem;
@@ -1685,6 +1696,7 @@ li.dropdown {
     line-height: 1.5rem;
     color: #0d1b2b;
     margin-right: 1rem;
+    margin-top:-1rem;
 }
 .tipo__copyright--elba{
   font-family: 'Jost', sans-serif;

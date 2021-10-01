@@ -17,14 +17,14 @@ $gris__nav:#2d2e2f;
 
 $lila__principal:#ac8fac;
 $lila__secundario: #b09ab0;
-$lila__amarillo: #b9a659;
-$lila_gradient: linear-gradient(#b09ab0, #ac8fac);
+$lila_gradient: linear-gradient(#aa9eaa, #ac8fac);
 
 $brown__principal: #a28570;
 $brown__secundario: #937a68;
 
 $mostaza__principal: #ae952e;
 $amarillo__naranja: #f09f3d;
+$lila__amarillo: #b9a659;
 
 
 $azul__principal:#052c48;
@@ -42,6 +42,7 @@ $negro:#31383f!default;
 $bordo__principal: #7e1e1b;
 $rojo__btn: #9d2021;
 $rojo__secundario: #aa3232;
+$lila_gradient: linear-gradient(#b9a659, #ac8fac);
 
 
 $rojo__principal: #c4373c;
@@ -50,12 +51,7 @@ $rojo__terracota:#b9635d;
 $rojo__terra:#7a3116;
 $mostaza__principal2: #ae6638;
 
-
-
 $rosa__dior:#e0aab6;
-
-
-
 
 /*botones*/
 $whats_click:#0ab39c;
@@ -79,3 +75,6 @@ $letter-spacing-seccion: 0.8px;
 
 /*color filtro*/
 $color-filtro-background: rgba(88, 64, 64, 0.25);
+
+$gradient__lilamarillo: linear-gradient(270deg, #b9a659, #ac8fac);
+

@@ -181,7 +181,7 @@ small {
 
 p,
 [class^="hvr-"] {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 [class^="hvr-"] {
@@ -218,10 +218,6 @@ p,
     background: #eee;
 }
 
-a {
-    color: #2098D1;
-    text-decoration: none;
-}
 
 .footer a:hover,
 .nav:hover {
