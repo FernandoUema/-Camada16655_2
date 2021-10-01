@@ -766,3 +766,21 @@ function randomHero() {
 // Show Random Image on Page Load
 randomHero();
 
+/*slider muestra*/
+$(".flexslider").flexslider({
+  animation: "slide", 
+  slideshow: true,
+  touch: true,
+  keyboard: true,
+  pauseOnHover: true,
+  after: function(item){
+    console.log(item);
+  }
+ // animationLoop: false
+});
+
+$(function() {
+  $('#slides').superslides({
+  hashchange: true
+  });
+  });

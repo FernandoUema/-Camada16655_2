@@ -172,10 +172,11 @@ body::-webkit-scrollbar-thumb {
     background-color:#cecece;
 }
 #colorbg__muestra--celeston{
-  background-color:#929f9b;
+  background:#b9635d;
 }
 .colorbg__muestra--celeston{
-  background-color:#929f9b;
+  background:#b9635d;
+
 }
 .colorbg__404--terra{
   background:#b9635d;
@@ -189,6 +190,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*---------------------CIERRA COLORBACKGROUND--------------------*/
+/*muestra slider*/
+/*cierra muestra slider*/
 /*---------------------abre error 404--------------------*/
 
 
@@ -344,6 +347,8 @@ text-align: start;
   margin-right:5%
 }
 
+
+
 .caja__muestra--elena{
   margin-left:50px;
 }
@@ -361,7 +366,7 @@ text-align: start;
     color:#2d2e2f;
 }
 
-.tipo__obra--material, 
+#epigrafe__obra--bg .tipo__obra--material, 
 .tipo__obra--medida, 
 .tipo__obra--descripcion, 
 .tipo__obra--anio, 
@@ -2685,6 +2690,26 @@ text-decoration: none;
 --------------------------------------------------------------*/
 #muestra li{
     list-style-type: none;
+}
+.tipo__subtitulo--muestra{
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  font-kerning: none;
+  color:#2d2e2f;
+  font-style: italic;
+  margin-bottom: 0px;
+  align-items:flex-end;
+}
+
+.tipo__subtitulo--muestra-sub{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-kerning: none;
+  color:#2d2e2f;
+  font-style: normal;
+  margin-bottom: 0px;
 }
 
 .slider__scroll--snap {

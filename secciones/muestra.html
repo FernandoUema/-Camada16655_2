@@ -18,10 +18,17 @@
 <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 <!-- Cierra Bootstrap-->
 
+<!-- scroll -->
+<link rel="stylesheet" type="text/css" href="../assets/scroll-h/fullpage.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/scroll-h/examples.css">
+<script type="text/javascript" src="../assets/scroll-h/jquery.js"></script>
+<!-- cierra scroll -->
+
 <!-- Abre Css estilos y Css styles_sass-->
-    <link rel="stylesheet" href="../css/estilos.css"/>
-    <link rel="stylesheet" href="../css/styles.css"/>
-    <link rel="stylesheet" href="../scss/styles.css"/>
+<link rel="stylesheet" href="../css/media.css"/>
+<link rel="stylesheet" href="../css/estilos.css"/>
+<link rel="stylesheet" href="../css/styles.css"/>
+<link rel="stylesheet" href="../scss/styles.css"/>
 <!-- Cierra Css estilos -->
 
 <!--abre Modernizr-->
@@ -56,7 +63,7 @@
 <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 <link rel="stylesheet" href="../dist/aos.css" />
 
-<!-- Abre Lazy https://carlosazaustre.es/lazy-loading-image -->
+<!-- Abre Lazy-->
 <script>
 if ("loading" in HTMLImageElement.prototype) {
 console.log("El navegador soporta `lazy-loading`...");
@@ -139,38 +146,49 @@ $(document).ready(function(){
 <!-- Cierra HTML General Menú--> 
 
 
-<!--Abre muestra -->
+    <!--Abre muestra -->
 <main> 
 <section id="muestra" class="caja__obra--titulo-filter section__scroll">
     <div class="container container__muestra">
-            <h1 data-scroll data-scroll-speed="1"><span class="tipo__titulo tipo__titulo--muestra">~Re-visiones</span></h1>
-            <span class="tipo__subtitulo--muestra">Un viaje por la obra de Inés Vega</span>
-            <p data-scroll data-scroll-speed="2" class="pscroll" data-scroll-delay="0.2">Muestra Virtual</p>
-            <div>
-                <span class="hero__scroll tipo index tipo__hero--scroll px-2" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="1000">Ir abajo
-                <em class="chevron bottom"></em>
-                </span>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h1 data-scroll data-scroll-speed="1"><span class="tipo__titulo tipo__titulo--muestra">~Re-visiones</span></h1>
             </div>
-    </div>
-</section>
-    
-<section id="sectionPin" class="section__scroll">
-          <div class="pin-wrap">
-            <div class="caja__muestra--elena">
-            <h6 class="tipo__muestra--elena">"Ubicados entre la pintura, el relieve y la escultura, los trabajos de Inés Vega sorprenden por su efecto de extrañeza".</h6></div>
-         <img src="../img/muestra/dibujos/Amanecer.JPG" class="imgscroll" alt="Amanecer, 150x140 cm, Acrlico,pastel tiza,sobre tela, año 2009">
-            <img src="../img/muestra/dibujos/Nadando sola,año 2010, 150 x 140 cm,carbon,pastel,acrilico sobre tela.png" class="imgscroll" alt="Nadando Sola">
-            <img src="../img/muestra/dibujos/La Buza.jpg" class="imgscroll" alt="La Buza,130x120, 2010,Pastel Tiza, acrilico,sobre tela">
-            <img src="../img/muestra/dibujos/Almalibro.jpg" class="imgscroll" alt="Almalibro">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+            <span class="tipo__subtitulo--muestra">Un viaje por la obra de Inés Vega</span>
+            <p data-scroll data-scroll-speed="2" class="pscroll tipo__subtitulo--muestra-sub" data-scroll-delay="0.2">Muestra Virtual</p>
 
-    
-          </div>
-        </section>
-        <section>
-        </section>
-      </div>
+        </div>
+        <div>
+            <span class="hero__scroll tipo index tipo__hero--scroll px-2" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="600">Dibujos
+            <em class="chevron bottom"></em>
+            </span>
+        </div>
+        </div>
+    </section>
 
-</section>
+    <div class="slider slider--full">
+
+            <div class="slider__inner">
+                <input checked type="radio" name="slider__radiobox" id="slider__radiobox--1" class="slider__radiobox slider__radiobox--1"><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item-1"></label><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev-4"></label><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next-2"></label>
+                <input         type="radio" name="slider__radiobox" id="slider__radiobox--2" class="slider__radiobox slider__radiobox--2"><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item-2"></label><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev-1"></label><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next-3"></label>
+                <input         type="radio" name="slider__radiobox" id="slider__radiobox--3" class="slider__radiobox slider__radiobox--3"><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item-3"></label><label for="slider__radiobox--2" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev-2"></label><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next-4"></label>
+                <input         type="radio" name="slider__radiobox" id="slider__radiobox--4" class="slider__radiobox slider__radiobox--4"><label for="slider__radiobox--4" class="slider__radiobox-label slider__radiobox-label--item slider__radiobox-label--item-4"></label><label for="slider__radiobox--3" class="slider__radiobox-label slider__radiobox-label--prev slider__radiobox-label--prev-3"></label><label for="slider__radiobox--1" class="slider__radiobox-label slider__radiobox-label--next slider__radiobox-label--next-1"></label>
+        
+                <div class="slider__slides">
+                    <div class="ancla" id="dibujos"></div>
+                    <div class="slider__slide slider__slide--2"><img alt="" src="../img/muestra/slide/5.jpg"></div>
+                    <div class="slider__slide slider__slide--2"><img alt="" src="../img/muestra/slide/2.jpg"></div>
+                    <div class="slider__slide slider__slide--2"><img alt="" src="../img/muestra/slide/3.jpg"></div>
+                    <div class="slider__slide slider__slide--2"><img alt="" src="../img/muestra/slide/4.jpg"></div>
+                </div>
+            </div>
+
+
+
+
+
+
 <!--BOTON IR ARRIBA-->
 <div class="button-arriba">
     <a class="item" id="buttonTop">
@@ -218,17 +236,43 @@ $(document).ready(function(){
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <!-- cierra bootstrap-->
-
-
 <!-- Abre JSr-->
 <script src="../js/jquery-2.1.1.js"></script>
 <script src="../js/jquery.mixitup.min.js"></script>
-<script src="../js/main.js"></script>  
-<!-- Cierra JSr-->
-<!--js scroll-->
-<script src="../js/scrollhorizontal.js"></script>
-<!-- button up-->
-<script src="../js/simplescrollup.js"></script>
+<script src="../js/main.js"></script> <!-- backtotop -->
+<script src="../js/simplescrollup.js"></script> <!-- backtotop -->
 <script src="../js/buttonup/script.js"></script> <!-- backtotop -->
+
+<!-- cierra JSr-->
+
+<!-- abre Enlace y activar aos  -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
+</script>
+
+<script>
+    hljs.initHighlightingOnLoad();
+
+    $('.hero__scroll').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: $(window).height()
+        }, 1300);
+    });
+</script>
+<!-- cierra Enlace y activar aos  -->
+
+  <!-- Abre js de animación de img de obra titulada -->
+ <script src="../js/js/charming.min.js"></script>
+ <script src="../js/js/imagesloaded.pkgd.min.js"></script>
+ <script src="../js/js/TweenMax.min.js"></script>
+ <script src="../js/js/demo.js"></script>
+<!-- Cierra js de animación de img de obra titulada -->
+
 </body>
 </html>
