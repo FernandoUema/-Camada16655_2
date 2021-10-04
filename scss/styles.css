@@ -714,6 +714,8 @@ button:hover .button-text {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  height: 0;
+  border: 10px solid #7e1e1b;
   border-top-color: transparent;
   border-bottom-color: transparent;
   opacity: 0;
@@ -723,12 +725,14 @@ button:hover .button-text {
 
 .slider__radiobox-label--prev {
   left: -6%;
-  background: url("../img/prev.svg") no-repeat center center;
+  border-left: 0;
+  border-right-width: 17px;
 }
 
 .slider__radiobox-label--next {
   right: -6%;
-  background: url("../img/next.svg") no-repeat center center;
+  border-right: 0;
+  border-left-width: 17px;
 }
 
 .slider__radiobox {
