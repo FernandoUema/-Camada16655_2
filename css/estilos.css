@@ -285,7 +285,11 @@ text-align: start;
   line-height: 0.1rem;
   margin-bottom: 4rem;
   }
-
+  .caja__epigrafe--slider{
+  z-index: 997;
+  text-align: end;
+  line-height: 0.1rem;
+  }
   .tipo__obra--video{
     font-family: 'Jost', sans-serif;
     font-size: 0.7rem;

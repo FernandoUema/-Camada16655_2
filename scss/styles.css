@@ -714,8 +714,6 @@ button:hover .button-text {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  height: 10px;
-  border: 10px solid #7e1e1b;
   border-top-color: transparent;
   border-bottom-color: transparent;
   opacity: 0;
